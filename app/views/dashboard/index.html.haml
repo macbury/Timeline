@@ -1,26 +1,27 @@
-.spaces
-  .space.span8
-    .toolbar
-      .move &nbsp;
-      %span.title Current
-      .act
-        %a.expand{ href: "#" } Expand all
-        %a.collapse{ href: "#" } Collapse all
-        %a.close{ href: "#" } Close
-    .inner
-      .nano
-        .content
-          - 30.times do
-            .ticket
-              .list
-                .pull-right
-                  %a.button{ href: "#" } Start
-                  .split
-                  = link_to image_tag("http://www.gravatar.com/avatar/205e460b479ese5b48aec07710c08d50?s=21"), "#", class: "avatar"
-                %a.expand{ href: "#" } Expand
-                %span Test
-                  
-              .block
-          .end
-  .space.span8
-    %h3 test
+%table.spaces
+  %tr
+    - 3.times do
+      %td
+        .space
+          .toolbar
+            .move &nbsp;
+            %span.title Current
+            .act
+              %a.expand{ href: "#" } Expand all
+              %a.collapse{ href: "#" } Collapse all
+              %a.close{ href: "#" } Close
+          .inner
+            .nano
+              .content
+                - (rand * 20).round.times do
+                  .ticket
+                    .list
+                      .pull-right
+                        %a.button{ href: "#" } Start
+                        .split
+                        = link_to image_tag("http://www.gravatar.com/avatar/205e460b479ese5b48aec07710c08d50?s=21"), "#", class: "avatar"
+                      %a.expand{ href: "#" } Expand
+                      %span Test
+                        
+                    .block
+                .end

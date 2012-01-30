@@ -1,6 +1,22 @@
 .spaces {
   $spaces_radius: 4px;
   $space_height: 300px;
+  &, & tr, & td {
+    border: none;
+  }
+
+  & td {
+    padding: 0px 2px;
+  }
+
+  & td:first-child {
+    padding-left: 0px;
+  }
+
+  & td:last-child {
+    padding-right: 0px;
+  }
+
   .space {
     height: $space_height;
     overflow: hidden;
