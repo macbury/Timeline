@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require chosen
 //= require jquery_ujs
 //= requirse i18n
 //= requirse i18n/translations
