@@ -15,12 +15,14 @@
       .topbar-wrapper
         .topbar
           .topbar-inner
-            %h3= link_to "Gears", root_url, :class => "logo"
-            %form
+            %h3= link_to t("application.name"), root_url, class: "logo"
+            %form.pull-right
               %input.span4{ placeholder: "Search..." }/
             %ul.nav
-              %li.active= link_to "Instances", "#"
-              %li= link_to "Applications", "#"
+              %li.active= link_to "Workspaces", "#"
+              %li= link_to "Notifications", "#"
+              %li= link_to "Account", "#"
+              %li= link_to "Logout", "#"
             .clear
     .container-fluid
       %ul.pills

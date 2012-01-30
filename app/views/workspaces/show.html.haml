@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @workspace.name
+%p
+  %b User:
+  = @workspace.user_id
+
+= link_to 'Edit', edit_workspace_path(@workspace)
+\|
+= link_to 'Back', workspaces_path
