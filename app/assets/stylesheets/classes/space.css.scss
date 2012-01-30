@@ -6,6 +6,15 @@
     overflow: hidden;
 
     .toolbar {
+      .move {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: transparent image-url("move.png") no-repeat;
+        margin-bottom: -1px;
+        margin-right: 2px;
+      }
+
       height: 26px;
       background: #333;
       font-size: 10px;
@@ -19,22 +28,98 @@
         text-transform:uppercase;
         font-weight: bold;
       }
+      a {
+        display: none;
+      }
     }
 
     .inner {
       border: 1px solid #6E6E6E;
       border-top: 0px;
-      background: #AEB6B9 image-url("dropzone.png") repeat-x top;
+      background: #AEB6B9;
       color: #666;
-      border-radius: 0 0 $spaces_radius $spaces_radius;
+      border-radius: 0 0 2px 2px;
       box-shadow: 0px 0px 1px rgba(0,0,0, 0.2);
       height: $space_height - 28px;
       overflow-x: hidden;
       overflow-y: hidden;
+
+      .end {
+        height: 202px;
+        background: #AEB6B9 image-url("dropzone.png") repeat-x top;
+      }
+    }
+  }
+
+  .ticket {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid white;
+    min-height: 24px;
+    line-height: 24px;
+
+    .button {
+      background: #e0e2e5;
+      border: 1px solid #bbc4cc;
+      box-shadow: inset 0px 0px 1px #fff;
+      border-radius: 2px;
+      display: block;
+      float: left;
+      width: 49px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #222;
+      margin: 1px 5px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-top: 0px;
+
+      &:hover {
+        text-decoration: none;
+        background: #bbc4cc;
+      }
+    }
+
+    .list {
+      .avatar {
+        height: 21px;
+        img {
+          height: 21px;
+        }
+      }
+
+      &:hover {
+        background: #E6E6E6;
+      }
+
+      .pull-right {
+        margin: 1px 2px;
+        float: right;
+        height: 21px;
+        .split {
+          border-left: 1px dotted gray;
+          width: 1px;
+          height: 21px;
+          display: inline-block;
+        }
+      }
+    }
+    .expand {
+      text-indent: -999px;
+      background: transparent image-url("collapsed.png") no-repeat center;
+      width: 18px;
+      height: 22px;
+      display: inline-block;
+    }
+
+    .block {
+      display: none;
     }
   }
 
 }
+
 
 .nano > .pane {
   right: 2px;

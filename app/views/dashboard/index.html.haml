@@ -1,27 +1,26 @@
 .spaces
   .space.span8
     .toolbar
+      .move &nbsp;
       %span.title Current
+      .act
+        %a.expand{ href: "#" } Expand all
+        %a.collapse{ href: "#" } Collapse all
+        %a.close{ href: "#" } Close
     .inner
       .nano
         .content
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          - 30.times do
+            .ticket
+              .list
+                .pull-right
+                  %a.button{ href: "#" } Start
+                  .split
+                  = link_to image_tag("http://www.gravatar.com/avatar/205e460b479ese5b48aec07710c08d50?s=21"), "#", class: "avatar"
+                %a.expand{ href: "#" } Expand
+                %span Test
+                  
+              .block
+          .end
   .space.span8
     %h3 test
