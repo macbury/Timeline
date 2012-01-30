@@ -1,0 +1,43 @@
+.spaces {
+  $spaces_radius: 4px;
+  $space_height: 300px;
+  .space {
+    height: $space_height;
+    overflow: hidden;
+
+    .toolbar {
+      height: 26px;
+      background: #333;
+      font-size: 10px;
+      border-radius: $spaces_radius $spaces_radius 0 0;
+      padding: 0px 6px;
+      border: 1px solid rgba(0,0,0,0.5);
+      border-bottom: 0px;
+      line-height: 26px;
+      .title {
+        color: #fff;
+        text-transform:uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .inner {
+      border: 1px solid #6E6E6E;
+      border-top: 0px;
+      background: #AEB6B9 image-url("dropzone.png") repeat-x top;
+      color: #666;
+      border-radius: 0 0 $spaces_radius $spaces_radius;
+      box-shadow: 0px 0px 1px rgba(0,0,0, 0.2);
+      height: $space_height - 28px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+  }
+
+}
+
+.nano > .pane {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+}

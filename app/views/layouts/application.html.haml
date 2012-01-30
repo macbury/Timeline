@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %title= t("application.name")
+    = csrf_meta_tags
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    :javascript
+      I18n.defaultLocale = #{I18n.default_locale.to_s.inspect};
+      I18n.locale = #{I18n.locale.to_s.inspect};
+    %link{ :rel => "shortcut icon", :href => "/favicon.png", :type => "image/x-icon" }/
+    = yield :head
+  %body{ :id => "controller_#{controller.controller_name}_#{controller.action_name}" }
+    .container-fluid
+      .topbar-wrapper
+        .topbar
+          .topbar-inner
+            %h3= link_to "Gears", root_url, :class => "logo"
+            %form
+              %input.span4{ placeholder: "Search..." }/
+            %ul.nav
+              %li.active= link_to "Instances", "#"
+              %li= link_to "Applications", "#"
+            .clear
+    .container-fluid
+      %ul.pills
+        %li.active= link_to "Overview", "#"
+        %li= link_to "Dashboard", "#"
+        %li= link_to "Dropbox", "#"
+        %li= link_to "Timeline", "#"
+      .clear
+      = yield
+      .clear
