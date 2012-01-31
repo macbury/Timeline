@@ -1,5 +1,7 @@
 Timeline::Application.routes.draw do
-  resources :workspaces
+  resources :workspaces do
+    resources :tickets
+  end
 
   devise_for :users
 

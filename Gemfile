@@ -21,6 +21,7 @@ gem 'haml_coffee_assets'
 gem "tabulous"
 gem "i18n-js"
 gem 'chosen_rails'
+gem 'jbuilder'
 
 # Gems used only for assets and not required
 # in production environments by default.
