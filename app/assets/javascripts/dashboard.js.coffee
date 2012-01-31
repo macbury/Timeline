@@ -42,13 +42,15 @@ $(document).ready ->
       left: "#{mx+16}px"
       top: "#{my+16}px"
   
-  setInterval updateCursorCallback, 50
+  #setInterval updateCursorCallback, 50
 
   $('.ticket .expand').click ->
     $(this).parents('.ticket').find(".list").hide()
-    $(this).parents('.ticket').find(".block").show()
+    $(this).parents('.ticket').find(".block").show("fade")
+    $(window).resize()
     false
   $('.ticket .collapse').click ->
-    $(this).parents('.ticket').find(".list").show()
+    $(this).parents('.ticket').find(".list").show("fade")
     $(this).parents('.ticket').find(".block").hide()
+    $(window).resize()
     false
