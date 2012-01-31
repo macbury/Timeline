@@ -128,14 +128,38 @@
     }
     .expand {
       text-indent: -999px;
-      background: transparent image-url("collapsed.png") no-repeat center;
+      background: transparent image-url("expand.gif") no-repeat center;
       width: 18px;
       height: 22px;
       display: inline-block;
     }
-
+    .collapse {
+      text-indent: -999px;
+      background: transparent image-url("collapse.gif") no-repeat center;
+      width: 18px;
+      height: 22px;
+      display: inline-block;
+      position: absolute;
+    }
     .block {
       display: none;
+      background-image: linear-gradient(bottom, rgb(244,244,244) 0%, rgb(255,255,255) 60%);
+      background-image: -o-linear-gradient(bottom, rgb(244,244,244) 0%, rgb(255,255,255) 60%);
+      background-image: -moz-linear-gradient(bottom, rgb(244,244,244) 0%, rgb(255,255,255) 60%);
+      background-image: -webkit-linear-gradient(bottom, rgb(244,244,244) 0%, rgb(255,255,255) 60%);
+      background-image: -ms-linear-gradient(bottom, rgb(244,244,244) 0%, rgb(255,255,255) 60%);
+
+      background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(244,244,244)),
+        color-stop(0.6, rgb(255,255,255))
+      );
+
+      .form {
+        margin: 0 20px;
+      }
     }
   }
 

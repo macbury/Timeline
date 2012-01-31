@@ -28,9 +28,20 @@ $(document).ready ->
     mx = event.pageX
     my = event.pageY
   
+  $("select").chosen();
+
   updateCursorCallback = ->
     cursor.css
       left: "#{mx+16}px"
       top: "#{my+16}px"
   
   setInterval updateCursorCallback, 50
+
+  $('.ticket .expand').click ->
+    $(this).parents('.ticket').find(".list").hide()
+    $(this).parents('.ticket').find(".block").show()
+    false
+  $('.ticket .collapse').click ->
+    $(this).parents('.ticket').find(".list").show()
+    $(this).parents('.ticket').find(".block").hide()
+    false
