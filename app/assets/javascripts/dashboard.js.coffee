@@ -30,6 +30,13 @@ $(document).ready ->
   
   $("select").chosen();
 
+  $('textarea').autoResize ->
+    animate: true
+    animateDuration: 250
+    extraSpace: 80,
+    animateCallback: -> $(window).resize()
+      
+
   updateCursorCallback = ->
     cursor.css
       left: "#{mx+16}px"
