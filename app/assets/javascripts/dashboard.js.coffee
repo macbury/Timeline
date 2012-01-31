@@ -20,4 +20,17 @@ $(document).ready ->
       $(this).find(".inner").height(inner_height)
       $(this).find(".nano").nanoScroller()
 
-  $(window).resize()  
+  $(window).resize()
+  cursor = $('.cursor')
+  mx = 0
+  my = 0
+  $('body').mousemove (event) ->
+    mx = event.pageX
+    my = event.pageY
+  
+  updateCursorCallback = ->
+    cursor.css
+      left: "#{mx+16}px"
+      top: "#{my+16}px"
+  
+  setInterval updateCursorCallback, 50
