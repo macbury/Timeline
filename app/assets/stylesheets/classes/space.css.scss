@@ -1,20 +1,24 @@
 .spaces {
   $spaces_radius: 4px;
   $space_height: 300px;
+  .placeholder {
+    border: 2px dashed #ccc;
+    margin: 10px;
+  }
   &, & tr, & td {
     border: none;
   }
 
   & td {
-    padding: 0px 2px;
+    padding: 0px 4px;
   }
 
   & td:first-child {
-    padding-left: 0px;
+    padding: 0px;
   }
 
   & td:last-child {
-    padding-right: 0px;
+    padding: 0px;
   }
 
   .space {
@@ -29,6 +33,7 @@
         background: transparent image-url("move.png") no-repeat;
         margin-bottom: -1px;
         margin-right: 2px;
+        cursor: move;
       }
 
       height: 26px;

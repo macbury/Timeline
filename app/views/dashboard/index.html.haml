@@ -1,11 +1,30 @@
+- content_for :header do
+  %a.btn.pull-right.primary{ href: "#" } Add Ticket
+  %ul.tabs
+    %li.dropdown{ data: { dropdown: "dropdown" } }
+      = link_to "Show Views", "#", class: "dropdown-toggle", id: "show_all"
+      %ul.dropdown-menu
+        %li
+          = link_to "#" do
+            %input{ type: "checkbox" }
+            Current
+        %li= link_to "Done", "#"
+        %li= link_to "IceBox", "#"
+        %li.divider
+        %li= link_to "Show All", "#"
+    %li= link_to "Stream", "#"
+    %li.active= link_to "Tickets", "#"
+    %li= link_to "Team", "#"
+    %li= link_to "Dropbox", "#"
+    %li= link_to "Settings", "#"
 %table.spaces
   %tr
-    - 3.times do
+    - 3.times do |index|
       %td
         .space
           .toolbar
             .move &nbsp;
-            %span.title Current
+            %span.title Current #{index}
             .act
               %a.expand{ href: "#" } Expand all
               %a.collapse{ href: "#" } Collapse all

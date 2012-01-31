@@ -11,8 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require chosen
 //= require jquery_ujs
+//= require bootstrap
+
 //= requirse i18n
 //= requirse i18n/translations
 //= require underscore

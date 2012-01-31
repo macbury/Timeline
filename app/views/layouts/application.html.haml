@@ -11,25 +11,32 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.png", :type => "image/x-icon" }/
     = yield :head
   %body{ :id => "controller_#{controller.controller_name}_#{controller.action_name}" }
-    .container-fluid
+    .container-fluid.header
       .topbar-wrapper
         .topbar
           .topbar-inner
             %h3= link_to t("application.name"), root_url, class: "logo"
-            %form.pull-right
-              %input.span4{ placeholder: "Search..." }/
             %ul.nav
-              %li.active= link_to "Workspaces", "#"
+              %li.dropdown{ data: { dropdown: "dropdown" } }
+                = link_to "Select Workspace", "#", class: "dropdown-toggle"
+                %ul.dropdown-menu
+                  %li= link_to "Bistro Master", "#"
+                  %li= link_to "Turist Guide", "#"
+                  %li= link_to "Quick Cloud", "#"
+                  %li.divider
+                  %li= link_to "Show All", "#"
+            %form
+              %input.span4{ placeholder: "Search..." }/
+            %ul.nav.secondary-nav
               %li= link_to "Notifications", "#"
               %li= link_to "Account", "#"
               %li= link_to "Logout", "#"
             .clear
-    .container-fluid
-      %ul.pills
-        %li.active= link_to "Overview", "#"
-        %li= link_to "Dashboard", "#"
-        %li= link_to "Dropbox", "#"
-        %li= link_to "Timeline", "#"
       .clear
+      = yield :header
+      .clear
+      = render partial: "shared/flash_messages"
+      .clear
+    .container-fluid
       = yield
       .clear
