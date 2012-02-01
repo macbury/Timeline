@@ -6,14 +6,19 @@ $(document).ready ->
     handle: ".toolbar .move"
     cursor: "move"
   
+  #$( ".spaces" ).selectable
+  #  filter: ".ticket"
+  $(".spaces .ticket").disableSelection()
+  
   $('.dropdown-toggle').dropdown()
+
   $('body, html').css
     overflow: "hidden"
 
   $(window).resize ->
     header_height = $('.header').height()
     body_height = $('body').height()
-    space_height = body_height - header_height - 15
+    space_height = body_height - header_height - 35
 
     $('.spaces .space').each ->
       inner_height = space_height - $(this).find('.toolbar').height() - 5

@@ -1,22 +1,29 @@
 - content_for :header do
-  %a.btn.pull-right.primary{ href: "#" } Add Ticket
-  %ul.nav.nav-tabs
-    %li.dropdown{ data: { dropdown: "dropdown" } }
-      = link_to "Show Views", "#", class: "dropdown-toggle", id: "show_all"
+  .btn-toolbar
+    %a.btn.pull-right.btn-primary{ href: "#" } Add Ticket
+    .btn-group{ data: { toggle: "buttons-checkbox" } }
+      = link_to "Current", "#", class: "btn active btn-info"
+      = link_to "Done", "#", class: "btn active btn-info"
+      = link_to "IceBox", "#", class: "btn active btn-info"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        More
+        %span.caret
       %ul.dropdown-menu
-        %li
-          = link_to "#" do
-            %input{ type: "checkbox" }
-            Current
-        %li= link_to "Done", "#"
-        %li= link_to "IceBox", "#"
-        %li.divider
-        %li= link_to "Show All", "#"
-    %li= link_to "Stream", "#"
-    %li.active= link_to "Tickets", "#"
-    %li= link_to "Team", "#"
-    %li= link_to "Dropbox", "#"
-    %li= link_to "Settings", "#"
+        %li= link_to "Charts", "#"
+        %li= link_to "Settings", "#"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        Project
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to "Settings", "#"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        Tickets
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to "Settings", "#"
 %table.spaces
   %tr
     - 3.times do |index|
@@ -32,7 +39,7 @@
           .inner
             .nano
               .content
-                - (rand * 20).round.times do
+                - (rand * 20).round.times do |test_index|
                   .ticket
                     .list
                       .pull-right
@@ -40,7 +47,7 @@
                         .split
                         = link_to image_tag("http://www.gravatar.com/avatar/205e460b479ese5b48aec07710c08d50?s=21"), "#", class: "avatar"
                       %a.expand{ href: "#" } Expand
-                      %span Test
+                      %span Test #{test_index}
                         
                     .block
                       %a.collapse{ href: "#" } Collapse
