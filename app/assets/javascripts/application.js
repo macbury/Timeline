@@ -15,8 +15,8 @@
 //= require chosen
 //= require jquery_ujs
 
-//= requirse i18n
-//= requirse i18n/translations
+//= require i18n
+//= require i18n/translations
 //= require underscore
 //= require_tree ./libs
 //= require backbone

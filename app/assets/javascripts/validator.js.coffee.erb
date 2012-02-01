@@ -6,20 +6,9 @@ validators[<%= klass.name.inspect.html_safe %>] = <%= JsValidator.build_hash(kla
 <% end %>
 
 test_functions =
-  presence_validator: (value, options) ->
-    [I18n.t("activerecord.errors.presence")] if value != "" || value != null || value != undefined
-  presence: (element, options) ->
-          options.message if /^\s*$/.test(element.val() || '')
-  acceptance: (element, options) ->
-    switch element.attr('type')
-      when 'checkbox'
-        unless element.attr('checked')
-          return options.message
-      when 'text'
-        if element.val() != (options.accept?.toString() || '1')
-          return options.message
-
-  format: (element, options) ->
+  presence_validator: (element, options) -> I18n.t("errors.messages.blank") if /^\s*$/.test(element || '')
+  acceptance_validator: (element, options) -> I18n.t("errors.messages.accepted") if /^\s*$/.test(element || '')
+  format_validator: (element, options) ->
     message = @presence(element, options)
     if message
       return if options.allow_blank == true
@@ -28,7 +17,7 @@ test_functions =
     return options.message if options.with and !options.with.test(element.val())
     return options.message if options.without and options.without.test(element.val())
 
-  numericality: (element, options) ->
+  numericality_validator: (element, options) ->
     unless /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d*)?$/.test(element.val())
       return options.messages.numericality
 
@@ -53,7 +42,7 @@ test_functions =
     if options.even and (parseInt(element.val(), 10) % 2)
       return options.messages.even
 
-  length: (element, options) ->
+  length_validator: (element, options) ->
     tokenizer = options.js_tokenizer || "split('')"
     tokenized_length = new Function('element', "return (element.val().#{tokenizer} || '').length")(element)
     CHECKS =
@@ -75,7 +64,7 @@ test_functions =
       fn = new Function("return #{tokenized_length} #{operator} #{options[check]}")
       return options.messages[check] unless fn()
 
-  exclusion: (element, options) ->
+  exclusion_validator: (element, options) ->
     message = @presence(element, options)
     if message
       return if options.allow_blank == true
@@ -89,7 +78,7 @@ test_functions =
       upper = options.range[1]
       return options.message if element.val() >= lower and element.val() <= upper
 
-  inclusion: (element, options) ->
+  inclusion_validator: (element, options) ->
     message = @presence(element, options)
     if message
       return if options.allow_blank == true
@@ -105,9 +94,10 @@ test_functions =
       return if element.val() >= lower and element.val() <= upper
       return options.message
 
-  confirmation: (element, options) ->
+  confirmation_validator: (element, options) ->
     if element.val() != jQuery("##{element.attr('id')}_confirmation").val()
       return options.message
+
 class Validator
 
   constructor: (attributes, klass) ->
