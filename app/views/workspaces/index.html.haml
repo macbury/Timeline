@@ -1,21 +1,17 @@
-%h1 Listing workspaces
 
-%table
+.page-header
+  %h2 
+    MacBury
+    %small workspaces
+
+%table.zebra-striped.bordered-table
   %tr
     %th Name
-    %th User
-    %th
-    %th
-    %th
 
   - @workspaces.each do |workspace|
     %tr
-      %td= workspace.name
-      %td= workspace.user_id
-      %td= link_to 'Show', workspace
-      %td= link_to 'Edit', edit_workspace_path(workspace)
-      %td= link_to 'Destroy', workspace, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to workspace.name, workspace
 
 %br
 
-= link_to 'New Workspace', new_workspace_path
+= link_to 'New Workspace', new_workspace_path, class: "btn primary large"

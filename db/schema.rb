@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120131112516) do
+ActiveRecord::Schema.define(:version => 20120201100722) do
 
   create_table "tickets", :force => true do |t|
     t.integer  "workspace_id"
@@ -56,8 +56,9 @@ ActiveRecord::Schema.define(:version => 20120131112516) do
   create_table "workspaces", :force => true do |t|
     t.string   "name"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.boolean  "public",     :default => true
   end
 
 end

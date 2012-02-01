@@ -82,3 +82,4 @@
 # Formtastic::FormBuilder.perform_browser_validations = true
 
 Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
+require "js_validator"

@@ -26,7 +26,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [ :email ]
+  config.authentication_keys = [ :email ]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -85,7 +85,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "d9ba6c15be31edcbb0e2b12dcc9dd51ffc55f125a284e863a4c61e00f8dbd9add14827054ecde69f35714573337fe4b326add834742af36bb262799fe39166a9"
+  config.pepper = "d9ba6c15be31edcbb0e2b12dcc9dd51ffc55f125a284e863a4c61e00f8dbd9add14827054ecde69f35714573337fe4b326add834742af36bb262799fe39166a9"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -172,7 +172,7 @@ Devise.setup do |config|
   # :authlogic_sha512 (then you should set stretches above to 20 for default behavior)
   # and :restful_authentication_sha1 (then you should set stretches to 10, and copy
   # REST_AUTH_SITE_KEY to pepper)
-  # config.encryptor = :sha512
+  config.encryptor = :sha512
 
   # ==> Configuration for :token_authenticatable
   # Defines name of the authentication token params key

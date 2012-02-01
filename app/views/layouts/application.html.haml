@@ -16,21 +16,26 @@
         .topbar
           .topbar-inner
             %h3= link_to t("application.name"), root_url, class: "logo"
-            %ul.nav
-              %li.dropdown{ data: { dropdown: "dropdown" } }
-                = link_to "Select Workspace", "#", class: "dropdown-toggle"
-                %ul.dropdown-menu
-                  %li= link_to "Bistro Master", "#"
-                  %li= link_to "Turist Guide", "#"
-                  %li= link_to "Quick Cloud", "#"
-                  %li.divider
-                  %li= link_to "Show All", "#"
-            %form
-              %input.span4{ placeholder: "Search..." }/
-            %ul.nav.secondary-nav
-              %li= link_to "Notifications", "#"
-              %li= link_to "Account", "#"
-              %li= link_to "Logout", "#"
+            - if user_signed_in?
+              %ul.nav
+                %li.dropdown{ data: { dropdown: "dropdown" } }
+                  = link_to "Select Workspace", "#", class: "dropdown-toggle"
+                  %ul.dropdown-menu
+                    - self.current_user.workspaces.each do |workspace|
+                      %li= link_to workspace.name, workspace
+                    %li.divider
+                    %li= link_to "Show All", workspaces_path
+              %form
+                %input.span4{ placeholder: "Search..." }/
+              %ul.nav.secondary-nav
+                %li= link_to "Notifications", "#"
+                %li= link_to "Account", "#"
+                %li= link_to "Logout", "#"
+            - else
+              = form_for(User.new, url: session_path("user"), html: { class: "pull-right" }) do |f|
+                = f.email_field :email, placeholder: "E-Mail", class: "input-small"
+                = f.password_field :password, placeholder: "Password", class: "input-small"
+                %button.btn Sign in
             .clear
       .clear
       = yield :header

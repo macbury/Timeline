@@ -1,0 +1,6 @@
+validators = []
+<% [Ticket, Workspace].each do |klass| %>
+
+validators[<%= klass.name.inspect.html_safe %>] = <%= JsValidator.build_hash(klass).to_json %>;
+
+<% end %>
