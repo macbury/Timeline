@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery-ui
+//= require hamlcoffee
 //= require chosen
 //= require jquery_ujs
 

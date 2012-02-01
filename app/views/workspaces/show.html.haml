@@ -1,12 +1,38 @@
-%p#notice= notice
+- content_for :header do
+  .btn-toolbar
+    %a.btn.pull-right.btn-primary#add_ticket{ href: "#" } Add Ticket
+    .btn-group{ data: { toggle: "buttons-checkbox" } }
+      = link_to "Done", "#", class: "btn btn-info", id: "done_space_button"
+      = link_to "Current", "#", class: "btn btn-info", id: "current_space_button"
+      = link_to "Pending", "#", class: "btn btn-info", id: "pending_space_button"
+      = link_to "IceBox", "#", class: "btn btn-info", id: "icebox_space_button"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        More
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to "Charts", "#"
+        %li= link_to "Settings", "#"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        Project
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to "Settings", "#"
+    .btn-group
+      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        Tickets
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to "Settings", "#"
 
-%p
-  %b Name:
-  = @workspace.name
-%p
-  %b User:
-  = @workspace.user_id
+- content_for :footer do
+  :javascript
+    $(document).ready(function(){
+      window.timeline = new Timeline.Routers.TicketsRouter({ url: #{workspace_tickets_path( workspace_id: @workspace.id).inspect.html_safe} });
+      Backbone.history.start();
+    });
 
-= link_to 'Edit', edit_workspace_path(@workspace)
-\|
-= link_to 'Back', workspaces_path
+%table.spaces#spaces
+  %tr
+    %td Loading... Please Wait...

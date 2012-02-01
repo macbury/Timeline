@@ -1,0 +1,34 @@
+.list
+  .pull-right
+    %a.button{ href: "#" } Start
+    .split
+    %a.avatar{ href: "#" }
+      %img{ src: "/assets/eye_inv.png" }/
+  %a.expand{ href: "#" } Expand
+  %span Test
+    
+.block
+  %a.collapse{ href: "#" } Collapse
+  %form.form
+    .field
+      %input.title{ name: "ticket[title]", type: "text", placeholder: "Enter ticket title here" }
+    .field.divider
+      %a.btn.btn-primary.small{ href: "#" } Save
+      %a.btn.small{ href: "#" } Cancel
+      %a.btn.btn-danger.small{ href: "#" } Destroy
+      %a.btn.btn-info.small{ href: "#" } View History
+    .field
+      %select
+
+      %span.hint requested this ticket on (now)
+    .field.divider
+      %select
+      %span.hint own this ticket
+    .field
+      %label Labels:
+      %input{ type: "text", placeholder: "Enter labels here" }
+      
+    .field
+      %label Description:
+      %textarea{ rows: 5 }
+.clear
