@@ -11,32 +11,31 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.png", :type => "image/x-icon" }/
     = yield :head
   %body{ :id => "controller_#{controller.controller_name}_#{controller.action_name}" }
-    .container-fluid.header
-      .topbar-wrapper
-        .topbar
-          .topbar-inner
-            %h3= link_to t("application.name"), root_url, class: "logo"
+    .header
+      .navbar
+        .navbar-inner
+          .container-fluid
+            = link_to t("application.name"), root_url, class: "brand"
             - if user_signed_in?
               %ul.nav
-                %li.dropdown{ data: { dropdown: "dropdown" } }
-                  = link_to "Select Workspace", "#", class: "dropdown-toggle"
+                %li.dropdown
+                  = link_to "#", class: "dropdown-toggle", data: { toggle: "dropdown" } do
+                    Select Workspace
+                    %b.caret
                   %ul.dropdown-menu
                     - self.current_user.workspaces.each do |workspace|
                       %li= link_to workspace.name, workspace
                     %li.divider
                     %li= link_to "Show All", workspaces_path
-              %form
-                %input.span4{ placeholder: "Search..." }/
-              %ul.nav.secondary-nav
+              %form.navbar-search.pull-left
+                %input.search-query.span2{ placeholder: "Search..." }/
+              %ul.nav.pull-right
                 %li= link_to "Notifications", "#"
                 %li= link_to "Account", "#"
+                %li.divider-vertical
                 %li= link_to "Logout", "#"
             - else
-              = form_for(User.new, url: session_path("user"), html: { class: "pull-right" }) do |f|
-                = f.email_field :email, placeholder: "E-Mail", class: "input-small"
-                = f.password_field :password, placeholder: "Password", class: "input-small"
-                %button.btn Sign in
-            .clear
+              %p.pull-right Test :P
       .clear
       = yield :header
       .clear

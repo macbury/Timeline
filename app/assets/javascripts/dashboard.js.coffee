@@ -6,6 +6,7 @@ $(document).ready ->
     handle: ".toolbar .move"
     cursor: "move"
   
+  $('.dropdown-toggle').dropdown()
   $('body, html').css
     overflow: "hidden"
 

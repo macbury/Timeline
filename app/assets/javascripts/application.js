@@ -14,11 +14,11 @@
 //= require jquery-ui
 //= require chosen
 //= require jquery_ujs
-//= require bootstrap
 
 //= requirse i18n
 //= requirse i18n/translations
 //= require underscore
+//= require_tree ./libs
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink

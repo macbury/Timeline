@@ -31,8 +31,6 @@ GEM
     arel (3.0.0)
     bcrypt-ruby (3.0.1)
     blankslate (2.1.2.4)
-    bootstrap-sass (1.4.4)
-      sass-rails (~> 3.1)
     builder (3.0.0)
     cancan (1.6.7)
     chosen_rails (0.1.0)
@@ -155,7 +153,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 1.4.4)
   cancan
   chosen_rails
   coffee-rails (~> 3.2.1)

@@ -1,6 +1,6 @@
 - content_for :header do
   %a.btn.pull-right.primary{ href: "#" } Add Ticket
-  %ul.tabs
+  %ul.nav.nav-tabs
     %li.dropdown{ data: { dropdown: "dropdown" } }
       = link_to "Show Views", "#", class: "dropdown-toggle", id: "show_all"
       %ul.dropdown-menu
@@ -48,10 +48,10 @@
                         .field
                           %input{ type: "text", placeholder: "Enter ticket title here" }
                         .field.divider
-                          %a.btn.small.primary{ href: "#" } Save
+                          %a.btn.btn-primary.small{ href: "#" } Save
                           %a.btn.small{ href: "#" } Cancel
-                          %a.btn.small.danger{ href: "#" } Destroy
-                          %a.btn.small.info{ href: "#" } View History
+                          %a.btn.btn-danger.small{ href: "#" } Destroy
+                          %a.btn.btn-info.small{ href: "#" } View History
                         .field
                           %select
                             - 20.times do |index|
