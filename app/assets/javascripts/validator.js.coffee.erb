@@ -7,19 +7,16 @@ validators[<%= klass.name.inspect.html_safe %>] = <%= JsValidator.build_hash(kla
 
 test_functions =
   presence_validator: (element, options) -> I18n.t("errors.messages.blank") if /^\s*$/.test(element || '')
-  acceptance_validator: (element, options) -> I18n.t("errors.messages.accepted") if /^\s*$/.test(element || '')
+  acceptance_validator: (element, options) -> I18n.t("errors.messages.accepted") unless element
   format_validator: (element, options) ->
-    message = @presence(element, options)
-    if message
-      return if options.allow_blank == true
-      return message
-    
+    return @presence_validator(element, options) if message
+    alert("implement this!")
+    return
     return options.message if options.with and !options.with.test(element.val())
     return options.message if options.without and options.without.test(element.val())
 
   numericality_validator: (element, options) ->
-    unless /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d*)?$/.test(element.val())
-      return options.messages.numericality
+    return I18n.t("errors.messages.blank") unless /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d*)?$/.test(element.val())
 
     if options.only_integer and !/^[+-]?\d+$/.test(element.val())
       return options.messages.only_integer
@@ -112,6 +109,11 @@ class Validator
     _.each @validator, (field, validators) =>
       @errors[field] = []
       _.each validators, (validator) =>
-        @errors[field].push test_functions[validator.type](@attributes[field], validator.options)
+        validator_function = test_functions[validator.type]
+        if validator_function
+          @errors[field].push validator_function(@attributes[field], validator.options)
+        else
+          console.log "Undefined validator #{validator.type} for #{field}"
         
       
+window.Validator = Validator;
