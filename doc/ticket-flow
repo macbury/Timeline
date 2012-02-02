@@ -1,0 +1,5 @@
+
+cost -> start -> finish -> deliver -> accept
+                    ^                   or  
+                    |                 reject -> restart -> |
+                    ----------------------------------------

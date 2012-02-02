@@ -1,17 +1,23 @@
+.row-fluid
+  .span4
+    %h3 Activity Feed
+        
+  .span8
+    .page-header
+      %h3 
+        MacBury
+        %small workspaces
 
-.page-header
-  %h2 
-    MacBury
-    %small workspaces
+    %table.zebra-striped.bordered-table
+      %tr
+        %th Name
 
-%table.zebra-striped.bordered-table
-  %tr
-    %th Name
+      - @workspaces.each do |workspace|
+        %tr
+          %td= link_to workspace.name, workspace
 
-  - @workspaces.each do |workspace|
-    %tr
-      %td= link_to workspace.name, workspace
+
 
 %br
 
-= link_to 'New Workspace', new_workspace_path, class: "btn primary large"
+= link_to 'New Workspace', new_workspace_path, class: "btn btn-large btn-primary"

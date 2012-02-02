@@ -9,7 +9,10 @@ $(document).ready ->
   $('.dropdown-toggle').dropdown()
 
 
-
+  $("#loading").ajaxStart ->
+    console.log "Starting ajax..." 
+  $('.log').ajaxStop  ->
+    console.log "Stopping ajax..." 
 
   cursor = $('.cursor')
   mx = 0
