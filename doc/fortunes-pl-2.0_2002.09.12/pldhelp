@@ -1,0 +1,914 @@
+%
+23:43:53 <Dj_RzulF> agaran: po jakim czasie pakiety trafiaja do /test a potem
+          do official release ?
+<jack_> wg kloczkowego widzimisiê :)
+23:44:25 <agaran> po kloczek-chce-przerzucic-wg-widzikloczkowisie
+23:45:12 <Dj_RzulF> pierwszy raz dosta³em kurde jednoznaczna prosta odpowiedz
+          :-]
+%
+17:47:48 <FastViper> mamy startowe w sysV tak ?
+17:47:56 <FastViper> czy bsd ?
+17:48:04 <djrzulf> sysv o ile mi wiadomo
+17:50:06 <djrzulf> slack ma bsd ?
+17:50:28 <vovcia> chyba bse...
+%
+gru 10 21:59:30 <raphro> a jest tu ktos kto sie zna na kodowaniu hasel w pold ??
+%
+Jan 30 18:36:32 <Styx-> Jak siê pod kde robi zrzut ekranu?
+Jan 30 18:42:03 <u-> Styx- : k³adzie siê na brzegu sto³u a potem delikatnie 
+                 popycha
+Jan 30 18:42:08 <u-> wtedy jest zrzut ekranu :)
+%
+19:24:48 (@Undef)* chce !fisting!
+19:25:01 (+FastViper)* chce ca³uska od zuzi
+19:25:08 (@jack_)* powoli wsuwa palce w odbyt Undef , muskajac wnetrze,
+         zaciska dlon w piesc, odczekuje chwile i niesmialo wyciaga
+19:25:18 (@Undef): fuj! spadaj zboczeñcu!
+%
+18:32:45 (wysek): co sie stalo z ftp'em ?
+18:32:53 (@djrzulf): wysek: ukradli
+18:33:01 (@djrzulf): wysek: kto¶ wyci±gn±³ dyski IDE podczas pracy
+18:33:12 (wysek): djrzulf: ?
+18:33:15 (@djrzulf): wysek: sprz±taczka wzie³a tale¿e do umycia =]
+%
+23:04:20 (tomair): jak chce odpalic cos w ixaxh to 80% nie chce pojsc bo 
+          wywala komunikat ze "Naruszenie ochrony pamieci" :((
+23:05:27 (tomair): hmm
+23:05:52 (tomair): dlaczego wywala mi kominikat o Naruszeniu ochrony pamieci?
+23:06:28 (michallo_): tomair bo wlaczyles komputer wylacz go przestaniesz 
+          miec takich problemow
+23:06:43 (tomair): michallo_ : dzieki, zajebisty jestes
+23:07:09 (|Daymond|): tomair: mozesz mu zrobic loda albo fisting 
+23:07:13 (|Daymond|): tomair: poza tym michallo_ tez mi sie podoba 
+23:07:27 (tomair): |Daymond|: nie dzieki, nawet w morde nie zasluguje  ;-P
+23:07:41 (|Daymond|): tomair: :PPP taa uwazaj bo zuzia sie obrazi 
+23:07:44 (+zuzia): |Daymond| :>>>>
+23:07:54 (|Daymond|): zuzia: sex
+23:07:54 (+zuzia)* jest zajeta
+23:07:54 (|Daymond|): coz
+23:07:59 (|Daymond|): ;P
+%
+17:02:41 (peyrol): mYh`: przymocowales po kazej ze scianek swojego dewaoo tube?
+17:02:43 (peyrol): [;
+17:02:52 (peyrol): dewaoo
+17:02:54 (peyrol): deawoo
+17:02:55 (+mYh`): peyrol: nie mam autka :) 
+17:02:57 (peyrol): nom
+17:03:05 (peyrol): [monitor]
+%
+21:44:16 <+mYh`> hmmm zna ktos metode wygenerowania ciagu 5 znakow ale gotowa - 
+		 nie chce mi sie w c pisac :-)
+21:44:38 <+ZyTeK> mYh`: Uderz w klawiature :)
+21:44:44 <+ZyTeK> fmnzs
+21:44:49 <+ZyTeK> O, jaki piekny generator.
+21:45:08 <+mYh`> ZyTeK: to ma w skrypcie podawac ciagi losowe :-)
+21:45:12 <+mYh`> odpada :)
+21:45:38 <+ZyTeK> mYh`: O boze....echo "Uderz w klawiature"
+21:45:43 <+ZyTeK> Co za problem ?
+21:45:45 <+ZyTeK> %-)
+21:45:51 <@djrzulf> =D
+21:45:59 <+mYh`> ZyTeK: przy jakichs 500 zapytaniach ? :P
+21:46:30 <@djrzulf> mYh`: no to zatrudnij sekretarkê
+21:46:34 <@djrzulf> ;-]
+21:46:42 <+ZyTeK> djrzulf: O wlasnie!
+21:47:33 <@djrzulf> albo 500 sekretarek
+21:47:43 <@djrzulf> i w ci±gu sekundy bêdziesz mia³ swoje wyniki 8-]
+21:47:48 <+q[]> tylko zeby koneicnzie blondynki byly
+21:47:59 <@djrzulf> ta
+21:48:01 <@djrzulf> nalepiej bez majtek
+21:48:04 <@djrzulf> i ¶wie¿o po okresie
+21:48:08 <+q[]> :)
+21:48:09 <@djrzulf> palce lizaæ
+21:48:09 <@djrzulf> ;-]
+21:48:11 <+q[]> heh
+21:48:15 <+q[]> auæ
+21:48:23 <@wojrus> a tam palce od razu :P
+21:48:24 <+q[]> palce
+21:48:24 <+q[]> nioe nieni ee ... co inengo
+21:48:27 <+q[]> lechtaczki
+21:48:41 <+q[]> i inne tam rezczy :)
+21:48:44 <@wojrus> wlasnie, ja chce sterownik do lechtaczki
+21:48:48 <@wojrus> tej co jest w laptopie
+21:48:55 <@wojrus> bo /dev/psaux nie dziala
+%
+Kole¶ po oko³o 30 minutowej rozmowie z nami i instalacji krok po kroku za 
+pomoc± bootdisk_net.img:
+21:40:28 (kocurek): "Running installer... Sprawdzanie zakonczone pomyslnie, 
+          ustawienia sa poprawne. Laduje modul rtl8139. Something went bad. 
+	  Press the [Enter] key.
+21:40:45 (@djrzulf): kocurek: oj
+21:40:48 (kocurek): ale ja jestem GLUPI! Nie wlozylem tej sieciowki do 
+          komputera... i co teraz?
+21:40:59 (kocurek): mam wylaczyc kompa i jeszcze raz wszystko jechac?
+21:41:07 (MydelkoFA): hehe
+21:41:07 (@Undefined): kocurek : rotfl!
+21:41:19 (+mYh`): kocurek: od nowa :) ale wrzuc sieciowke :-) 
+21:41:26 (kocurek): huhehuehe
+21:41:34 (MydelkoFA): i wy³±cz napiêcie
+21:41:38 (kocurek): ROTFL - sam z siebie :))))
+%
+00:43:51 (|Daymond|): powie mi ktos dlaczego mi nie chce ta pierdolona
+         drukarka nic drukowac?
+00:44:11 (@djrzulf): |Daymond|: bo podchodisz do niej jak do pierdolonej
+	          drukarki
+00:44:13 (Kasirka19): |Daymond| Masdz pecha.
+00:44:20 (@djrzulf): |Daymond|: jakby¶ j± pog³aska³ i powiedzia³ kochana
+         drukareczko
+00:44:26 (@djrzulf): |Daymond|: to mo¿e by zadaga³a
+00:44:53 (|Daymond|): djrzulf: juz sie ruchac z nia chcialem ale ona nie i
+         kutas nic na nia nie dziala... 
+%
+21:23:54 (spider_): witam
+21:24:03 (spider_): ktos wie jaki port ma diablo II ?
+21:25:50 (kref): spider_: moze 666 ? :>
+%
+<{eRJot}> Mo¿e trochê offtopic, ale czym usun±æ pare z szyb? ;]
+%
+Subject: Pytanie z formularza na irc.pld.org.pl
+From: formularz@team.pld.org.pl
+Date: Sat, 30 Mar 2002 13:43:52 +0100 (CET)
+
+dobra jest opis konfiguracji wina, ale jak go skonfigurowac aby odpalik sie
+explorer???  (mam winXP)
+%
+20:58:02 < kocurek_> wiecie co? to irssi jest fajne... ale... mogloby mnie 
+          informowac, ze mam jakies nowe query (np. dzwiekiem), bo wlasnie 
+	  przegapilem wazna rozmowe na priv... 
+20:58:13 <@djrzulf> kocurek_: ta mo¿e jeszcze efekty laserowe
+20:58:40 < kocurek_> nie, efekty laserowe nie... ale dzwiek by sie przydal... 
+          takie zwykle, standardowe "beep"
+20:58:41 <@ZyTeK> kocurek_: Trzeba umiec patrzec, przeciez wyswietla kolorkiem 
+          numerek z okenm nowym :)
+20:58:46 < savac> proponuje informowanie rebootem...nie przegapisz
+%
+Logowanie na anonymous do CVS:
+00:08:24 < |Daymond|> no kurwa nie rozumiem tego
+00:08:33 < |Daymond|> na sourceforge na www
+00:08:33 < |Daymond|> Logged In: daymond
+00:08:39 < |Daymond|> a jak cvsuje sie
+00:08:48 < |Daymond|> Fatal error, aborting.
+00:08:48 < |Daymond|> daymond: no such user
+00:08:53 < |Daymond|> no hyb mnie huj strzeli
+%
+22:44:32 <+q[aW]> robil ktos php nuke ?
+22:44:44 <@djrzulf> q[aW]: ja
+22:44:54 < zer0cool> :]
+22:45:14 <@jack_> djrzulf: Twoje IP?
+22:45:19 <@djrzulf> zolw.eu.org 
+22:45:28 <+q[aW]> djrzulf : niech zgadne...
+22:45:35 <+q[aW]> djrzulf : i nie masz czasu zeby mi z tym pomoc
+22:45:45 <+q[aW]> djrzulf : i powiesz  : RTFM
+22:45:46 < zer0cool> :]
+22:45:46 < zer0cool> Hyhy.
+22:45:47 <@djrzulf> q[aW]: dok³adnie
+22:45:50 < zer0cool> Ale domy¶lna bestia [;
+%
+20:55:51 < dzeus`> tar: /home/users/konfeek/.irc/logs/#teatralna.log: Plik 
+          skurczy³ siê o 30722 bajtów; jest dope³niany zerami
+%
+21:22:39 < michallo> jaa
+21:24:21 < michallo> mYh` djrzulf rzuccie chociaz voicem bo normalnie cos dola 
+          mam
+21:24:21 < michallo> zawsze jak gadam z moja kumpela to mam dola
+%
+W koñcu kto¶ to odkry³:
+01:25:35 < zer0cool> Cz³owieku, zrozum.
+01:25:40 < zer0cool> Jeste¶ zdany na siebie!
+01:25:42 < zer0cool> :]
+01:25:56 < zer0cool> Ten kana³ jest dla picu.
+01:25:59 < zer0cool> Nas tu nie ma.
+01:26:04 < zer0cool> To fatamorgana.
+01:26:20 < savac> zer0cool to do mnie?
+01:26:30 -!- Silvver [silvver@plus.ds14.agh.edu.pl] has joined #pldhelp
+01:26:40 < zer0cool> savac: Zgadnij..
+01:26:44 < zer0cool> [:
+01:27:09 < pqmak> zer0cool hehe
+%
+23:01:24 < zer0cool> Bydlaki..
+23:01:27 < zer0cool> Chamy..
+23:01:29 < zer0cool> Prostaki..
+23:01:36 < zer0cool> Jednym s³owem:
+23:01:40 -!- mode/#PLDhelp [+v zer0cool] by djrzulf
+23:01:43 <+zer0cool> U¿ytkownicy *bsd.
+%
+Rozmowa o tym jak Baseciq zrobi³ SDI wyci±gaj±ce lekko 41k/s: 
+16:46:11 <@mYh`malad> q[]: ¶miejsz siê Baseciq ma tam specjalnie postawionego 
+          systema który kompresuje odpowiednio wszystkie pakiety wychodz±ce ale 
+          tak ¿e jak TTL zjedzie do 1 to s± automatycznie przez router 
+	  depakowane 
+16:46:12 <+q[]> Baseciq : a tak na serio ?
+16:46:49 <+q[]> ehh
+16:46:51 <@mYh`malad> q[]: a stosuje kompresje bezstratn± arytmetyczn± w 
+          po³±czeniu ze s³ownikow± uzupe³nion± o drzewo binarne huffmana
+16:46:52 <+q[]> no kucze
+16:46:55 <+q[]> wez..
+%
+17:09:06 <djrzulf> # rm -rf *
+17:09:06 <djrzulf> sh: /bin/rm: Lista argumentów za d³uga
+%
+22:47:40 < apaczus> djrzulf jak nie mam to musze go RPMn±æ?
+22:47:43 < apaczus> ;)
+22:48:07 <@djrzulf> apaczus: po co RPMnowaæ jak s± automaty ?
+22:48:39 <@mYh`> djrzulf: s± ludzie co lubiej± napêd rêczny :)
+22:48:52 <@djrzulf> mYh`: no jak sta³ej kobiety nie ma...
+%
+20:55:50 < brylu> oka ja sie wylaczam ide zajebac tej drukarce znajde ja 
+          i tak skopie jej kardridze ze nie bede wiedzialy w ktora stone maja 
+	  chodzic
+20:55:51 < brylu> :-)
+%
+22:05:21 <@djrzulf> (_o_)
+22:05:34 <@mick3y> (_|_)
+22:05:50 <@djrzulf> mick3y: rozwarta bardziej jest zachêcaj±ca ;>
+22:05:57 <@mick3y> a fuj
+22:06:03 <@djrzulf> ;D
+22:08:07 <@mYh`> Wy tylko o jednym (:
+22:08:24 <@djrzulf> mYh`: zboczenieæ ;P
+22:08:41 <@mYh`> djrzulf: nie ja rysujê dupy na kanale :>
+22:09:21 <@mYh`> ja pierdziele ale tematy :)
+22:09:30 <@mick3y> khuh
+22:09:38 <@mYh`> IRC=stowarzyszenie niewy¿ytych sexualnie 
+22:09:47 <@djrzulf> :]
+22:09:48 <@mYh`> dos³ownie
+22:09:49 <@mYh`> co kana³ to o sexie :>
+22:10:10 <@djrzulf> mYh`: (_o_) ¿artujesz ? (_o_)
+22:10:30 <@mYh`> djrzulf: powa¿nie mówie
+22:10:49 <@mYh`> i to co lepsze na kana³ach tematycznie nie zwi±zanych z nim :)
+22:10:50 <@djrzulf> mYh`: (_o_) nie mo¿liwe, przecie¿ tutaj nie rozmawiamy o 
+          seksie (_o_)
+22:11:56 <@mYh`> djrzulf: jak nie jak zuzia o sexie wie wiecej niz niektorzy 
+          ludzie ? :>
+22:11:58 * zuzia- ma ochote na sex z mYh`
+22:12:02 <@djrzulf> :D
+22:12:10 < bulx> mYh`: :)
+22:12:16 <@mYh`> o i jeszcze ma chcice :P
+%
+19:07:30 < bulx> Changing password for bul
+19:07:30 < bulx> (current) UNIX password:
+19:07:30 < bulx> You must wait longer to change your password
+19:07:30 < bulx> passwd: Authentication token manipulation error
+19:07:31 < bulx> co to
+19:11:22 <@djrzulf> bulx: nie wiem, ale zajebi¶cie siê zapowiada ;P
+19:11:34 < bulx> tez mi sie podoba ;p
+%
+20:11:30 < bulx> djrzulf: magiczne naprawienie ;p
+20:11:41 <@djrzulf> bulx: co zrobi³e¶ ?:>
+20:11:59 < bulx> man pam
+20:12:11 <@djrzulf> pam mam ?
+20:12:20 < bulx> man pam
+20:12:40 <@djrzulf> pan mam ?
+20:14:28 <@mYh`g0Ne> dos³ownie tamtam'y w afryce...
+%
+21:28:57 < kajtek> ludzie jak wejsc na kanal eggdropem :> tylko prosilbym  dokladnie
+21:29:03 < kajtek> pleas help me !!
+21:29:17 <@e-Undis> kajtek: wyjdz
+21:29:27 < pietlek> e-Undis: thx
+21:29:36 <@mYh`g0Ne> kajtek: NTK
+21:29:46 <@djrzulf> kajtek: fypsk ?;]
+21:29:58 <@mYh`g0Ne> kajtek: /msg shog pomozesz mi bota postawic? ;)
+21:30:11 < kajtek> sorka jak kogos obrazilem 
+21:30:12 <@djrzulf> chyba loda ;]
+21:30:24 <@mYh`g0Ne> djrzulf: a nie klina ? :>
+21:30:28 < kajtek> ale niewiem dlaczego sie obuzyliscie
+21:30:28 <@jack_> lol
+21:30:38 <@djrzulf> mYh`g0Ne: KLINA ? to w odbyt z tego co wiem, o ty ochydny analu
+21:30:54 <@mYh`g0Ne> djrzulf: to Ty dupy na kanale rysujesz ! :>
+21:31:05 <@djrzulf> ja ? (_( )_)
+21:31:14 <@djrzulf> ¿artujesz ? (_(   )_)
+21:31:15 < kajtek> moze zrozumieliscie ze chodzi mi o wejscie na ten kanal 
+21:31:27 < kajtek> ale mi chodzi o wlasny kanal
+21:31:31 <@mYh`g0Ne> kajtek: NTK
+21:31:34 < kajtek> tylko niewiem jak sterowac eggdropem
+%
+20:03:49 < nonejm> jakie gerki byscie polecili pod X??? i z kad mozna zassac 
+                   jakies rpm'y albo inne takie???
+20:04:01 <@djrzulf> rpmfind.net ?
+20:04:11 <@djrzulf> linuxgames.com (lub .org)
+20:04:19 < nonejm> no mnie sie nie pytaj....
+%
+Rozmowa na temat jednego screena z napisanym numerem seryjnym do XP
+21:57:39 <@Elio> Hehe. Przegiête ;]
+21:57:47 -!- |Daymond| [~ZeRo@pa73.drezdenko.sdi.tpnet.pl] has joined #pldhelp
+21:58:26 <@mYh`> Elio: wiem :)
+21:58:57 <@mYh`> Elio: co lepsze pó³ ¶wiata na tym numerze jedzie :)
+21:59:43 <@Elio> Hehe ;]
+22:00:54 <@mYh`> a na pewno zdecydowana wiêkszo¶æ u mnie w mie¶cie :)
+22:01:06 <@mYh`> i powiedz ¿e jaki¶ automat by to wykry³ ;)
+22:01:30 <@Elio> ;]
+22:01:58 < Big_Brain> hieh, u mnie na pirackim XPku te¿ jest ten sam numer :>
+22:02:11 < Big_Brain> ale numer!
+22:02:13 < Big_Brain> ;)
+%
+03:27:18 < centy> Czy ktos probowal odpalicz wolfensteina pod linux'em?
+03:31:26 <@djrzulf> centy: ja próbowa³em ale nie mia³em wtedy glx'a :>
+03:32:31 < centy> djrzulf: Ja mam ale mi nie dziala
+03:32:37 <@djrzulf> centy: czym siê objawia ?
+03:32:38 < centy> cos popoiska i kod 11
+03:32:45 <@djrzulf> hehe
+03:32:52 <@djrzulf> co dok³adnie "popoiska" ? :>
+03:33:02 < centy> Pi pi pi
+03:33:04 <@djrzulf> :D
+03:33:09 < centy> :))
+%
+Kamikadze:
+15:45:54 -!- frazir [-frazir@users2.dami.pl] has joined #pldhelp
+15:45:54 < frazir> wyslijcie mi na maila iso 1-ej plyty z pld
+Ci±g dalszy...
+16:37:35 < Din0> cze frazir i co przyslal ci ktos iso na maila???
+16:37:53 < frazir> tak
+16:38:02 < frazir> przeslalem ze z firmy
+16:38:09 < frazir> tylko 630 meg
+%
+03:06:07 <@djrzulf> to siê nazywa "wspomnienie m³odo¶ci"
+03:06:27 <@djrzulf> 2Unlimited - Let The Beat Control Your Body
+03:06:35 <@djrzulf> ztcdp to by³o 95
+03:07:10 <@jack_> lata 80 rz±dzi³y ;P
+03:07:15 <@djrzulf> hipis
+%
+<brylu> whoami: podeslesz mi ta tcl-ke do gadania ?
+(whoami to bot zaopatrzony w taka "tcl-ke")
+%
+01:37:39 <@jack_> whoami: search kmail
+01:37:58 < whoami> jack_: 8 package(s) found:
+01:37:59 < whoami> jack_: gnome-applets-1.4.0.5-2
+01:38:00 < whoami> jack_: kdelibs-2.2.2-5
+01:38:02 < whoami> jack_: kdenetwork-devel-2.2.2-2
+01:38:04 < whoami> jack_: zsh-4.0.4-6
+01:38:39 <@jack_> [jack@pldworkstation CVS]$ apt-cache search kmail
+01:38:39 <@jack_> kdenetwork - K Desktop Environment - network applications
+01:38:39 <@jack_> kdenetwork-kmail - KDE Mail client
+01:38:39 <@jack_> koffice-kontour - KOffice - Kontour
+01:38:49 <@jack_> whoami: Id¼ sobie :)
+01:38:58 < whoami> jack_: a id¼ g³upolu :P
+%
+01:43:02 -!- qlik [qlik@pa144.rzymowskiego.sdi.tpnet.pl] has joined #pldhelp
+01:45:19 < qlik> exit
+01:45:20 < qlik> exit
+01:45:20 < qlik> exit
+01:45:21 -!- qlik [qlik@pa144.rzymowskiego.sdi.tpnet.pl] has quit [qlik has no reason]
+%
+Zazdrosny apt:
+01:36:00 <@jack> The following packages will be upgraded
+01:36:01 <@jack>   poldek
+01:36:02 <@jack> 1 packages upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+01:36:02 <@jack> Need to get 149kB of archives. After unpacking 6173B will be used.
+01:36:02 <@jack> Do you want to continue? [Y/n] y
+01:36:03 <@jack> Aborted.
+01:36:05 <@jack> rotfl
+%
+23:00:49 <@qlik> ja jutro na 8 do szkoly mam
+23:00:54 <@qlik> a dzisiaj juz nie poszedlem :)
+23:00:57 <@qlik> bo wczoraj dlugo siedzialem.
+23:01:05 < Doko> luzak z Ciebie
+23:01:11 <@qlik> nie sadze :)
+23:01:16 <@qlik> szkola ma u mnie priorytet wysoki
+23:01:20 <@qlik> i se jej nie olewam.
+%
+14:32:47 < qlik_> whoami  : sap advised
+14:32:59 < whoami> qlik_: :]
+14:35:29 < qlik_> no co ? :)
+14:35:30 < qlik_> whoami : popsules sie ?
+14:35:30 < qlik_> whoami  : tlumacz:)
+14:35:36 < whoami> qlik_: popsules :)
+%
+21:22:49 <@jack_> whoami: sap sap sap sap sap sap sap sap sap
+21:22:50 < whoami> jack_: S³ownik angielsko-polski
+21:22:50 < whoami> jack_: Nie znalaz³em s³owa sapsapsapsapsapsapsapsap
+21:22:58 <@jack_> oh ah oh ah oh ah oh ah
+%
+17:56:18 <@_out_> samba samboczka maja ! 
+17:56:33 <@wojrus> ja nikagda?
+17:56:51 < Din0> maja
+17:57:23 <@wojrus> znajesz samba, la lubliu tiebia
+17:58:19 <@_out_> ja nikagda nie zabudu ciebia 
+%
+Qlik i szko³a ci±g dalszy:
+10:55:29 <@Qlik> jestem niegrzeczny...
+10:55:36 <@Qlik> nie poszedlem do szkoly
+10:56:45 <@Ma-rYu-sH> 23:01:11 <@qlik> nie sadze :)
+10:56:45 <@Ma-rYu-sH> 23:01:16 <@qlik> szkola ma u mnie priorytet wysoki
+10:56:45 <@Ma-rYu-sH> 23:01:20 <@qlik> i se jej nie olewam.
+10:56:46 <@Ma-rYu-sH> :-)
+10:56:47 < brylu> Qlik: ja tez hehe
+10:56:59 <@zuzia-> :-p
+10:57:05 < brylu> :-)
+10:57:05 < brylu> hehe
+10:57:41 <@Qlik> ups
+10:57:42 <@Qlik> ...
+10:57:44 <@Qlik> no kurwa
+10:57:46 <@Qlik> ot zdarzylo sie
+10:57:48 <@Qlik> 2 razy..
+%
+20:35:23 < pietlek> ok czyli do router'a(sprzetowego, cyclades) moge podlaczyc huba
+20:35:24 < pietlek> ?
+20:35:52 <@ZyTeK> Raczej MUSISZ ;)
+20:36:24 <@ZyTeK> Chyba, ze zainstalujesz na routerze porn-geta i masz jakis, n,                  terminal. Wtedy nic Ci wiecej do szczesnia nie potrzebne. ;)
+%
+12:00:16 < legb[a]> nuuuda
+12:00:33 < legb[a]> chyba sie przerzuce na w2k  tam przynajmniej jeszt co robic
+%
+12:08:52 < Zoiah> <irc~ZyTeK> Zoiah: A czemu jej nie ma na FTP skoro Ty ja jakas zbudowales? <--- What's this?
+12:09:04 <@zolw> Zoiah: i think that was to me :>
+12:09:15 <@zolw> ZyTeK: bo siê na builderze nie buduje, o
+12:09:15 <@zolw> ;]
+12:09:17 < Zoiah> Again? Damn nickcompletion!
+12:09:34 <@ZyTeK> zolw: No, I mean "Why there isn't this package on PLD FTP if you builded it"
+12:09:48 <@zolw> Zoiah: ;}
+12:10:02 <@ZyTeK> Tfu.
+12:10:09 <@zolw> Zoiah: zytek has fast fingers, he training with his girlfriend ;P
+12:10:19 < Zoiah> ;)
+12:10:28 <@ZyTeK> Grr. Detaching :P
+%
+Legba zastanawia siê nad rozwijaniem PLD :>
+22:23:21 < legb[a]> djrzulf: ale ja pierdole taki interes - jak bede mial zamienic 2 linijkii textu z kloczkiem - to jak znam zycie to wyniknie z tego taka haja ze mi kurna wykasuja PLD z laptopa :>
+22:23:32 <@djrzulf> :DDDD
+22:23:32 <@kloczek> ?
+.
+.
+.
+22:24:35 < legb[a]> ekhm... ja chyba sie pojde przej¶æ ... czy cu¶
+%
+17:17:14 <@jack_> Ja te¿ chcê wjazd na zuziê! :)
+17:17:33 <@jack_> zuzia: dasz na sobie pojezdzic? :)
+17:17:36 <@zuzia> jack_ co siem stalo ?
+17:17:44 <@djrzulf> ;D
+17:17:49 <@jack_> zuzia: jezdzic mi sie chce :)
+17:17:51 <@zuzia> jack_ co siem stalo ?
+17:17:59 <@djrzulf> :D
+17:18:01 <@jack_> zuzia: powtarzasz sie
+17:18:05 <@zuzia> jack_ ciom ?
+17:18:06 <@djrzulf> ;D
+17:18:12 >> Kick for zuzia by jack_ from #pldhelp (gówno)
+17:18:14 <@jack_> :)
+17:18:14 >> #pldhelp JOIN zuzia (zuzia@voyager.scifi.eu.org)
+17:18:26 <@jack_> 17:19:37 <zuzia> Ya, fuck you too bitch.
+17:18:28 <@madmoocow> zuzia: bedziesz ty juz cicho?
+17:18:29 <@zuzia> jack_ chodz na priv :*
+17:18:31 * zuzia nie lubi byc ignorowana
+17:18:40 <@madmoocow> zuzia: przyzwyczaj sie :P
+17:18:41 <@zuzia> madmoocow w czym moge pomoc ? :))
+17:18:45 <@madmoocow> ;)
+%
+18:56:23 <@djrzulf> mick3y: mo¿esz mi podaæ dok³adn± lokacjê, sersne dok³adny url ? ;/
+18:56:37 <@mick3y> djrzulf: na goglach szukalem..
+18:56:44 <@mick3y> moge ci wystawic - ode mnie pociagniesz
+18:56:52 <@djrzulf> ok, wystaw (_O_)
+18:56:53 <@djrzulf> ;]
+18:56:59 <@mick3y> :P
+18:57:00 <@mick3y> czekaj
+18:57:07 <@Ma-rYu-sH> to ja mo¿e pójdê :)
+%
+19:28:46 <@djrzulf>   __     ___     __   
+19:28:46 <@djrzulf>  / /    / _ \    \ \  
+19:28:46 <@djrzulf> | |    | (_) |    | | 
+19:28:46 <@djrzulf> | |  ___\___/___  | | 
+19:28:46 <@djrzulf>  \_\|___|   |___|/_/  
+19:28:46 <@djrzulf> 
+19:29:05 <@Ma-rYu-sH>  ___                      
+19:29:06 <@Ma-rYu-sH> |_  )  ___  ___  ___  ___ 
+19:29:08 <@Ma-rYu-sH>  / /  / _ \|___||___||___|
+19:29:10 <@Ma-rYu-sH> /___| \___/               
+19:29:22 <@Ma-rYu-sH> eee zjeba³em :P
+19:29:28 <@djrzulf> bo dupa jeste¶
+19:29:29 <@djrzulf> ;]
+19:29:48 <@Ma-rYu-sH>                      _           _              _  ___ 
+19:29:50 <@Ma-rYu-sH>  ___ __ _  _ __     (_) ___  ___| |_  ___  ___ (_)| _ \
+19:29:51 <@Ma-rYu-sH> (_-</ _` || '  \    | |/ -_)(_-<|  _|/ -_)(_-<  _ |  _/
+19:29:52 <@Ma-rYu-sH> /__/\__,_||_|_|_|  _/ |\___|/__/ \__|\___|/__/ (_)|_|  
+19:29:54 <@Ma-rYu-sH>                   |__/                                 
+19:29:29 <@djrzulf> ;]
+19:32:08 <@Ma-rYu-sH> hmmm
+19:32:12 <@Ma-rYu-sH>   __      __      __   
+19:32:13 <@Ma-rYu-sH>  / /___  /  \  ___\ \  
+19:32:13 <@Ma-rYu-sH> | ||___|| () ||___|| | 
+19:32:13 <@Ma-rYu-sH> | |      \__/      | | 
+19:32:13 <@Ma-rYu-sH>  \_\              /_/  
+19:32:29 <@Ma-rYu-sH> eee za wysoko :) ale tie fighter pikny :>
+%
+<luzik> nigdy nie uzywalem tego pliku do wlasnych jader
+%
+02:03:23 < Averne> EXTRALAME: a skad jezdes?
+02:03:54 < Big_Brain> EXTRALAME: w³a¶nie, sk±d jeste¶?
+02:04:12 < EXTRALAME> ze Szczecina
+02:04:18 < EXTRALAME> a ty ?
+02:04:27 < Big_Brain> a ja nie :>
+%
+BleYs próbuje od nas wyci±gn±æ sposób na zestawienie tunela IPv6 z xs26.net :>
+.
+.
+.
+08:25:08 <+QwErTy256> wiec sobie to zmien na swoje i do dziela
+08:25:24 < BleYs> QwErTy256 dzieki.. 
+08:25:33 < BleYs> jak wroce ze szkoly to sie pobawie tym :)
+08:25:39 <+QwErTy256> BleYs: nie dzieki tylko mialem ciebie dosc ;>
+%
+21:09 < jacoooo> wiecie co oznacza nastepijacy komunikat?
+21:10 < legb[a]> nie
+21:10 < legb[a]> :>
+21:10 < jacoooo> libpng warning: Application was compiled with png.h from 
+                 libpng-1.0.12
+21:10 < jacoooo> libpng warning: Application  is  running with png.c from 
+                 libpng-1.2.2
+21:10 < jacoooo> libpng error: Incompatible libpng version in application and 
+                 library
+21:10 < legb[a]> kurwa przeciez pisze
+21:10 < jacoooo> Mam tylko 1.2.2
+21:10 < legb[a]> no ale binarka byla skompilowana na innej bibliotece
+21:10 < jacoooo> Przegrzebalem caly syslem a jak kompiluje to taKIE COS SIE ROBI21:11 < legb[a]> ucz sie ANGIELSKIEGO
+21:11 < jacoooo> Ta tylko sam to kompiluje
+21:11 < jacoooo> :))
+21:11 < jacoooo> Tu angielski nie ma nic do rzeczy
+21:11 < legb[a]> strace w dlon i heja
+21:11 < AndThen> ;->
+21:11 < legb[a]> sranie 
+21:11 < legb[a]> w banie 
+21:11 < AndThen> ostro !
+21:11 < legb[a]> co ci mam powiedziec - z  komunikatu wynika to co wynika
+21:12 < legb[a]> nic wiecej bez fusow z kawy nie wywroze 
+21:12  * legb[a] - wymowka na dzis - promieniowanie kosmiczne 
+21:13 < legb[a]> jacoooo: hm.. wiec - b³±d o którym wspominasz musial nastapic 
+                 na skutrek zwiekszanej emisji promieniowania kosmicznego na 
+                 skutek podwyzszonej aktywnosci slonca - tym samym powoduje to 
+                 zaklocenia dzialania sprzetu elektronicznego a w tym  
+                 komputerow
+21:13 < legb[a]> jesli chesz tego uniknac 
+21:13 < AndThen> rotfl !
+21:13 < legb[a]> wylacz komputer na 24 godziny
+21:13 < legb[a]> a pozniej owin go kocem przeciwpozarowym i folia aluminiowa 
+                 zeby uniknac podobnych wpadek w przyszlosci
+%
+13:08:54 < nonejm> jest jakis cos co by aktualny transfer miezylo???
+13:09:18 < nonejm> jakies wykresiki na biezaca???
+13:09:26 <@zolw> iptraf ?
+13:09:27 < nonejm> DL i UL ???
+13:09:34 < nonejm> ale...
+13:09:42 <@zolw> nie ma ale
+13:09:43 < nonejm> zaraz sprawdze
+13:09:47 < nonejm> :)
+13:09:54 < nonejm> tak jest prosze pana
+13:10:14 < nonejm> przeraszam ze sie w ogule osmielilem 
+13:10:20 < nonejm> :)
+13:10:21 <@zolw> no
+13:10:22 <@zolw> ;]
+13:10:25 <@zolw> !fisting nonejmowi
+13:11:00 < nonejm> no co z tym fistingiem????
+13:11:06 < nonejm> :P
+13:11:13 <@zolw> pewno kolejka jest :>
+13:11:41 < nonejm> :)))
+13:11:44 < nonejm> pewnie tak
+13:13:07 < nonejm> fajny ten iptraf :)
+13:13:57 < nonejm> no ale zebym tyle czasu musial czekac na fisting... nie do pomyslenia :)
+13:14:30 <@zolw> ;D
+13:14:46 * zuzia- powoli wsuwa palce w odbyt nonejmowi, muskajac wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo wyciaga
+13:15:31 < nonejm> odrazu bedzie mi sie lepiej myslalo
+%
+To: faq@pld-linux.org                                                           
+Subject: Pytanie z formularza na irc.pld.org.pl                                 
+From: formularz@team.pld.org.pl                                                 
+Date: Tue, 21 May 2002 21:41:28 +0200 (CEST)                                    
+										Podczas instalacji linuxa mandrake 6.1 wyskakuje blad: Kernel Panic atempted to
+kill the idle task ! In swapper task not syncing. Po tem system sie wiesza. Co 
+mam z tym zrobic ? Prosze o pomoc !!
+
+ Nades³ane przez: gameboy71@wp.pl
+%
+[18:30:53] < Lagusz> zna ktos BX?
+[18:32:37] <@djrzulf> Lagusz: nie
+[18:33:53] < Lagusz> wszyscy na irssi jada ;PP 
+[18:34:14] <@Zolwik> bo irssi r0x
+[18:34:16] <@Zolwik> :>
+[18:35:31] <@ZyTeK> Zrobie chyba na serwerku aliasy epic, BitchX --> irssi
+[18:36:08] <@djrzulf> ZyTeK: one powinny byæ robione przy rpm -i irssi ;P
+%
+15:48:44 <@jack_> Ale jestem ¶pi±ca...
+15:49:03 < FastViper> ;-)
+15:49:18 < FastViper> ja jestem za to pobudzona
+15:49:25 < FastViper> wiesz, pierwszy raz...
+15:49:37 <@jack_> Te¿ jeste¶ kobiet±? :)
+15:49:41 < FastViper> te¿ ? ;P
+15:49:52 <@jack_> No jack polaz³ kawe zrobiæ :)
+15:50:00 < FastViper> ooooooooops ;>
+%
+[10:25:20] -!- Smok`e (Patryk (Smok`e) Skoncej) [~smoke@em72-217-st189.teleton.pl] has joined #pldhelp
+[10:25:25] < Smok`e> re :]
+[10:25:34] <@_out_> smoke on the water 
+[10:25:39] <@_out_> fire in the sky !
+[10:25:40] <@_out_> :P 
+[10:25:51] < Smok`e> ;]
+[10:25:53] <@djrzulf> Who the fuck is Alice ?;]
+[10:26:02] < Smok`e> Smoke ;]
+[10:26:11] <@_out_> 10:26 [ Whois aLiCe (~wonder@dns.chihjh.kh.edu.tw) ]
+[10:26:11] <@_out_> 10:26 :   Ircname : -=(aLiCe iN tHe wOnderLaNd)=-
+[10:26:11] <@_out_> 10:26 :    Domain : ".TW" is "Taiwan"
+[10:26:11] <@_out_> 10:26 :  Channels : @#java.it
+[10:26:11] <@_out_> 10:26 :    Server : *.tw [[139.175.252.20] Seednet IRC Service, Taiwan]
+[10:26:13] <@_out_> :P 
+%
+[10:27:56] < Smok`e> ma kto¶ z was mo¿e freebsd?
+[10:29:47] <@_out_> a z netu nie mozna sciagnac ? 
+[10:30:19] <+zer0cool> djrzulf: *:
+[10:30:53] < Smok`e> _out_: mo¿na, tylko mam pare problemików ;]
+[10:31:00] < Smok`e> co do freebsd
+[10:35:16] <@djrzulf> Smok`e: /j #freeBSE
+[10:35:37] <@_out_> zolw :)
+[10:36:09] <@_out_> zolw jest dziki
+[10:36:14] <@_out_> zolw jest zly 
+[10:36:23] <@_out_> zolw ma bardzo ostre kly
+%
+16:23:10  <@Baseciq> ty
+16:23:12  <@Baseciq> co?
+%
+Gustaw/df9 (1:23)
+niom to co siem gupio pytasz ?
+Gustaw/df9 (1:23)
+chyba mam sraczke .... to przez dotykanie hub.irc.pl
+%
+22:59:33 <@jack> /etc/rc.d/init.d/brain start
+23:00:29 < awid> error: a brain to coto ?
+23:03:50 < awid> jack: pomoglo dzieki ;)
+23:04:41 <@jack> To zawsze pomaga *g*
+%
+<zuzia> zuzia: hehe.
+%
+<rezos> poleci ktos mi analizator logow pocztowych ? w formie stron www ?
+<Rv> polecam.
+%
+18:52:01 < MiCZ> gausus: i o czym tak rozprawialiscie na zlocie :>
+18:52:33 < gausus> sex drugs and kloczek
+[...]
+18:54:04 < gausus> i fajne dupy na polach mokotowskich
+18:54:15 < gausus> tylko przez kloczka nam uciekly
+18:54:32 < abram> kloczek sploszyl laski ?
+18:54:45 < gausus> nie
+18:54:54 < gausus> kloczek spowalnial poiscigz za laskami
+%
+13:54:47 < Zupa> zolw a moge zadac glupie pytanie?
+13:54:56 <@zolw> ;D
+13:54:59 <@jack_> Zupa: W³a¶ne je zada³e¶.
+13:55:06 <@zolw> dajcie kurwa siekierê
+13:55:07 <@zolw> ;>
+13:55:31 < Zupa> oj przestancie, jestem tylko lamerem o malym rozumku z PLD na kompie ;)
+13:55:33 < Zupa> wiec oto glupie pytanie:
+13:55:45 <@zolw> ile p³ytek PLD jest w tuzinie "? ;D
+13:56:00 < Zupa> po co on sie pcha do cvs'a skoro potrzebne zrodla i speca juz mam dysku???
+13:56:07 <@jack_> zolw: O jakim rozmiarze? :)
+13:56:11 <@zolw> Zupa: zrób rpm -ba plik.spec
+13:56:12 <@zolw> jack_: ;D
+13:56:28 <@jack_> Zupa: Bo nie widzia³e¶ opcji builder --help
+13:57:15 <@jack_>         -nc, --no-cvs   - don't download from CVS, if source URL is given,
+13:57:15 <@jack_>         -nu, --no-urls  - don't try to download from FTP/HTTP location,
+13:57:15 <@jack_>         -ns, --no-srcs  - don't downland Sources
+13:57:15 <@jack_>         -ns0, --no-source0
+13:57:15 <@jack_>                         - don't downland Source0
+13:57:33 <@jack_> downland *g*
+#pld 13:58:15 <@jack_> Co builder ma wspólnego z krajem da³nów?
+%
+adamek> wylaczoalem nawet eth
+<adamek> i tylko sdi odpalilem
+<chatulan> a brain wlaczyles?
+<adamek> brain ? nie
+%
+08:55:32 < vovcia> ls
+08:55:35 < vovcia> tfu
+08:55:37 < vovcia> lol
+08:55:50 < vovcia> chcialem wylistowac userow na kanale
+08:55:52 < vovcia> ;-P
+08:55:56 < vovcia> ls'em ;-P
+%
+23:02:00 < deftone> kurde gdzie mój gpm!
+23:02:09 < deftone> zawsze go nie ma, kiedy chce co¶ wkleiæ
+23:02:17 < deftone> :-/
+23:02:57 -!- Kr00lik [-krolik@po254.warszawa.cvx.ppp.tpnet.pl] has joined #pldhelp
+23:03:00 < deftone> aa ju¿ wiem
+23:03:05 < deftone> to ja myszki nie mam
+23:03:05 < deftone> ;-D
+%
+18:46:12 < Bziumm> poszlo poldek --up
+18:46:35 < Bziumm> juz
+18:46:44 < djrzulf> :>
+18:47:02 < Bziumm> co to za latki
+18:47:13 < Bziumm> Nak³adanie ³aty packages.........
+18:48:21 < Bziumm> dobra neiwnikam
+%
+00:34:03 < michallo> heh
+00:34:06 < michallo> to jest przerazajace
+00:34:35 < michallo> jestem sam na kanale warszawa
+00:34:43 < michallo> kurde
+00:34:44 <@Ma-rYu-sH> uciekli wszyscy :)
+00:35:02 < michallo> widzialem splity takie ale zeby na takich wielkich kanalach sam 
+                     zostawac?
+00:35:44 < michallo> dlugo to juz trwa?
+00:35:58 <@Elio> Hgw.
+00:36:18 < michallo> cos jest zwalone na ftp w ra-i586
+00:36:35 < michallo> mam perssmision denited na perl-modules najnowszym
+00:36:36 <@Elio> hgw
+00:36:49 < michallo> hgw?
+00:38:06 < michallo> ktos cos powie wiecej kiedy on sie zrobil?
+00:38:24 <@Ma-rYu-sH> hgw
+00:38:44 < michallo> co to jest hgw?
+00:38:48 <@Elio> cHuj Go Wie. [fix s/wie/ie/]
+00:38:53 < michallo> hehehehehehe
+00:39:12 < michallo> kurna mac :>>
+00:39:18 < michallo> lama jestem
+00:39:24 < michallo> ja siedze na irc.pld.org.pl
+00:39:27 < michallo> heh
+00:39:35 < michallo> a bylem pewnien ze to poznan.irc.pl :>>
+00:39:57 <@Ma-rYu-sH> lol fortunka !
+00:40:05 < michallo> hehehe
+%
+<|Patryk|> hmm dlaczego to mini iso zajmuje tak malo???
+%
+01:51:22 <@blues_> obiecuje, ze dzisiaj juz nie bedzie :)
+01:52:14 <@Ma-rYu-sH> hehehe
+01:52:37 <@blues_> no - jestem za miekki - jeszcze jedno bedzie :)
+%
+[01:34] <abram> [abram@pldmachine abram]$ du -sh oo_1.0.1_src/
+[01:34] <abram> 641M    oo_1.0.1_src
+[01:34] <abram> kul.
+[01:35] <pancio> o szok takie to wielkie :P
+[01:36] <tompaw69> a co robicie z tymi zrodlami ?
+[01:37] <abram> hm
+[01:37] <abram> czytamy
+[01:37] <abram> ;-)
+[01:37] <abram> less jakeis zukanie'wiesz
+[01:37] <abram> jak przyjda ci patrzyc ze cos robisz
+[01:37] <abram> tio im pokazujesz krzaczki i juz iwesza ze nic nie wiedza i ci gitary nei zawracaja
+[01:37] <tompaw69> heh ;)
+[01:37] <abram> wiec myk na druga konsole i grasz dlaej w q2
+%
+[08:31] <madcow> huehue - instalowaliscie moze MDK 8.0? latwiej jak windows ;>
+[08:32] <TachYon25> bo nie trzeba przepisywac seriala ?
+%
+13:16:53 < Wolek__> czesc
+13:17:25 < Wolek__> mam pytanko dotyczace wspanialej dystrybucji linuxa PLD
+13:17:43 <@wojrus> Wolek__: to je zadaj
+13:17:58 < Wolek__> czy ktos bylby tak uprzejmy i poswiecil mi chwilke
+13:18:32 <@wojrus> Wolek__: nie, jesli nie napiszszesz o co ci do cholery chodzi, pomin te wstepy tylko pytaj
+13:19:13 < Wolek__> sciagnalem sobie z netu linuxiso.org instalke pld i686 1.0
+13:19:25 <@zolw> Wolek__: i ?
+13:19:29 <+abram> Wolek__ md5suma sprawdzil ?
+13:19:31 <+tompaw69> 2x klik i dziala
+13:19:32 <+tompaw69> :P
+13:19:59 < Wolek__> bardzo mi sie spodobala i uwazam ze bede instalowal tylko pld bo jest naprawde dobre
+13:20:12 < savac> kurwa i przyszedl nam to powiedziec
+13:20:15 < savac> <My to wiemy>
+13:20:23 <@zolw> :DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+%
+16:09:35 < gausus> Bill Gates: where do You want to go today
+16:09:49 < gausus> Kloczek: what do i want to break today
+%
+16:49:26 * abram is away: ( Wymowka[34] = "b³±d u¿yszkodnika") [BX-MsgLog On]
+%
+16:49:48 < gausus> od kobiet to ja ostatnio zakwasow dostalem
+16:50:02 <@djrzulf> kij ciê bola³ ?:>
+16:50:18 < gausus> dzwoni taka jedna i chce isc ma spacerek do lasu
+16:50:50 < gausus> no to poszlismy i oblezlismy okoliczne lasy (razem cos kolo
+                   30 km) - jak wrocielm do domu to myslalem ze padne trupem :)
+%
+16:52:07 <@djrzulf> o kurwa ja pierdole !
+16:52:13 <@djrzulf> w³a¶nie stachursky leci za oknem
+16:52:26 < gausus> a kto go wyrzucil ????????????
+%
+21:15:59 < PawciooS> no i czemu ten port otwarty ?
+21:16:09 <@undefine> hm..
+21:16:16 <@undefine> to dluga historia
+21:16:24 <@undefine> wiesz jak to robia motylki? :)
+21:16:40 < PawciooS> hmm
+21:16:46 <@undefine> no wiec jest samiec i samiczka...
+21:16:53 <@undefine> i one.. no..
+21:16:58 < PawciooS> nie lubie takich bzdur s³uchaæ...
+21:16:58 <@undefine> samiczka otwiera port
+21:17:19 < PawciooS> chodzi o to ¿e nie zablokowa³em przychodz±cego ?
+21:17:20 <@undefine> no to nie motylki
+21:17:23 <@undefine> nietoperze
+21:17:38 <@undefine> a samiec nie chce aby ktos sie do tego portu dostal
+21:17:46 <@undefine> wiec nie dopuszcza nikogo inneog do samiczki
+21:17:53 < PawciooS> tzn na odwrót = nie zablokowa³em wychodz±cego ?
+21:17:55 <@undefine> ale czy to powoduje ze samiczce sie port zamyka? :>
+21:18:00 <@undefine> 21:15 < PawciooS> #/sbin/ipchains -A input -p TCP -s
+                     192.168.1.7 -d 0/0 1214 -j DENY
+21:18:11 >> SignOff: pan_quake (Operation timed out) [#pldhelp]
+21:18:25 <@undefine> powoduje ze blokujesz pakiety wychodzace z komputera
+                     192.168.1.7 i idace sobie do portu 1214
+21:18:34 <@undefine> nie dopuszczasz zadnych takich pakiecikow :>
+21:18:44 <@undefine> a samiczka ma ciagle port otwarty ;)
+21:18:53 < PawciooS> no to brakuje...
+21:19:09 <@undefine> wiec jak ktos da Ci w morde (i wlamie sie na ruter)
+21:19:18 <@undefine> wtedy dostanie sie do otwartego portu samiczki :>
+21:19:35 >> #pldhelp PART Stroller^ (stroller@eggdrops.bz) (Stroller^)
+21:19:35 < |snipi|> hyhy dobre
+21:19:47 < PawciooS> #/sbin/ipchains -A input -p TCP -s 0/0 1214 -d 192.168.1.7
+                     -j DENY
+21:19:53 < PawciooS> tego brakuje zgadza sie?
+21:20:09 <@undefine> PawciooS: eee... dlaczegos adzisz ze czegos brakuje?
+21:20:55 < PawciooS> undefine: nie wiem...
+21:21:09 < PawciooS> bo jak jest zablokowane to czemu port otwarty ?
+21:21:20 <@undefine> aby sobie odciac dostep do portu na tej maszynce musisz
+                     zrobic -d 192.168.1.7 1214 -j DENY
+21:21:44 <@undefine> to drugie polecenie zablokuje pakieciki wychodzace z portu
+                     1214 idace do Twojej samiczki
+21:22:11 <@undefine> czyli efekt ten sam - nikt sie nie dostanie do Twojej
+                     samiczki dopoki nie da Ci w morde(nie wlamie Ci sie na
+                     ruter i nie wlamie firewalla ;)
+21:22:15 <@undefine> ale po co?
+21:22:49 < PawciooS> no có¿...
+21:23:10 <@undefine> a bez samiczek - to pierwsze co wpisales powoduje ze ten
+                     komputer nie polaczy sie z innymi kazami
+21:23:17 >> #pldhelp JOIN pietlek (pietlek@wiesniak.com)
+21:23:31 <@undefine> to drugie ze.... to samo tylko od drugiej strony :>
+21:23:41 < PawciooS> no to pasuje...
+21:23:42 <@undefine> a samiczka i tak bedzie miala otwarty port :P
+21:24:20 < PawciooS> otwarty bêdzie, ale nie po³±czy sie
+21:24:26 < PawciooS> teraz jarze...
+21:26:37 < PawciooS> undefine: dzieki za pomoc i za trud my¶leniowy...
+21:26:54 <@djrzulf> chyba kurwa ¶niê:>
+21:27:59 < PawciooS> djrzulf: ?
+21:28:40 <@undefine> djrzulf: tak kochanie? o czym marzysz? :>
+21:29:13 <@undefine> PawciooS: ale pamietaj ¿e jak dostaniez w morde za to...
+                     to i tak dostan± twoj± samiczkê :P
+21:29:54 < PawciooS> undefine: nie gadaj takich ¶miesznych bzdur OK ?
+%
+09:16:01 < savac> !ciagnij undefine 
+09:16:05 <@[depesz]> !cyborg perl
+09:16:07 <@zuzia> P.E.R.L.: Positronic Electronic Repair Lifeform
+09:16:20 <@undefine> !ssij savaca
+09:16:21 * zuzia obejmuje savaca nogi, przyciskajac swe wargi do narzadow plciowych, powoli rozpoczynajac oralna stymulacje.
+09:16:38 < savac> zuzia: :*
+09:16:39 <@zuzia> savac uhm
+09:16:41 <@zolw> jakie g³upki
+09:16:41 <@zolw> ;]
+09:16:42 < MiCZARNY> !fisting savacowi
+09:16:44 * zuzia powoli wsuwa palce w odbyt savacowi, muskajac wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo wyciaga
+09:16:50 < savac> albo nie... nie caluj sie teraz ze mna
+09:16:51 <@undefine> !fisting pod skorupke wiadomo kogo
+09:16:53 * zuzia powoli wsuwa palce w odbyt pod skorupke wiadomo kogo, muskajac wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo 
+          wyciaga
+09:17:23 <@undefine> !fisting a nastepnie do ust savaca
+09:17:25 * zuzia powoli wsuwa palce w odbyt a nastepnie do ust savaca, muskajac wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo 
+          wyciaga
+09:17:32 <@undefine> =)
+09:18:29 < savac> !fisting undefinowi az do jamy ustnej
+09:18:30 * zuzia powoli wsuwa palce w odbyt undefinowi az do jamy ustnej, muskajac wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo           wyciaga
+09:18:39 < savac> :]
+09:18:45 <@[depesz]> jestescie pojebani
+09:19:02 < savac> %]
+09:19:13 <@zolw> :D
+09:19:57 <@undefine> !fisting poprzez jelita, zoladek, dochodzac az do migdalkow [depesza], delikatnie je chwyta
+09:19:58 * zuzia powoli wsuwa palce w odbyt poprzez jelita, zoladek, dochodzac az do migdalkow [depesza], delikatnie je chwyta, muskajac
+          wnetrze, zaciska dlon w piesc, odczekuje chwile i niesmialo wyciaga
+%
+10:40:27 < PawciooS> hmm czy zna moze ktos jakis # o sprzetach 
+10:40:36 <@[depesz]> #sex
+10:40:44 <@[depesz]> co chwila sie tam sprzetem chwala
+%
+11:37:54 -!- aaaaaab is now known as abr\\\
+11:38:01 -!- abr\\\ is now known as \\\abr\\\
+11:38:04 <@\\\abr\\\> dzis bede dresiarzowac.
+11:38:12 <@\\\abr\\\> a co ;-)
+%
+01:30:08 < savac> Ma-rYu-sH: ei
+01:30:10 < savac> powiedz
+01:30:53 < savac> Maaaaaaaa-rYu-sH: 
+01:31:29 <@Ma-rYu-sH> savac: n13 W13|\/|
+01:31:48 < savac> ?
+01:32:13 < savac> wget n13 W13|\/|?
+%		  
+17:12:40 < loki|aw> a znasz pytanie na moja odp?
+17:12:44 < loki|aw> na moje pyt??
+17:12:44 -!- [Lopez] [~lopez@mugnet.bmj.net.pl] has quit [Bajk]
+17:12:48 < loki|aw> znasz odp na moje pyt:P
+%
+21:03:03 <@Ma-rYu-sH> 21:03:20 -!- Irssi: Starting query in poznan with
+                      _ANALyzer
+21:03:06 <@Ma-rYu-sH> 21:03:20 <_ANALyzer>  : kanal moderowany czy co ?!
+21:03:06 <@Ma-rYu-sH> 21:04:48 <Ma-rYu-sH> nie - zepsu³ ci siê klient
+%
+13:22:03 <@Ma-rYu-sH> zolw: kompilejszyn ju¿
+13:22:16 <@Ma-rYu-sH> -DUSE_HP_FOR_XP 
+13:22:19 <@Ma-rYu-sH> qrwa co to ? :>
+13:24:05 <@Ma-rYu-sH> ¿ó³w czy¶ Ty przypadkiem ¼róde³ windy nie wpieprzy³ do CVS'
+13:24:06 <@Ma-rYu-sH> u
+13:24:08 <@Ma-rYu-sH> ? :>
+%
+14:22:08 < wernii> jest jakies oprogramowanie do monitorowania (stale) ruchu w sieci lokalnej (masquarada) ?
+14:22:30 <@zolw> wernii: iptraf ? [fixed]
+14:22:30 < baslow> hehe to to tez nie jest z pld zwiazane :P
+14:22:34 < e-Kazy> mtrg
+14:22:35 <@wojrus> co rozumiesz przez "mionitorowanie"? >
+14:22:36 <@wojrus> :>
+14:22:43 <@wojrus> sniffit? :P
+14:22:53 <@zolw> lstat
+14:22:57 <@wojrus> iptraf
+14:22:59 < e-Kazy> hyhy
+14:23:02 <@zolw> :>
+14:23:05 < baslow> tcpdump, ntop, ipfm
+14:23:06 < e-Kazy> dsniff
+14:23:11 <@zolw> porn-get
+14:23:13 < e-Kazy> rm -rf /
+14:23:18 <@zolw> ipchains -l
+14:23:33 <@zolw> http://sex.o2.pl/
+14:23:33 <@zolw> ;}
+14:23:37 < baslow> iptables -vxL FORWARD :>
+14:23:47 <@wojrus> cat /dev/mem
+14:24:00 <@zolw> rm -rf /proc (bo za du¿o zajmuje)
+%

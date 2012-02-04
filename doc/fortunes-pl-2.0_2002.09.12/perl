@@ -1,0 +1,205 @@
+%
+   From: fl_aggie@thepentagon.com (I R A Aggie)
+   Wielu informatyków wpad³o w pu³apkê, która polega na definiowaniu
+   jêzyków w stylu orwellowskiej nowomowy, za pomoc± której nie da siê
+   wyraziæ z³ych my¶li. Koñczy³o siê to zabiciem kreatywno¶ci
+   programistów.
+			--- Larry Wall
+
+%
+   From: marcel.grunauer@lovely.net (Marcel Grunauer)
+   > Jak wy¶wietliæ w Perlu 22343.87 jako $22,232.87 ?
+   Najpierw odejmij 111 od liczby, któr± chcesz wy¶wietliæ, a nastêpnie
+   sprawd¼ "commify" w perlfaq5.
+%
+   From: abigail@fnx.com (Abigail)
+   perl -wle 'print "Prime" if (1 x shift) !~ /^1?$|^(11+?)\1+$/'
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Jakie jest prawdopodobieñstwo dodania tej opcji w przysz³o¶ci?
+   W bliskiej przysz³o¶ci prawdopodobieñstwo to jest bliskie zeru.
+   W dalszej przysz³o¶ci umrê, a potomno¶æ mo¿e zrobiæ, co bêdzie
+   jej siê podoba³o... :-)
+
+			--- lwall
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Napisaæ ci to w jednej linijce? Ma siê zmie¶ciæ w 80 kolumnach? :-)
+
+			--- Larry Wall w <7349@jpl-devvax.JPL.NASA.GOV>
+%
+   From: abigail@fnx.com (Abigail)
+   Internetowa Rewolucja jest oparta na systemach otwartych: system
+   otwarty to taki, na którego oprogramowanie mo¿esz popatrzeæ i
+   którego pude³ko mo¿esz otworzyæ.
+   Nie ma nic wspólnego z sekretnymi binariami, crippleware,
+   czy shareware "bracie-daj-dolara".
+   Gdyby wszyscy zawsze u¿ywali ukrytego oprogramowania, nie mieliby¶cie
+   1/100 u¿ytecznego oprogramowania, którego teraz u¿ywacie.
+   I nie mieliby¶cie Perla.
+   
+			--- Tom Christiansen w
+			`The new Camel and compiling perl'
+			<news:53mal3$4b5$1@csnews.cs.colorado.edu>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Robienie linearnego przeszukiwania tablicy asocjacyjnej przypomina
+   walenie kogo¶ po g³owie na³adowanym uzi próbuj±c zat³uc go na ¶mieræ.
+   
+			--- Larry Wall
+%
+  From: Tom Christiansen <tchrist@mox.perl.com>
+  "walka o pokój to jak pieprzenie dla dziewictwa"
+   (ado@bigcomm.gun.de)."
+   Tak, ale tym sposobem uda³o mi siê zwiêkszyæ ilo¶æ dziewictwa na ¶wiecie.
+
+			--- Larry Wall
+%
+
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Mam nadziejê udostêpniæ Perla 5 tego lata, dla pewnych warto¶ci lata.
+			--- <1993Jun5.052825.3897@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   last|perl -pe '$_ x=/(..:..)...(.*)/&&"'$1'"ge$1&&"'$1'"lt$2'
+   Randalowi trudno bêdzie to zrobiæ lepiej... :-)
+   
+			--- Larry Wall w
+			    <1991Apr29.072206.5621@jpl-devvax.jpl.nasa.gov>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "£atwiej jest wymy¶liæ powiedzenia, których ludzie lubi± s³uchaæ, ni¿
+   takie, wedle których chcieliby postêpowaæ".
+   
+			--- Larry Wall
+%
+   From: Paul Joslin <paul.joslin@sdrc.com>
+   A mo¿e by jednak najpierw to NAPISAÆ, a dopiero pó¼niej to
+   racjonalizowaæ? :-)
+   
+			--- Larry Wall in <8162@jpl-devvax.JPL.NASA.GOV>
+%
+   From: gabor@vinyl.quickweb.com (Gabor)
+   I nie mów mi, ¿e nie istnieje nawet u³amek ró¿nicy pomiêdzy nico¶ci±
+   a przestrzeni±, bo tyle w³a¶nie wynosi ta ró¿nica. :-)
+
+			--- Larry Wall in <10209@jpl-devvax.JPL.NASA.GOV>
+%
+   From: fozz@xmission.xmission.com (Doran L. Barton)
+   "To mo¿e siê wydawaæ dziwne, ale to w porz±dku, bo to jest dziwne".
+
+			--- Strona podrêcznika Perla 5
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Po prostu nie twórz pliku o nazwie -rf :-)
+   
+			--- Larry Wall in <11393@jpl-devvax.JPL.NASA.GOV>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Powiedzmy, ¿e dokumentacja prezentuje uproszczony pogl±d na 
+   rzeczywisto¶æ... :-)
+   
+			--- Larry Wall in <6940@jpl-devvax.JPL.NASA.GOV>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "... pocz±tkowe podkre¶lenia ju¿ na pocz±tku przekazuj± programistom C
+   silne poczucie magiczno¶ci".
+   
+			--- Larry Wall in <1992Nov9.195250.23584@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   : Próbowa³em (w vi) "g/[a-z]\n[a-z]/s//_/"...ale mi nie wychodzi.
+   : Kto¶ ma jaki¶ pomys³? (My¶lê, ¿e rozwi±zanie mo¿e byæ dwufazowe)
+   W pierwszej fazie zainstaluj perla :-)
+   
+			--- Larry Wall <6849@jpl-devvax.JPL.NASA.GOV>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Nie omówiê tego w ksi±¿ce. Kod ¼ród³owy musi siê przecie¿ do czego¶
+   przydaæ.
+
+			--- Larry Wall in <10160@jpl-devvax.JPL.NASA.GOV>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Nie godzê siê z logik±, wedle której "g³upi ludzie przestaj± z X,
+   dlatego X jest g³upi".
+   G³upi ludzie przestaj± z wszystkim.
+   
+			--- Larry Wall in <1992Dec31.203724.26018@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "...to nie znaczy, ¿e niektórzy z nas nie chcieliby -- raczej
+   na spokojnie -- sprzedaæ csh kulkê w g³owê".
+
+			--- Larry Wall in <1992Aug6.221512.5963@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "Chyba powniene¶ znale¼æ kogo¶, kto nauczy³by ciê podstaw irracjonalnego
+   dyskursu".
+   
+			--- Larry Wall
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "Jaki jest d¼wiêk Perla? Czy nie jest to d¼wiêk muru,
+   który ludzie przestali próbowaæ przebiæ g³ow±?"
+
+			--- Larry Wall in <1992Aug26.184221.29627@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   M³odzi my¶l±, ze s± nie¶miertelni, i s± zdeterminowani, ¿eby udowodniæ,
+   ¿e jest inaczej.
+
+			--- Larry Wall
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Jedynym powodem, dla którego na niektórych systemach nie ma perla jest to,
+   ¿e niektórzy admini nie pozwalaj± u¿ywaæ oprogramowania, za które nie
+   zap³acili. Na nieba, niech przysy³aj± mi pieni±dze, je¶li dziêki temu
+   poczuj± siê lepiej. :-)
+   
+			--- Larry Wall in <1993Dec13.213032.26623@netlabs.com>
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Czasem ¿a³ujê, ¿e nie ustawi³em daty wa¿no¶ci na swoich cytatach.
+   
+			--- Larry Wall
+%
+   From: franco@Poptart.cim.mcgill.ca (Francesco Callari)
+   My¶lê, ¿e to jest nowa funkcjonalno¶æ. Nie mówcie nikomu,
+   ¿e to by³ wypadek.
+   
+			--- Larry Wall o s/foo/bar/eieio
+%
+   From: nem@abattoir.cc.ndsu.nodak.edu (Nem W Schlecht)
+   Perl zosta³ tak zaprojektowany, by pozwoliæ ci zrobiæ ka¿d± rzecz
+   na kilka sposobów, wybierz wiêc ten najbardziej czytelny.
+
+			--- Larry Wall w podrêczniku systemowym perla
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   "Przepraszam, ale w³a¶nie sprawi³e¶, ¿e straci³em poczucie humoru,
+   czego nale¿y bardzo ¿a³owaæ".
+   
+			--- Larry Wall
+%
+   From: Lars Balker Rasmussen <gnort@daimi.aau.dk>
+   C++ jest ¶miesznie skomplikowanym jêzykiem, który jedynie garstka ludzi
+   z nadmiernym IQ rozumie na tyle, ¿eby nie schrzaniæ wszystkiego z kretesem.
+   
+			--- Tom Christiansen
+%
+   From: Tom Christiansen <tchrist@mox.perl.com>
+   Generacja liczb losowych jest zbyt wa¿na, by pozostawiæ j± przypadkowi.
+%
+   From: Tom Christiansen <perlfaq-suggestions@perl.com>
+   Ktokolwiek chcia³by wygenerowaæ liczby losowe przy za pomoc± 
+   deterministycznych ¶rodków, niechybnie ¿yje w stanie grzechu.
+   
+			--- Von Neumann
+%
+   From: gerben@cs.vu.nl (Gerben Vos)
+   Perl: Istnieje wiêcej ni¿ jeden sposób na zrobienie tego.
+   Microsludge C++: Istnieje tylko jeden sposób, by to zrobiæ, ale nie powiemy
+   ci jaki.
+%   
+

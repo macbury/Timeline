@@ -1,0 +1,774 @@
+%
+#pld
+<^3nk> linux byl pierwszym systemem operacyjnym w kosmosie
+<_ArM_> 3nk: w kosmos to latali zanim jeszcze linux powsta³
+<^3nk> _ArM_: ale na alienie widzialem tryb tekstowy czyli chyba to bul jakis unix
+<_ArM_> 3nk: ,,alienie'' ? :>
+<^3nk> _ArM: tak w ktoryms obcym widac monitor z trybym tekstowym
+<_ArM_> 3nk: co Ty bredzisz ? alien to film, fikcja (mam to capsem napisaæ ?)
+<^3nk> _ArM_: quake to tez fikcja?
+<agaran> a nie?
+<^3nk> faktycznie fikcja
+%
+#pld
+<alee_> red hat jest scisle zwiazany z glibc pld bedzie takze?
+%
+#pld
+<kev|n> agaran: hmm, jeszcze moment i zaczne eksperymentowac z nowych glibcem - 
+                jakby co to wszystko bedzie Twoja wina :-)
+<agaran> ;)
+<peyrol> to ja jak co tez na agaran'a zrzuce a co mi tam
+<agaran> ;)
+<kev|n> Juz widze plakaty na miescie: agrana z podbitym okiem i napis: 
+        Bo glibc nie chodzil :-)
+%
+#pld
+<dobrek> kev|n: czyzbys przylazl tu defetyzm i ironije rozsiewac? :))
+<kev|n> dobrek: jestem imperialistycznym, zepsutym, konspirantem innej 
+                dystrybucji :-)
+%
+#pld
+<augs> kloczek: chodzi mi o to czy rozumiesz calkowicie kod zrodlowy jadra
+<augs> czytalem na pl.comp.os.advocacy ze w polsce sa tylko dwie osoby ktore 
+       rozumieja jadro. `informatyk` tak napisal
+<arekm> augs: sam Linus nie wie do koñca co który kawa³ek kodu robi.
+<augs> ja myslalem ze Linus potrafi w pamieci zaemulowac dzialanie dwoch albo
+       trzech jader
+[ agaran!agaran@magnus.cordef.net.pl ] czy dzisiaj mamy wysyp idiotoW?
+## Signoff #pld: augs (.)
+## Join #pld: lcamtuf (=lcamtuf@pa145.jeleniag.ppp.tpnet.pl) at 11:35PM
+[ Whowas augs (=augs@pa145.jeleniag.ppp.tpnet.pl) ]
+...
+[ agaran!agaran@magnus.cordef.net.pl ] wiesz ile division by zero by wywo³ali
+				jakby ircd sprawdza³ inteligencjê na lini IQ?
+%
+#pld
+Left #pld: break|na (break@lx.zetosa.com.pl) at 07:25PM <<<linux>>> jest
+                                         jak wigwam: no windows no gates.
+%
+#pld-installer@pld.org.pl
+> > Nie cierpie interfejsu uzytkownika
+> Ja nieznosze urzytkownikow.
+Niestety nie da sie w prosty sposob rozwiazac tego problemu ;)
+%
+- Dziêki za info, znaczy nie jestem ostatnim lamerem :-))).
+- no co ty - lamerzy nie uzywaja PLD ;>
+
+		--- Konrad Stêpieñ & BartOwl @ pld-list
+%
+- Czy¿by PLD cierpia³o na niedobór Zwyk³ych U¿ytkowników (TM) ? ;)
+- Nie. PLD ma tak wspanialych u¿ytkowników, ¿e nie zadaj± g³upich pytañ!
+
+		--- Marek Fetliñski & Pawe³ Ko³odziej @ pld-users-pl
+%
+- Czy¿by PLD cierpia³o na niedobór Zwyk³ych U¿ytkowników (TM) ? ;)
+- Mysle, ze nie, ale na razie nie ma (???) problemow :)
+- nale¿a³oby wiêc jakie¶ stworzyæ ;-P w koñcu ze zdaniem zawartym w pewnej
+  sygnaturce, u¿ytkownikom PLD wypada siê liczyæ ;))
+
+		--- Marek Fetliñski & Blues @ pld-users-pl
+%
+#pld
+<mst_> masz pld u siebie?
+<wiget> tak
+<mst_> i jak to chodzi
+%
+From: "Ampla" <ampla@go2.pl>
+To: <feedback@pld.org.pl>
+Subject: pakiet-LINUX
+
+Witam
+Proszê o podanie ceny za licecje na 12 stacji
+
+Pozdrawiam Piotr
+%
+#pld
+<arekm> Emiles: jak to nie? skrypty do sieci u¿ywaj± wy³±cznie iproute2
+<Emiles> arekm: hmm, nie zmyslasz?
+<arekm> pfff
+<Emiles> arekm: az sprawdze (podejrzewam, ze jesli tak, to pewnie iproute wywoluje ifconfig)
+%
+#pld
+18:30  * wiget jest ju¿ w domu
+18:31  * socrat sie cieszy ze wiget jest juz w domu :>
+18:32  * zagrodzki sie cieszy ze sie wszyscy ciesza :>
+18:33  * michuz sie cieszy ze wyszscy sie ciesza z tego ze sie ciesza :>
+18:34  * malekith jest taki happy, ze wszyscy sa happy, ze sie az jasno dookola robi
+18:34 <@socrat> hyhyhy :>
+18:35 <@michuz> trza zrobic > fortunes-pl :>
+%
+From: "Michal Margula" <alchemyx@uznam.top.pl>
+To: <pld-users-pl@pld.org.pl>
+
+[czwartek, 22 marzec 2001], Grzegorz 'Dzikus' Sterniczuk napisa³(a):
+
+> On Thu, 22 Mar 2001 19:15:24 +0100, you wrote:
+> >A moja siostra u¿ywa gnome :)
+>
+> A ja nie mam siostry :(
+>
+
+Hm... to ju¿ problem hardwarowy, my nie pomo¿emy ;]
+%
+16:26 < DOERman> cze
+16:27 < DOERman> zna ktos ftp z grami?
+16:27 <@wiget> DOERman: ftp:://127.0.0.1/.Warez/
+16:28 <@wiget> DOERman: widzia³em tam pe³no gier
+16:28 <@wiget> DOERman: na ftp://::1/.XXX/ te¿ co¶ by³o ale mia³em do niego za du¿e lagi
+16:30 < DOERman> thx
+16:30 < DOERman> wiget tylo co najpier wpisac?
+16:30 < DOERman> 127.0.0.1
+16:30 < DOERman> to
+16:31 < DOERman> czy to cale
+%
+20:00 <Krwisty> agarann na serio bedziecie robic 'stabilne' pld?
+%
+21:04 <blues> __hal__: you stupid mashine!!
+%
+<Czoper> heh
+<Czoper> ja od 4 jestem ;-)
+<socrat> Czoper : slyszalem juz o takich zboczeniach... pewnie siedzisz przed
+          komputerem? ;-P
+<Czoper> hehe ;-P
+<Czoper> ta, a zkad wiedziales  ? ;-)
+<socrat> Czoper : moja kobieca intuicja ;-P
+<oil3> socrat: Instynkt macie¿yñski ?? :P
+<socrat> oil3 : s/macie¿yñski/macierzyñski/ ;-PPP
+<socrat> oil3 : pewnie ispella nie masz w systemie, synq? ;-P
+<oil3> socrat: Mam dyzortografie ;]
+* socrat w koncu stawia sobie tunele do pop3 i smtp
+<oil3> A pozatym przed chwil± wsta³em z kobiety . Wiêc nie do mnie pretêsje .
+          Za du¿o wczoraj wypi³em .
+<Czoper> hehe
+<Czoper> ;-))))))))))))))))))
+<socrat> oil3 : jak tam pociecha? ;>
+<oil3> Ide dalej spaæ ..... Nie mam ju¿ si³y .... Ide spaæ sam .
+<socrat> hehehe
+<socrat> :>
+%
+00:34:01 <taug> czasami otrzymuje komunikat naruszenie ochrony pamieci co to
+          znaczy?
+00:34:37 <blues^> taug: ze kondona na pamiec nie zalozyles
+00:34:43 <blues^> taug: i sie naruszylo
+00:35:01 <taug> jak sie go zaklada?
+00:35:18 <taug> man kondom?
+%
+#pld
+17:44 < Havk> ktos z was moze uzywa pld?
+17:44 < Havk> jak to sie sprawuje?
+17:44 < malekith> Havk: chcesz dostac sie do fortunek :)
+17:45 < Havk> ee fortunek?
+17:45 <@dobrek> Juz sie dostales :))))))
+%
+#pld
+14:26 < dF99> arekm: wiesz gdzie mozna znalezc jakies patche na jaja ?
+14:27 <@arekm> pozostawiam to bez komentarza
+14:27 <@dobrek> dF99: czekaj na wielkanoc. Bedzie mnostwo.
+%
+21:52:42 <_CrasH_> zainstalowalem pld ale mam problem bo nie kce mi
+          podmontowac cdromu :(
+21:53:14 <michallo_> _CrasH_ a czemu ci niechce cdromu podmontowac
+21:54:32 <_CrasH_> zapodaje mu mount /mnt/cdrom a on ze device /dev/cdrom does
+          not exist
+22:01:35 <pawelk_> _CrasH_: masz plik /dev/cdrom ?
+22:01:42 <_CrasH_> nie mam
+%
+15:18:15 ---    arekm is now known as arekmZLY
+15:18:40 <vinix>        arekmZLY: *CMOK*
+15:19:02 <arekmZLY>     vinix: fuj.
+15:19:02 <arekmZLY>     ;>
+15:19:36 <djrzulf>      arekmZLY: zawsze *cmok* lepszy od *ziew*'a :-]
+%
+12:52:26 ð aflinta/#pld znowu jaki¶ palant u mnie w plku panienki ¶ci±ga, tu
+          siê nie da pracowaæ :( Ca³e ³acze zapycha
+12:52:38 <vinix> aflinta: wytnij.. wytnij..
+12:53:01 <aflinta> vinix ale, ¿ebym wiedzia³ który to?
+<jack_> aflinta: wszystkich! :>
+12:53:36 <vinix> aflinta: wszystkich!
+12:53:44 <agaran> kill'em all
+%
+10:14:01 <vinix> arekm: uchm.
+10:14:39 <arekm> vinix: nie uchm tylko tak
+10:14:46 <vinix> arekm: a to kto ?
+10:14:57 <arekm> vinix: kto co?
+%
+16:08 <@jajcus> adasi: my¶lisz ¿e jest szansa, ¿e to co znalaz³em w test mi ruszy i poprawnie obs³u¿y ATA100?
+16:08 < adasi> jajcus nie mam ata100 wiec nie wiem... ale jezeli sie znalazlo w test to znaczy ze powinno dzialac...
+16:08 <@malekith> adasi: rotfl
+16:13 < adasi> malekith co sie smiejesz: w PLD jezeli cos sie buduje to juz jest zajebiscie :)
+%
+14:21 < pld_fan> czy moglby ktos mi powiedz nt. tego bledu ktory wyskakuje podaczs instalcji z Netu ?
+14:21 < pld_fan> poldek: mark : kernel-source not found
+14:21 <@malekith> pld_fan: trzeba kloczka ¶cigaæ
+14:22 <@malekith> pld_fan: a chwilowo wywal kernel-source z /etc/installer.pkgs
+[...]
+14:23 < pld_fan> yy jeszcze 1 pyttanie : co to ten kloczek ?
+[...]
+14:28 < pld_fan> malekith  :)) hihi janrapwde nie zartuje, nie wiem co to kloczek o ktory sie rozchodzi
+%
+Subject: STBR, kurwa maæ!
+
+> Cze¶æ
+>
+> Czy to naprawdê jest tak trudno pu¶ciæ na buildery taki malutki (<100k!)
+> pakiecik, który siê g-wrap nazywa? Jak d³ugo jeszcze bêdê musia³ siê
+> przekonywaæ, ¿e g-wrap-devel jest potrzebne do dzia³ania gnucach, mimo
+> ¿e zosta³o to poprawione dwa miesi±ce temu w CVS a ja kilka razy
+> grzecznie prosi³em o przebudowanie? A jak nie mo¿na go pu¶ciæ, to mo¿e
+> nale¿a³oby poinformowaæ o tym fakcie i jego przyczynie, ¿eby kto¶ móg³
+> to poprawiæ?
+proponuje tym samym nowy skrot: STBRKJM! (send to builder request k****
+jego mac!).
+
+		--- Micha³ Kochanowicz & Rafal Cygnarowski @ pld-devel-pl
+%
+Subject: Re: Dillo && xine!
+
+> Od razu siê wyt³umaczê - chêtnie bym siê zaj±³ pakietami lub
+> przynajmniej sam sobie skompilowa³, ale mam tylko modem 33,6 i ¶ciaganie
+> pakietów z nag³ówkami+same ¼ród³a niezbyt mi siê kalkuluje.
+
+Je¿eli chcesz pomóc to rób tylko tyle ile mozesz. Robienie cudów pozostaw 
+innym :)
+
+		--- Maciej Arciuch & Tomasz K³oczko @ pld-devel-pl ---
+%
+Subject: I've got a dream...
+
+> > Tak lekko OT... snilo mi sie ze wszyscy na grupie mnie op......li za moje
+> > pomys³y... Budzie trza siem podszkoliæ :)
+> Mistrzu, masz sny o potêdze!
+> Tego siê nie da wyleczyæ :)
+ehhh... ostatnio uzna³em ¿e za du¿o siedzê przy kompie po tym jak ¶ni³o mi
+siê ¿e ser, kloczek i ryszard r±czkowski (z pl.misc.telefonia.gsm) razem
+mnie ochrzaniaja... szczegó³ ¿e ¿adnego z nich w ¿yciu nie widzia³em
+
+		--- Witek Krêcicki & Witold Filipczyk @ pld-devel-pl
+%
+23:08:30 <AlanZ1> moze ktos polecic mi jakis program do webmail ktory bedzie dzialac z nowym
+          impad ?
+23:08:45 <Zuzia13> squirrelmail
+23:08:46 <socrat> squirrelmail ?
+23:08:58 <AlanZ1> pierwszy raz slysze
+23:09:08 <socrat> chyba drugi...
+%	  
+[18:25] * [depesz] tak tylko wpadl sie pochwalic, ze jego proces potomny ma
+	juz 17 centymetrów
+[18:26] <ser> depesz: chodzi ci o fiuta?
+[18:26] <aflinta> [depesz] ??? by³e¶ w szpitalu z ¿on± na USG?
+[18:27] <ser> depesz: oh, pardon
+%
+12:22:14 (@dzimi): o 2.2.21pre4 wyszlo
+12:22:32 (@dzimi): alan juz szykuje sie do rc1 oraz 2.2.22pre
+12:22:42 (@dzimi): wow, fajnie
+12:22:46 (+djrzulf): zboczeniec
+12:22:46 (+djrzulf): :>
+12:23:05 (@wojrus): scigaja sie z 2.4 czy co? :>
+12:23:12 (+ZyTeK): Byl fetyszyzm, jest kernelizm.
+%
+22:34:43 (+Undis): hm.. nie masz mirca? cos ty?
+22:34:51 (+Undis): jak mozesz nie miec mirca?
+22:34:54 (@agaran): Undis: ;>
+22:34:58 (+Jelit): :)
+22:34:59 (+Undis): to jak ty pracujesz?
+22:35:00 (@dzimi): Undis: mirca sie da spod wine odpalic
+22:35:05 (+djrzulf): dzimi: da siê
+22:35:06 (+djrzulf): :>
+22:35:28 (@dzimi): djrzulf: wiem, jak lama bylem to tak odpalalem ...
+22:35:41 (+djrzulf): dzimi: a ja nie, wierzê na s³owo 8-]
+22:35:47 (+djrzulf): dzimi: ale se odpali³em ostatnio wincmd32 pod wine
+22:35:50 (+djrzulf): dzimi: ¶renio to dzia³a :/
+22:35:59 (+djrzulf): dzimi: przy kursorach zaznacza pliki
+22:36:09 (+djrzulf): dzimi: ale ogonie i tak nie¼le im to wysz³o
+22:36:13 (+djrzulf): wygl±d nie najgorszy
+22:36:14 (+Undis): pod wine? pod jakim wine? to wy nie macie windows 98? :P
+%
+01:57:15 <@blues_> ping
+01:57:23 <@agaran> pong
+01:59:50 <@blues_> ping
+01:59:54 <@agaran> pong
+02:00:24 < baggins_> bzzzt
+02:00:48 -!- mode/#pld [+o baggins_] by agaran
+02:00:50 <@agaran> :>
+02:00:55 <@agaran> baggins_: zwarcia masz?
+02:01:14 <@blues_> bum
+02:01:20 <@blues_>  :)
+02:01:23 <@zuzia-> :-D
+02:01:24 <@blues_> hi baggins_  :)
+02:01:28 <@baggins_> kto sie zajmuje botami - wogóle s± tu jakie¶ oprócz papuga?
+02:01:40 <@agaran> baggins_: jest zuzia ale z niej chyba pozytka niema
+02:01:43 <@zuzia-> agaran aha
+02:01:47 <@blues_> zuzia jest przeciez!
+02:01:48 <@blues_> :)
+02:01:50 <@zuzia-> blues_ yhy
+02:01:57 <@agaran> ja moge zaladowac perla do sesji..i bedzie jakis op..czy cós
+02:01:58 <@baggins_> a zuzia da opa?
+02:02:00 <@zuzia-> baggins_ chodz na priv :*
+02:02:01 <@agaran> siewca ma opa
+02:02:08 <@agaran> baggins_: ona jest chetna ale do czego innego
+02:02:15 <@baggins_> widze ;>
+%
+Subject: octave
+
+> Mam pisaæ wiêkszymi literami ?
+> Prszê: GNUCACH DO POPRAWNEJ PRACY POTZREBUJE GUILE 1.3.4, KTÓREGO NIE 
+> MAMY I NIE £UD¬ SIÊ ¯E BÊDZIEMY MIELI.
+To ja te¿ ;)
+
+BREDZISZ, BREDZISZ, BREDZISZ, BREDZISZ!
+
+		--- Tomasz K³oczko & Arkadiusz Miskiewicz @ pld-devel-pl
+
+%
+12:36AM <ser> zasram siê ze ¶miechu
+%
+Subject: Re: Fw: Alternatywa dla qmail'a
+
+(...)Po przeczytaniu jeszcze kilku innych kawa³ków te¿ zaczynam dochodziæ 
+do wniosku ¿e go¶æ ma nie¼le nasrane pod sufitem(...)
+
+		--- Tomasz K³oczko @ pld-devel-pl
+%
+18:25:53 <+mmazur> hmmm... uspokoilibyscie sie moze? :)
+18:25:53 <+Krwisty> no can do.
+18:28:39 <@djrzulf> zdychaj tr0lu!
+18:30:21 <+mmazur> dzieci dzieci... bezsensowne dyskusje to na #pldhelp, a nie
+                   tu :)
+18:30:39 <@djrzulf> gdzie masz bezsensown± dyskusjê ?
+18:31:06 <+mmazur> tu
+18:31:23 <@djrzulf> nie widzê
+18:31:29 <@djrzulf> narazie bezsensown± dyskusjê to ty co¶ piszesz;p
+18:31:41 <+mmazur> wredny
+18:32:01 <@djrzulf> nazwajem :-]
+18:32:20 <@jack_> Zaraz go z krzy¿a zdejmiemy :>
+18:32:47 <+mmazur> ty mi tu nie podskakuj :P
+18:32:51 <@djrzulf> i kto potem bêdzie PLD traffic pisa³ ?:>
+18:32:57 <+mmazur> w³a¶nie :)
+18:32:58 <@djrzulf> ukrzy¿ujemy innego ?:>
+18:34:00 <+Krwisty> co sie tak na mnie patrzycie?
+%
+So .. all is opened before You. Most from as can communicate (better odr
+worse) not only polish language :_)
+
+		--- Tomasz K³oczko @ pld-devel-en
+%
+From: "matrix" <matrix@multicurie.zabrze.net.pl>
+To: <feedback@pld.org.pl>
+Subject: Instalacja Lilo na PLD 
+
+WItam!
+
+Czy wiecie moze jak zainstalowac Lilo pod tym linuxem.
+%
+> sudo twoim przyjacielem :)
+Powa¿nie nie ma innego wyj¶cia? :( Nie lubiê sudo, on siê do mnie
+brzydko odzywa... ;>
+
+		--- Michal Kochanowicz @ pld-users-pl
+%
+11:13:39 <@dzimi> poldek jest glupi ...
+11:14:30 <@dzimi> a nie ...
+11:14:35 <@dzimi> dzimi jest glupi ...
+%
+		--- Piotr Szymañski & Mariusz Mazur @ pld-users-pl
+On Friday 03 May 2002 21:02, Piotr Szymanski wrote:
+> Ja sie pod tym podpisuje! KDE bylo traktowane po macoszemu przez wiekszosc
+> dystrybucji (np. RH i Debian), praca pana Michala, zapewni nam, ze KDE nie
+> bedzie tak traktowane w PLD. Nie nalezy tez zapominac, jak wiele pracy
+> wiaze sie z utrzymywaniem pakietow tak rozbudowanego srodowiska.
+> Bardzo dziekuje!
+Kochanowicz na prezydenta!
+A Kochanowicz Desktop Environment to ju¿ chyba na sta³e zostanie :)
+%
+02:19:36 <@jack_> Mounting NFS
+                  filesystems...........................................[
+		  ZAJETY  ]mount: RPC: Awaria portmappera - RPC: Niemo¿liwy
+		  odbiór
+02:19:44 <@djrzulf> ajæ
+02:19:52 <@jack_> Ble, jakby nie mog³o sprawdziæ, czy zdalny host jest up :)
+02:20:54 <+Elio> jack_: ping? telnet na usluge?
+02:20:55 <@djrzulf> i jeszcze obrazek w ascii narysowa³o z napisem Host
+                    unreachable
+02:21:44 <+Elio> ;]
+02:21:58 <@djrzulf> albo z bocianem i napis "odlecia³em"
+02:22:10 <@jack_> [root@pldmachine root]$ rpcinfo -p 192.168.0.98
+02:22:10 <@jack_> rpcinfo: kontakt z portmapperem niemo¿liwy: RPC: B³±d w
+                  odleg³ym systemie - Brak drogi do systemu
+02:22:15 <@jack_> Nie lepiej?
+02:22:44 <@djrzulf> ten pomysl z bocianem bardziej mi siê podoba³
+%
+18:33:39 >> Mode #pld "-b *!*Zoska1f_2@*.punkt.pl" by o-siefca, lt
+18:33:41 >> Mode #pld "-b *!*Zoska1f_2@*.punkt.pl" by trojan_, trojan, areq, adasi
+18:33:41 >> Mode #pld "-b *!*Zoska1f_2@*.punkt.pl" by blue_bot
+18:34:38 <@jack_> blue_bot, o-siefca, lt, trojan_, trojan, areq, adasi <- botnet? ;)))
+%
+16:35:01 -!- mode/#pld [+o fahren] by djrzulf
+16:35:21 -!- mode/#pld [-o fahren] by dzimi
+16:35:49 -!- mode/#pld [+o fahren] by agaran_
+16:36:39 <@djrzulf> dzimi: ?
+16:41:55 <@jack_> djrzulf: zbanujemy za to dzimiego? ;))))
+16:41:58 <@djrzulf> jack_: tak
+16:42:27 <@jack_> djrzulf: Tylko jaki¶ reason trzeba wymy¶leæ
+16:42:36 <@jack_> djrzulf: "bo 2.2 nie ma iptables" ?
+16:42:40 <@djrzulf> mo¿e byæ
+16:43:57 <@jack_> 16:43:59 <@dzimi> jack_: ju¿ nak³adam patcha daj±cego iptables i grsec do
+                  2.2.21... momencik [fake msg from dzimi]
+[...]
+20:01:20 <@dzimi> szykujê anons na lkl, ze neofb gotowe dla 2.2, i szykujê sobie piersz±
+                  kompilacje iptables dla 2.2, bo jajko juz skonczone
+%
+17:36:36 <@dzimi> ciekawi mnie jak to bedzie dzialac, cyz da sie np. office odpalic, nie wiem, gry jakies, i cyz to woogle wymaga 
+                  windows\system
+17:36:50 <@Ma-rYu-sH> dzimi: testowane:
+17:36:50 <@Ma-rYu-sH> word
+17:36:50 <@Ma-rYu-sH> excell
+17:36:54 <@Ma-rYu-sH> powerpoint
+17:36:57 <@Ma-rYu-sH> wincmd
+17:37:01 <@Ma-rYu-sH> gadu gadu
+17:37:03 <@Ma-rYu-sH> irfan
+17:37:09 <@Ma-rYu-sH> putty
+17:37:11 <@Ma-rYu-sH> fallout 1 i 2
+17:37:17 <@Ma-rYu-sH> photoshop
+17:37:21 <@Ma-rYu-sH> dalej nie pamiêtam :)
+17:37:26 <@dzimi> wow :)
+17:37:30 <@Ma-rYu-sH> ale dzia³a³y u mnie
+17:37:38 <@dzimi> to ja robie wlasn± dystrybucjê linuxa
+17:37:40 <@djrzulf> i to na winex ?
+17:37:42 <@dzimi> z winex
+17:37:46 <@dzimi> dla lamerów
+17:37:47 <@djrzulf> dzimi: Lindows ? ;D
+17:37:47 <@dzimi> :>
+17:37:49 <@Ma-rYu-sH> djrzulf: na wine i na winex
+17:37:53 <@dzimi> jak lindows :)))))
+17:38:02 <@Ma-rYu-sH> djrzulf: chyba dzimdows :)
+17:38:05 <@djrzulf> :DDD
+17:38:11 <@dzimi> ale nazwê to ... dzimdows :P
+%
+19:10:35 <@arekm> baggins: widzia³e¶ na xfsie takie cuda jak:
+19:10:35 <@arekm> [misiek@arm BUILD]$ ls -ld 2f7*
+19:10:35 <@arekm> drwxr-xr-x    8 misiek   users          72 maj 17 18:38 
+                  2f7bcd674e58e90f3997089ee9663de7ed068bc5e1f64afc57539ccd20977a94
+19:10:40 <@arekm> ?
+19:12:17 <@ser> arekm: ostra sprawa
+19:13:15 <@aflinta> arekm wygl±da jak migracja kawa³ka rejestru windows na filesystem :-)))
+%
+Log: samba.spec,v
+Revision 1.100  2002/05/21 09:43:40  mkochano
+- Kurwamaæ
+%
+17:00:16 Netsplit hub2.irc.pl <-> poznan.irc.pl quits: dF9, @aflinta, e-Undis, @Yaro, whoami, argv_, @jack_, @shept, @dobrek, ZyTeK,  
+(+30 more, use /NETSPLIT to show all of them)
+17:01:15 Netsplit over, joins: argv_, +dF9, +wysek, ArEkMaT, +Ma-rYu-sH, MW-Zombi, @waszi_, @wojrus, +whoami, Pieq (+7 more)
+17:01:15 >> #pld JOIN baggins (baggins@kenny.mimuw.edu.pl)
+17:01:15 Netsplit over, joins: Doko, @bonkey, @Yaro
+17:01:15 >> NetHack #pld "+ooo baggins bonkey Yaro" by poznan.irc.pl
+17:01:16 Netsplit over, joins: +e-Undis, +xeros, FoXMaN, +nes`, @jack_, @aflinta, +ZyTeK, @[depesz], shept, +pioklo (+4 more)
+17:01:16 >> #pld JOIN Elio (elio@seven.wmc.com.pl)
+17:01:18 Netsplit over, joins: +hunter_
+17:01:18 >> NetHack #pld "+ovv shept Elio hunter_" by poznan.irc.pl
+17:01:18 Netsplit over, joins: @dobrek, @agaran
+17:01:18 >> NetHack #pld "+ovo dobrek dobrek agaran" by poznan.irc.pl
+17:01:18 Netsplit over, joins: +thorgi, @fvk, Wolfmoon
+17:01:18 >> NetHack #pld "+vov agaran fvk thorgi" by poznan.irc.pl
+17:01:24 >> Mode #pld "+o agaran" by Papug
+17:01:24 >> #pld JOIN michuz_ (~michuz@pnet.t-shirt.pl)
+17:01:38 >> Mode #pld "+v michuz_" by agaran
+17:06:19 <@mmazur> ble... my¶la³em, ¿e ustawianie routingu jest ³atwiejsze :(
+%
+[21:00:40] * Jajcus bardzo siê podoba umieszczenie fortunek w CVS
+[21:01:10] <@Jajcus> mogê sobie ³atwo aktualizowaæ. tylko cvs update i strfile na interesuj±cych plikach :-)
+[21:01:26] * Jajcus ¼le u¿y³ /me i wyszed³ na lamera :-)
+%
+[22:57:35] <@ser> mmazur: moglbys napisac cos w mojej obronie
+[22:58:07] <@mmazur> k³oczek chyba mia³ racjê, ¿e lepszy ze mnie developer jak trafficiarz
+[22:58:36] <@mmazur> ser: heh... i w tym ca³y bajer, ¿e z za³o¿enia traffic ma byæ obiektowy :)
+[22:58:55] <@aflinta> mmazur obiektowy?
+[22:58:59] <@mmazur> obiektywny :)
+%
+Sunday May 26 2002 -- 12:21 +02:00
+11:11:01 <@mmazur> !seen ser
+11:11:03 <@Qrczak> mmazur: Osoba o nicku ser odezwala sie 23m 29s temu; jest tutaj.
+11:11:11 <@mmazur> !seen ma³ykit
+11:11:11 <@Qrczak> mmazur: Niestety nie widzialem nigdzie nicka ma³ykit.
+11:11:16 <@mmazur> !seen malekith
+11:11:18 <@Qrczak> mmazur: Osoba o nicku malekith odezwala sie 20h 57m temu; 20h 41m temu byla tu i wyszla z irca: Ping timeout
+[11:11:42] <@aflinta> mmazur !seen traffic :>>
+%
+12:31:40 <@kloczek> kawa³ek z autoconfa do Eterma:
+12:31:55 <@kloczek> checking for life_signs in -lKenny... no
+12:31:55 <@kloczek>   Oh my god, they killed Kenny!  You bastards!
+%
+To: grupa rozwijaj±cych pld <pld-devel-pl@pld.org.pl>
+Subject: Re: STBR slrn-pl
+From: Arkadiusz Miskiewicz <misiek@pld.ORG.PL>
+Date: 31 May 2002 00:02:58 +0200
+
+Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl> writes:
+
+> "Miliony much nie mog± siê myliæ - jedxmy gówno".
+A stra¿nik WC zabroni muchom je¶æ gówno bo taki z niego m±drala!
+
+Odwiedzi³ by¶ kiedy¶ Ziemiê.
+
+> kloczek
+%
+[21:22:49] <@mmazur> pfff... jak zwykle szeberna¶cie tysiêcy pakietów do upgrejdniêcia... stability stability
+[21:23:14] <+Baseciq> mmazur: marudzisz jak mmazur w ci±¿y
+%
+> Mam pytanko jak zaadresowaæ maila tak, aby dostali go wszyscy, którzy
+> maja k±ta mailowe na serwerze(co¶ jak onet wysy³a reklamy). U¿ywam
+> Qmaila.
+> Pozdrawiam Wojtek
+>
+
+A po co to robic, wystarczy wyslac adminowi ze jest kut....
+i tez Ci skasuje konto :)
+
+		--- frazir & TiweK @pld-users-pl
+%
+[19:27:51] <@dzimi> RMF: btw w wawie mam u ciebie nocleg nagrany ? czy mam sie zglosic do skobi by mnei kurna zanocowala gdzies 
+                    ... :>
+[19:28:12] <@chatulan> ziew.
+[19:28:36] * chatulan ma wolny karton ;> pod mostem... 
+[19:28:43] <@dzimi> chatulan: ;)))))))))
+[19:28:47] <@dzimi> siupper :>
+[19:29:05] <@RMF> dzimi: no oczywiscie ze podloga czeka (jesli Ci szum 3 komputerow nie przeszkadza)
+.
+.
+.
+[19:36:10] * -> djrzulf te¿ chce do RMFa
+[19:36:11] <@djrzulf> :>
+[19:36:29] <@chatulan> djrzulf: co chc esz?
+[19:36:46] <@dzimi> djrzulf: a chcesz spac w wannie ? ;)
+[19:36:59] <@djrzulf> chcê kompy
+[19:37:09] <@djrzulf> wlanei ciekaw ile basset ma kompów
+[19:37:10] <@djrzulf> ;>
+[19:37:14] <@djrzulf> Baseciq: ile masz komputerów ?
+[19:37:15] <@RMF> dzimi: wanna juz zajeta
+[19:37:19] <@djrzulf> RMF: ;D
+[19:37:21] <@dzimi> RMF: powaznie ?
+[19:37:28] <@RMF> dzimi: kloczek
+[19:37:31] <@dzimi> RMF: :)))))))))
+[19:37:37] <@djrzulf> RMF: =D
+%
+[19:18:26] <+Baseciq> dobry wieczór pañstwu
+[19:18:39] <+Baseciq> tu program siódmy polskiego radia i telewizji oddzia³ w kielcach
+[19:20:11] <@aflinta> Baseciq halo, halo, dobrywieczór pañstwu, mamy wspania³y czerwcowy poranek, na dzisiejszy mecz przyjkecha³o 
+                      45 reporterów z 78 krajów, mecz siê jeszcze nie rozpocz±³, ale prowadzimy ju¿ 2:1 :-) 
+%
+PLD Traffic @ 7thguard.net :
+W dzisiejszym trafficu: informacje o jego zej¶ciu (prawda, ¿e jestem okropny :)...
+Komentarz:
+>> No to masz przechlapane...<<	 (Baseciq) [odpowiedz]
+Niniejszym informuje Ciê, i¿ nasy³am na Ciebie moj± siostrê. ;-) 
+%
+14:26:00 <+Baseciq> erm, czy nasz kernel przewiduje odpalenie raida programowego na ide?
+14:26:18 <@arekm> baseciq: pf.
+%
+21:23:00  <@RMF> ccezar: a pojawisz sie gdzies jutro ?
+21:23:23  <+ccezar> RMF: HGW, chyba zebym z dzieciakiem przyjechal.
+21:23:54  <+ccezar> RMF: wytrzymasz upierdliwego 3-latka na glowie? Tym bardziej ze mowi tylko Tata i Linus ;)
+[...]
+21:28:35  <@skobelek> ccezar ile on ma lat ?
+21:29:26  <+ccezar> skobelek: prawie 3 latka. A pierwszy tekst w kwrite stworzyl jak mial 1.5 roku. I zaczal od "#in" ale
+                    potem sie pogubil... ;)
+21:29:47  <+ccezar> skobelek: ale kierunek obral sluszny ;)
+21:29:52  <@RMF> ccezar: mialo byc #include ?
+21:30:07  <+ccezar> RMF: tak sadze :)
+21:30:20  <+ccezar> RMF: ale w tym wieku to raczej asembler... ;)
+21:30:25  <@RMF> ccezar: no to Mieszkix kiedys pewnie powstanie :)
+21:31:14  <+ccezar> RMF: Mieszkix to jedno, ale Ty to powinienes zobaczyc jak on na WKD reaguje ;) I ogolnie na kolej. Az
+                    zaczynam miec brzydkie podejrzenia... ;)
+21:31:35  <@RMF> ccezar: a juz eu07 od ep09 rozroznia ?
+21:32:15  <+ccezar> RMF: a zebys qrde wiedzial ze tak! Jak ostatnio jechal sklad naprawczy taboru to popatrzyl z
+                    dezaprobata i powiedzial: "fu fu fu!" :)
+%
+12:06:11 <+gausus> jakis student zabil aststenta
+12:06:15 <@zolw> tak
+12:06:18 <@zolw> siekierom 
+12:06:18 <+gausus> kumpel sie pytal czy nie kloczka :)
+.
+.
+.
+13:40:47 <@aflinta> mo¿e to faktycznie kloczek dosta³ tym toporkiem na PG i nikt nam ju¿ CVS nie przywróci do ¿ycia :(
+13:42:04 <@aflinta> zolw a m¿e tym go¶ciem z toporkiem by³ zdesperowny developer PLD który na¿eka³ na sypi±cy siê CVS :)
+13:46:14 <@aflinta> W pokoju byli dwaj pracownicy naukowi Czes³aw S. i Krzysztof P. - chmm, czyli jednak Tomek jest ca³y, tylko czemu CVS le¿r? Mo¿e to cvs dosta³ przez przypadek ostrym narzêdziem?
+%
+10:38PM <kloczek> QQ
+10:38PM <kloczek> \/
+ùíù SignOff BartOwl: #PLD (reboot)
+10:48PM <adasi> kloczek mam prosbe
+10:48PM <adasi> kloczek WIELKA prosbe
+10:48PM <adasi> kloczek taka gigantyczna
+10:48PM <adasi> kloczek WEZ COS DO CHUJA PANA ZROB Z TYM CVS'EM BO TO SIE POCHLASTAC IDZIE
+%
+<aflinta> **********
+<aflinta> * WANTED *
+<aflinta> *        *
+<aflinta> *   QQ   *
+<aflinta> *   \/   *
+<aflinta> *        *
+<aflinta> * kloczek*
+<aflinta> *        *
+<aflinta> * $50000 *
+<aflinta> **********
+%
+<mmazur> RMF: dzisiaj tego nie zrobiê... w³a¶nie wpisa³em ssh buildlogs.pld.org.pl, a z mozilli próbowa³em wyj¶æ wpisuj±c exit... idê spaæ
+%
+22:18 <@RMF> blues^: dzimi powinien miec 0-700-KERNEL - oplata 1Euro/min+Vat
+%
+21:26:38 <@dobrek`> kurwa : error: vftp: /dists/ra/PLD/i686/PLD/RPMS/glibc-2.2.5-17.i686.rpm:
+                    no such file
+21:26:57 <@wiget> dobrek`: -18 ju¿ jest
+21:26:57 <@arekm> dobrek: kloczek szaleje dzis caly dzien z indeksami
+21:27:02 <@wiget> dobrek`: kloczek regeneruje indeksy
+21:27:11 <@dobrek`> aha a kiedy skonczy ?
+21:27:21 <@wiget> dobrek`: jak pójdzie spaæ :-)
+21:27:28 <@dobrek`> to niech juz idzie
+%
+23:17:15 <@chatul> jak mnie ktos obudzi przed 9 to zabije
+23:18:05 <@jack_> Podaj numer ;)
+23:18:09 <@mmazur> w³a¶nie
+23:18:29 <@agaran> samobojcow mamy na #pld?
+23:19:30 <@wojrus> hyh, co robi samobojca w PLD? cvs commit suicide :>
+%
+>>>>>>Czy jest jakis programik to czyszczenia pamieci ?
+>>>>> Mozesz troche rozwianac? O jaka pamiec chodzi?
+>>>>> Ja tam zdumchuje nadmiar kurzu... :)
+>>>>Chodzi o pamiec wysoka.
+>>> A.. jak wysok. to co innego.
+>>> echo -n >/dev/mem
+>> ech.. i znów zle:
+>> naokolo zawsze blizej:
+>> dd if=/dev/zero of=/dev/mem
+>Bardzo fajnie ale u mnie nie dziala :). Komp sie zwiesza.
+W³±¶nie dosta³e¶ nauczkê od BOFHa ;-))
+
+			arcisz@yasuhir.com.pl & PLD-Team @ pld-users-pl
+%
+22:34:11 >> #pld JOIN honej (-honey@gprs1.idea.pl)
+22:34:21 >> Mode #pld "+v honej" by fisting
+22:34:23 <@fisting> cze¶æ kochanie
+22:34:24 <@fisting> ;>
+22:35:01 <+honej> wrrr :P  czesc wszystkim :)  Wita uzytkownik PLD
+                  nieposiadajacy Debiana ;)
+22:35:09 <@fisting> nie wierzê
+22:35:10 <@fisting> ;}
+22:35:13 <@agaran> hmm niemozliwe
+22:35:22 <@RMF> honej: ktory zapomnial dodac ze to PLD jest na powerpc
+22:35:33 <@agaran> honej bez debiana hmm jak komputer bez procesora..
+22:35:33 <+honej> a, bo RMF dal mi komputer z PLD bez CD :>
+22:35:42 <+honej> a przeciez nie bêdê ci±gn±æ Debiana przez komórkê :)
+22:35:44 <@fisting> honej: :DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+22:35:55 <@agaran> honej: :>
+22:35:55 <@fisting> honej: pod³y plan ;D
+22:36:06 <+honej> to by³ podstêp ;)
+%
+[2002-08-27 09:16] <agaran> tomahawk ma jeszcze lepsza celnasc..
+[2002-08-27 09:17] <aflinta> agaran: celno¶æ tomahawka zale¿y od stanu upojenia alkoholowego rzucaj±cego :)
+%
+00:22:21 <@Socrat> szkoda rak do gadania
+%
+16:23 <@blues^> Nie ma dziurawych dziurawych dystrybucji. Dziurawi bywaja admini, czasem maja dziure zamiast mozgu
+16:26 <+ZyTeK> A co maja powiedziec administratorki he ? :>
+16:27 <@wiget> ZyTeK: administratorki zawsze maj± dziurke, ale nie zawsze zamiast mózgu
+%
+16:34 <+ZyTeK> To jest nawet smieszne ;)
+16:34 <@agaran> ZyTeK: a czemu mialoby niebyc?
+16:34 <+ZyTeK> agaran: No bo gdybym tego nie zrozumial to byl sie nie smial, a smieje sie bo sie ciesze, ze zrozumialem ten
+               dowcip! :) Ale troche czasu mi to zajelo :)
+%
+15:05:46 <@SkIbI> blues^:  tak miedzyu nami jakiego jaj uzywasz?
+%
+17:00 <agaran> ale zarabiscie taka goraca kompiel
+17:15 <agaran> normalnie jak nowo forkniety
+%
+00:56:22  * mmazur & #¶piem
+00:56:43 <+honey> mmazur: nie #¶pij, to niezgodne z RFC ;)
+%
+16:03 <@SkIbI> dzimi: kocham twoje jadra :P
+%
+19:42 <@chatul> pop3 ssie..
+19:42 <@chatul> ztesszt poczta ssie
+19:42 <@chatul> wszystko ssei
+19:44 <@aflinta> zepsuty odkurzacz nie ssie :)
+
+%
+10:33:48 <@trojan> djrzulf: u mnie trzeba zrobic najpierw /dev/sprzataczka
+10:34:10 <@djrzulf> e to chyba ./get_naked /dev/sprzataczka
+10:34:10 <@djrzulf> ;>
+10:34:12 <@trojan> djrzulf: po pewnie od trzech tygodni tego nie robi³êm :(
+10:34:27 <@djrzulf> ;}
+10:34:32 <@trojan> fak
+10:34:45 <@trojan> oczywi¶cie mowa o sprzataniu ;))
+%
+12:18:58 * aflinta ma pytanie, czemu GNOME2 jest na cenzurowanym?
+12:19:24 <@djrzulf> na czym ?
+12:20:39 <@aflinta> djrzulf: na cenzurowanym, czyli poza g³ównym nurtem
+                    dystrybucji, wszyscy pakuj± KDE3 a G2 olewaj±
+12:21:10 <@djrzulf> aflinta: no szczególnie gdy kde3 to koby³a wolno dzia³aj±ca
+12:21:35 <@jack_> aflinta: Bo to ma byæ Kloczek Desktop Environment
+%
+20:34:33 <+Ma-rYu-sH> jadwiniu proszê natychmiast rozwi±zaæ tatusia
+20:34:38 <@agaran> i przeprosic
+20:34:53 <@agaran> alescie nas urzadzily..siostry..
+20:34:53 <+Ma-rYu-sH> no fakt :)
+20:35:08 <+Ma-rYu-sH> burdel to wy tam macie w meteo :)
+20:35:20 <@adasi> Ma-rYu-sH archeo nie meteo :P
+20:35:20 <+Ma-rYu-sH> ¿eby facet z go³± bab± nie móg³ w windzie
+20:35:35 <@agaran> boooocian..
+20:35:40 <+Ma-rYu-sH> adasi: qrfa /dev/memory do wymiany :)
+20:35:46 <+Ma-rYu-sH> agaran: to ju¿ tam PLD mieli ? :)
+20:35:51 <@agaran> Ma-rYu-sH: jaaaaaaaaaasne
+%
+20:40:45 <+Ma-rYu-sH> o ¿ó³w o Tobie mowa by³a :P
+20:41:15 <@djrzulf> wsensie "nie¼le zbudowana ta rozgyrwaj±ca" ?
+20:41:29 <@agaran> djrzulf: :>>>>>
+20:41:36 <+Ma-rYu-sH> djrzulf: nie - w sensie nasza cywilizacja upad³a a tobie
+                      dupy w g³owie :P
+20:41:45 <+Ma-rYu-sH> czy jak to tam szlo :>
+20:41:49 <@agaran> :>>>>
+20:41:50 <@djrzulf> a
+20:41:50 <@djrzulf> ;D
+%
+20:42:09 <@adasi> 'nasza dystrybucja upadla a tobie bociany w glowie'
+20:42:25 <@agaran> ;>>>>>>>>>>>>>>>>>>>>>>>
+20:42:45 <+Ma-rYu-sH> adasi: a nie 'nasza dystrybucja upad³a a tobie spece
+                      nadal w glowie' ? :)
+%
+21:07:43 <@djrzulf> kloczek: czy g2 wejdzie do RA ?
+21:09:58 <@kloczek> djrzulf: o ile nie nas±pi jaki¶ katakliznm to raczje nie
+21:10:25 <+honey> djrzulf: to robimy trzêsienie ziemii. Wez pigu³kê ;)
+21:10:31 <+honey> znaczy - to pierwsze to kataklizm ;)
+21:10:42 <@agaran> :>>>>
+%
+21:24:34 <+Ma-rYu-sH> qrfa ja ju¿ dzisiaj nic nie mówiê
+21:24:43 <+Ma-rYu-sH> dominujê w dzisiejszych fortunakch :)
+%
+<Dyskusja nt telefonow>
+08:19:24 <@[depesz]> jak patrze na to kto co obecnie kupuje i *do czego uzywa*
+                     telefonu komórkowego to przychodzi mi na mysl: twoj dres
+		     kupowalby nokie
+%
+17:07:53 <@Socrat> gausus: dobra dobra ;]
+17:08:19 <+gausus> Socrat : nie poznaje kolegi.....
+17:08:49 <@Socrat> gausus: cicha woda...
+17:08:52 <@Socrat> :P
+17:08:57 <@djrzulf> <ja tylko niose pomoc>
+17:08:57 <@djrzulf> ;D
+17:09:07 >> #pld JOIN qwark (~bob@proton.pozyton.net.pl)
+17:09:08 <@Socrat> dj :>
+17:09:15 >> Mode #pld "+v qwark" by djrzulf
+17:09:24 <+gausus> ja tu widze niezly burdel
+17:10:03 <@djrzulf> gausus: burdel, ty wy macie w tym swoim slackware
+                    sisotrzyczki
+17:10:03 <@djrzulf> ;D
+17:10:27 <+gausus> A moze Curie Sklodowska tez uzywala PLD ???????
+17:10:38 <@djrzulf> :D
+17:10:56 <@Socrat> !fortune :P
+17:10:57 <+mick3y> z³y przyk³ad
+17:11:04 <@djrzulf> mick3y: a bo go zmyli³y¶my
+17:11:05 <+Ma-rYu-sH> gausus: eee to z³y przyk³ad...
+17:11:20 * gausus jest dumny bo jest juz 3 razy w fortunes-pl
+%
+

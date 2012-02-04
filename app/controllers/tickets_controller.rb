@@ -28,7 +28,7 @@ class TicketsController < ApplicationController
 
     respond_to do |format|
       if @ticket.save
-        format.json { render json: @ticket, status: :created, location: @ticket }
+        format.json { render json: @ticket, status: :created, location: [@workspace, @ticket] }
       else
         format.json { render json: @ticket.errors, status: :unprocessable_entity }
       end

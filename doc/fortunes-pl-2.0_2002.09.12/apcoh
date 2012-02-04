@@ -1,0 +1,339 @@
+%
+{PPL Licensed Declaration}
+Programi¶ci!  Linuksowcy!  Developerzy!
+Próbujcie Lepiej Debiana!  Pró¿no Lawirowaæ Daltonistycznie Po¶ród
+Linuksowych Dystrybucji Poszukuj±c Lepszego Darmowego Projektu.  Linux
+Dla Prawdziwych Ludzi Doceniaj±cych Potêgê - Legendarny Debian!
+Podejmijcie Lepsz± Decyzjê!
+Poezj± Linuksa - Debian!
+Pozdrawiam Lokalnych Debianowców,
+met., Poszukuj±cy Legalnej Drogi
+(MSPLDANC)
+%
+I ja wychodzê dzi¶ z ukrycia aby wspomóc braci w wierze w bohaterskiej,
+nierównej walce z przewa¿aj±cymi si³ami wroga o s³uszn± sprawê
+ostatecznego zwyciêstwa nie¶miertelnej ideii Prostego Linuxa Dla_ka¿dego
+wcielonej przez Profesjonalnych Linuxowych Developerów w Powszechnie
+Lubian± Dystrybucjê Pora¿aj±c± Lamerskich Debianowców sw± Prostot±,
+Lekko¶ci± i Dynamik± ;))))))
+%
+> to ja siê ujawniam (MDK 8.0),
+
+
+No to wpad³e¶ jak ¶liwka w kompot :)
+
+[kuba@pldmachine kuba]$ mdk
+mdk (ManDarynka Killer) v. 1 i 1/2
+----------------------------------
+Detecting
+                OK
+                OK
+
+Target detected@address:        pi72.wroclaw.sdi.tpnet.pl
+Sending "The Ping of Death"     OK
+Wait
+**************************** 25%
+**************************** 50%
+**************************** 75%
+**************************** 100%
+PLD auto installation succesfully completed
+
+Updating Linux users statistics:
+Mandrake users --;
+PLD users ++;
+%
+> znaczy sorry - masz szansê, jesli co¶ g³upiego powiesz, ale na razie siê
+> migasz. Nic to, my mamy czas ;)
+
+he he... nie ze mn± te numery, Dariusz ;-))
+%
+>>, tam te¿ po raz pierwszy znalaz³em opis, jak skompilowaæ j±dro.
+a ja artykulu czytac nie chcialem, otworzylem szybko, zobaczylem
+pierwsza komende 'rm -rf /' wpisalem sobie podekscytowany i
+przeczytalem opis pod nia '...spowoduje usuniecie calego systemu.'
+do dzis pamietam to donosne 'ku...' ;)
+%
+>>  (  v )   Administrator: Michal Zalewski [lcamtuf]
+>> ale i tak watpie zeby zwrocil na mnie uwage wiec nie bede sie wyglupiac :)
+>
+> Je¿eli bêdziesz wysok±, wyportowan± i ³adn± blondynk±, to mo¿e zwróci na
+> ciebie uwagê, ale nie bêde siê za niego wypowiadaæ, bo nie znam Jego gustu
+hm.. a je¿eli jestem ma³ym, ³ysiej±cym grubaskiem w okularach to zwróci?
+Ew mogê przytuliæ;)
+%
+>  Ehm.  Poszed³em sobie do Pana Administratora na konsultacje - winien mu
+> by³em zaleg³y skrypt w awku. Skrypt przytarga³em ze sob± na 3.5" calowej
+> dyskietce. Puk, puk, wchodzê do ¶rodka. Pan Administrator z radosn± min±
+> siedzi przy jakim¶ swoim RedHacie i namiêtnie co¶  w  gmc  robi.  Odrywa
+> wzrok...
+>  ' - Przyszed³em oddaæ zaleg³e czwarte zadanie...
+>    - A, to wy¶mienicie. Ma pan skrypt na koncie?
+>    - Nie, ze sob± na dyskietce
+>    - Aha... Tak... no to moment....'
+>  W  tym  momencie Pan Administrator wylogowywuje siê z GNOMEa, rebootuje
+> maszynê (!), wchodzi do Windowsa (!?), wrzuca dyskietkê, przegrywa  plik
+> (O_o), rebootuje maszynê raz jeszcze, wraca do Linuksa...
+>  ' - Proszê usi±¶æ, i zademonstrowaæ dzia³anie skryptu'
+>  Lekko mnie to oszo³omi³o...
+>
+> Pozdróvka,
+>
+> Q.
+
+ale to chyba nie by³ wasz serwer pocztowy?! ;)
+%
+>> bankomat blokooje karte czy cus takiego :) Ale to jest NIEMOZLIWE.
+>
+>Z¿era j±. Pó¼niej jest do odbioru w banq.
+
+Czasem przysly³aj± do domq.
+%
+> > Poszukaj w FAQ. By³o wiele razy.
+> A gdzie mo¿na znale¼æ FAQ?
+
+Jestes pewien, ze po odpowiedziach jakie otrzymales chcesz go
+przeczytac?
+%
+> Je¿eli bêdziesz wysok±, wyportowan± i ³adn± blondynk±, to mo¿e zwróci na
+
+A jak wogóle to co to za zwierz ta "wyportowana" blondynka? To
+jest jaka¶ nowa odmiana bez portów?
+%
+>
+> BTW tak off-topic: jaki dzisiaj jest dzieñ tygodnia? ¦roda?
+
+Niestety ju¿ czwartek. Kto¶ znowu r±bn±³ mi pó³ tygodnia, nawet nie
+zauwa¿y³em kiedy.
+%
+dowód przez zagro¿enie:
+"Mam to pañstwu udowodniæ?"
+dowód przez zadanie domowe:
+"Dowód przeprowadz± sobie pañstwo w domu"
+dowód przez oczywisto¶æ:
+"Dowód oczywisty"
+dowód przez trywialno¶æ:
+"Dowód trywialny"
+dowód przez analogiê:
+"Dowód analogiczny do poprzedniego"
+%
+> Widzisz facet ja po prostu czego¶ szukam a ty lubisz pogadaæ ( widzê po
+> postach na które nie wiadomo czemu odpowiadasz ) , jak nie masz tego co
+> potrzebujê - nie odpisuj .
+
+Widzisz facet ja po prostu wymagam jakiej¶ kultury od ludzi a ty lubisz
+brzydko cytowaæ w postach (co widzê po postach w których cytujesz),
+jak nie umiesz cytowaæ - nie odpowiadaj na posty.
+%
+>> Widzisz facet ja po prostu czego¶ szukam a ty lubisz pogadaæ ( widzê po
+>> postach na które nie wiadomo czemu odpowiadasz ) , jak nie masz tego co
+>> potrzebujê - nie odpisuj .
+>
+>Widzisz facet ja po prostu wymagam jakiej¶ kultury od ludzi a ty lubisz
+>brzydko cytowaæ w postach (co widzê po postach w których cytujesz),
+>jak nie umiesz cytowaæ - nie odpowiadaj na posty.
+
+Widzisz facet ja po prostu kocham czytaæ ludzi takich jak Kszych, od razu
+w g³owie wymy¶lam sobie mo¿liwy post, na który mogli odpowiedzieæ, i mam
+chwilowy ubaw (co widaæ po postach, na które odpisujê).
+Je¶li tego nie rozumiesz - nie irytuj siê.
+%
+>> Ma kto¶ do podes³ania dobry skaner portów pod Linuxa ?
+> apt-get install nmap
+to s± tylko trzy te skanery??
+%
+>> Frajera. Prosto w oczy.
+> Masz na mysli siebie?
+Tak. Zaufaj mi i patrz mi prosto w oczy.
+
+A teraz powtarzaj:
+Jeste¶ dzikiem.
+%
+>> nie czytam, dlatego przepraszam jezeli ten watek juz sie pojawil na grupie.
+>I w³a¶nie dlatego za karê nie odpowiem Ci na twoje pytanie. A wierz mi ¿e
+>znam dopowied¼.
+
+ To mi powiedz na ucho, nie powiem mu :)
+%
+
+Artur Skura <arturs@iidea.pl> zeznaje:
+> @@@@@@@@@@@@@@@@@@@@
+>                  @@
+>                 @@                              / v \
+>                @@
+>               @@                    / v \
+>          @@@@@@@@@
+>            @@
+>           @@
+>          @@
+>         @@  ###    #  #   #    #     ##    ##   ##  #     #
+>        @@   #  #   #  #   #    #    #     #    #  # #  #  #
+>       @@    ##     #  #   #    #     #    #    #  # #     #
+>       @@    ##     #  #   #    #     #    #    #  # #     #
+>      @@     #  #   #  #   #    #      #   #    #  # #     #
+>             ##      ##    ###  ###  ##  #  ##   ##  #     #
+
+      __.,gggd$$P'
+ggd$$$$$$$$$$$$P
+`Y$P""'    d$$P
+          d$$P__.
+      _.,d$$P""`
+     """d$$P d$'              d$',$P
+       d$$P d$'._    __  __  d$',$P  ___      __    __
+      d$$P d$'`"$b  d$' ,$P d$',$P d$P"'   ,gP""',gP""Yg ,$P"YgP"Y.
+     d$$P d$'  ,$P d$' ,$P d$',$P `Yb._    $$    $$  ,dP,$' ,$' ,$'
+    d$$P d$$ggdP'  Y$gdP' d$',$P     `Yb o `Yss. YbsdP',$' ,$' ,$'
+  .sssssssssssssssssssssssssssssssssd$P'
+
+Id¼ i nie grzesz wiêcej...
+
+met.
+%
+czy jesli skanujê jaki¶ IP i jest ten port otwarty, to znaczy, ¿e
+skanowany komputer jest prawdopodobnie w LAN?
+%
+Grzesiek Dabrowski <grzegorzd@go2.pl> zeznaje:
+> z ciekawo¶ci: sk±d pochodzi cytat w Twojej sygnaturce?? ;-)))
+Tekst zaczerpn±³em z jakiego¶ starego Top Secret.  By³a tam rubryka
+"Supery", w której publikowano rozmaite bzdurstwa nades³ane przez
+czytelników.  Tekst w ca³o¶ci prezentuje siê nastêpuj±co:
+
+Od niedawna jestem posiadaczem Amiga 500.  Jak zmie-
+niæ, lub rozmawiaæ z komputerem po polsku.  Proszê opi-
+saæ gry o informacji KICK BOXING.  Poszukujê gier grafiki
+zmienny filmu, lub rysunkowy a jaki bez Video.  Jak ³±czyæ
+ruchome zdania od filmy z programem jak w kinie.
+
+Nie mam pojêcia, kto i pod wp³ywem jakich ¶rodków go napisa³, ale
+chwyta za serce ;>
+
+met.
+%
+From: "miro" <miro82@poland.com>
+Newsgroups: alt.pl.comp.os.hacking
+Subject: Strona z Aktorkami,modelkami
+
+Czesc
+Szukam stron z ze zdjeciami aktorek , modelek itp chodzi mi o normalne
+zdjecia mog byc nude( tylko nie jakies zboczone przerobki)   niestey
+juz mnie powoli zaczyna to wkurw...aæ po pierwsze 80 % tych stron niby
+jest free a jednak nie jest a reszta jest do dupy po pare zdjec czy
+ktos zna jakas dobra strone  o tkiej tematyce czyli ze zdjeciami .
+
+zdolowany miro
+%
+
+> Jhesxê jqdyuz sxorq moztpyu iaecrydemqæ thkwy jmqhto toia.  Sxesyq¿
+> feijqmyudyu Bydkaiq dq eierduz fqhjoszy erea Eayudua je dys jhktduwe.
+
+Jhpurq rêtpyu iyê hepuzhpuæ pq zqayc¶ cq³oc (cq³oc?) toiayuc. Jxdn. :)
+
+> Ceml bfmpmêqalz tbfcbqnebjnavh zvrwfprz, qn fvê hcpua±æ wnx±¶
+> qlfgelohpwê an gemlfgh zrtnonwgnpu...  Fnz xbemlfgn³rz mr fgnertb Erq
+> Ungn an qjhfghcvêæqmvrfvêpvbzrtnonwgbjlz qlfxh...  J grw pujvyv (an glz
+> xbzchgremr), zbwn cneglpwn Yvahxfbjn zn fvrqrzfrg fvrqrzqmvrfv±g fvrqrz
+> zrtnonwgój v cbjbyv mnpmlan oenxbjnæ zv zvrwfpn :/  Btóyavr wnx puprfm
+> fvê onjvæ j KSerr, h¿ljnæ Tabzr v gnxvpu gnz, gemlfgn zrtn gb avrpb mn
+> zn³b... n ghgnw anjrg avr znz Tabzn.  Uzz, zhfmê pulon j xbñph pb¶
+> bqvafgnybjnæ.
+
+Jofih g rh¿kft zfzaltlt ahr qlza. Dpukvdz al¿ tv¿l ghqtvdhæ rpsrhzla
+tlnh, hsl tv¿l ifæ al¿ ahr, ¿l whyê npnh upl iêkgpl jojph³v zahyjgfæ.
+
+tlnh, hsl tv¿l ifæ al¿ ahr, ¿l whyê npnh upl iêkgpl jojph³v zahyjgfæ.
+
+> > > > Nkrv... :)
+> > > skn, tqpkrjq dfqv gtfc?
+> > G-g... c rqykpkgpgo?
+> Qs¿iwd deawdi wtvófsaeæ, dsfegdcwd axihc, d gdcq pyhdmi
+> qen± tvsfpiqc m neo ni repi¿c vsdam±dcaeæ...  :)
+
+Yfr qzienj wfhejo rfo± uwtgqjrd e utixyfbtbdrn
+wejhefrn, hed snh e yjo lwzud snj ewtezrnjr?
+
+> ...l azepx updknkp upopy yl MpZDl, upopy yl BYI-l,
+> atêæ yl vwldepc XZDTI, kp ohl k EZD-px, upopy yl
+> Rpzdtp, upopy k Hzcvmpynspx t xl³p Lelct ulvz
+> epcxtylw ;-O
+
+Dwdubqnd wr eb³r fr¶. :SS Gclvldm pld³hp rndcmê
+Dwdubqnd wr eb³r fr¶. :SS Gclvldm pld³hp rndcmê
+sudfrzdæ qd AW'ndfk c 20PE KGG. :S Zduvcwdwb
+vcnroqh, qrzb gcld³. ;)
+
+> Skoro uda³o mi siê zdekodowaæ (jak piszê
+> ni¿ej), to chyba nie jest ze mn± tak ¼le...
+
+Algorytm jest identyczny, tyle ¿e "w drug± stronê".
+
+> Jak nauczê siê _do koñca i porz±dnie_ programowaæ w c, to napiszê sobie
+> co¶ takiego.  Teraz pozostaje mi tylko korzystaæ z mojego beznadziejnie
+> prostego wrapperka shellowego do w³a¶ciwego programu.
+
+Chcesz moj± wersjê pod szklarniê? Kilka kB.
+%
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > > > Tak ;P
+> > > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > > Nie ;P
+> > > > > > > > > > > Nie ;P
+> > > > > > > > > > Nie ;P
+> > > > > > > > > Nie ;P
+> > > > > > > > > Nie ;P
+> > > > > > > > Nie ;P
+> > > > > > > Nie ;P
+> > > > > > Tak ;P
+> > > > > Nie ;P
+> > > > Nie ;P
+> > > Nie ;P
+> > Nie ;P
+> Nie ;P
+
+Nie ;P
+%
+metallo wrote:
+> {PPL Licensed Declaration}
+>
+> Artur Skura <arturs@iidea.pl> zeznaje:
+>> > Puff!  Ledwie Debiani¶ci Przestali Lawirowaæ Po¶ród Lokalnych Dictd,
+>> Phi, Lepiej Dobrze i Porz±dnie Lawirowaæ, ni¿ Pó³-Legalnie Debianiæ.
+> Pó³ Legalnie?!?  Dobrze Pomy¶l... Lekcewa¿±co Deklaruj±c Popularnego
+> Linuksa Debian Pó³ Legalnym Dajesz Przyk³ad Lamerom...  Debiani¶ci
+> Patrz±, Listy Downloaduj±...  Przystopuj Lepiej, Dobrze?
+
+Przestañ Lekkomy¶lnie Dupereliæ! Przecie¿ Ludzie Dobrze Pamiêtaj± Lakonizm
+Debiana!
+
+>> > Pracowicie Literki Dekoduj±c...  Powiniene¶ Lepiej Dog³êbnie Przemy¶leæ
+>> > Lansowan± Definicjê "Programu Leniwych Do Poczty" Lubianego Przez
+>> > Destruktorów...
+>> Proszê Lekcej i Dosadniej... Próbujê Listten Dekodowaæ Piêknie, Lecz Dupa.
+> Przestañ Lekcewa¿yæ Debiana!
+
+Przypominam: Linux != Debian!
+
+>> Pozdrowienia,
+> Pozdrawiam, Lecz Dementujê.
+
+Pozdrawiam,
+Lubi±cy Demokracjê - Artur
+%
+

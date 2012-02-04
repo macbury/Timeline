@@ -1,26 +1,25 @@
 - content_for :header do
   .btn-toolbar
-    %a.btn.pull-right.btn-primary#add_ticket{ href: "#" } Add Ticket
+    %a.btn.pull-right.btn-primary#add_ticket{ href: "#" }
+      %i.icon-plus-sign.icon-white
+      Add Ticket
     .btn-group{ data: { toggle: "buttons-checkbox" } }
-      = link_to "Done", "#", class: "btn btn-info", id: "done_space_button"
-      = link_to "Current", "#", class: "btn btn-info", id: "current_space_button"
-      = link_to "Pending", "#", class: "btn btn-info", id: "pending_space_button"
-      = link_to "IceBox", "#", class: "btn btn-info", id: "icebox_space_button"
+      = link_to t("views.done"), "#", class: "btn btn-info", id: "done_space_button"
+      = link_to t("views.current"), "#", class: "btn btn-info", id: "current_space_button"
+      = link_to t("views.icebox"), "#", class: "btn btn-info", id: "pending_space_button"
     .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
-        More
+      %a.btn.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        %i.icon-cog
+        Workspace
         %span.caret
       %ul.dropdown-menu
-        %li= link_to "Charts", "#"
+        %li= link_to "Enter distraction Free Mode", "#"
+        %li.divider
         %li= link_to "Settings", "#"
+        %li= link_to "Members", "#"
     .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
-        Project
-        %span.caret
-      %ul.dropdown-menu
-        %li= link_to "Settings", "#"
-    .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+      %a.btn.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
+        %i.icon-road
         Tickets
         %span.caret
       %ul.dropdown-menu

@@ -32,7 +32,7 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
     inner_height = space_height - @toolbar.height() - 5
     @space.height(space_height)
     @inner.height(inner_height)
-    @scroller.nanoScroller()
+    @update()
   
   width: (new_width) ->
     $(@el).css
@@ -40,11 +40,14 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
 
   addAll: =>
     @options.tickets.each(@addOne)
+  
+  update: => @scroller.nanoScroller()
 
   addOne: (ticket) =>
     view = new Timeline.Views.Tickets.TicketView({model : ticket})
+    view.bind "resize", => @update()
     $(@el).find(".end").before(view.render().el)
-    @scroller.nanoScroller()
+    
 
   render: =>
     $(@el).html(@template())

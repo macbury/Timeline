@@ -1,7 +1,7 @@
 Timeline.Views.Tickets ||= {}
 
 class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseSpace
-  spaceName: "Pending"
+  spaceName: "IceBox"
   buttonElement: "#pending_space_button"
 
   addOne: (ticket) =>

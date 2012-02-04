@@ -3,4 +3,18 @@
 
 en:
   application:
-    name: "#!"
+    name: "Rabbit Tracker"
+  actions:
+    save: "Save"
+    saving: "Saving..."
+    cancel: "Cancel"
+    destroy: "Destroy"
+    view_history: "View History"
+  views:
+    icebox: "IceBox"
+    done: Done
+    current: Current
+  ticket:
+    title_placeholder: "Enter ticket title here"
+    status:
+      start: "Start"

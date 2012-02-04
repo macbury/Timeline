@@ -12,13 +12,13 @@ test_functions =
     return @presence_validator(element, options) if message
     alert("implement this!")
     return
-    return options.message if options.with and !options.with.test(element.val())
-    return options.message if options.without and options.without.test(element.val())
+    return options.message if options.with and !options.with.test(element)
+    return options.message if options.without and options.without.test(element)
 
   numericality_validator: (element, options) ->
-    return I18n.t("errors.messages.blank") unless /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d*)?$/.test(element.val())
+    return I18n.t("errors.messages.blank") unless /^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d*)?$/.test(element)
 
-    if options.only_integer and !/^[+-]?\d+$/.test(element.val())
+    if options.only_integer and !/^[+-]?\d+$/.test(element)
       return options.messages.only_integer
 
     CHECKS =
@@ -30,18 +30,18 @@ test_functions =
 
     # options[check] may be 0 so we must check for undefined
     for check, operator of CHECKS when options[check]?
-      fn = new Function("return #{element.val()} #{operator} #{options[check]}")
+      fn = new Function("return #{element} #{operator} #{options[check]}")
       return options.messages[check] unless fn()
 
-    if options.odd and !(parseInt(element.val(), 10) % 2)
+    if options.odd and !(parseInt(element, 10) % 2)
       return options.messages.odd
 
-    if options.even and (parseInt(element.val(), 10) % 2)
+    if options.even and (parseInt(element, 10) % 2)
       return options.messages.even
 
   length_validator: (element, options) ->
     tokenizer = options.js_tokenizer || "split('')"
-    tokenized_length = new Function('element', "return (element.val().#{tokenizer} || '').length")(element)
+    tokenized_length = new Function('element', "return (element.#{tokenizer} || '').length")(element)
     CHECKS =
       is: '=='
       minimum: '>='
@@ -68,12 +68,12 @@ test_functions =
       return message
 
     if options.in
-      return options.message if element.val() in (o.toString() for o in options.in)
+      return options.message if element in (o.toString() for o in options.in)
 
     if options.range
       lower = options.range[0]
       upper = options.range[1]
-      return options.message if element.val() >= lower and element.val() <= upper
+      return options.message if element >= lower and element <= upper
 
   inclusion_validator: (element, options) ->
     message = @presence(element, options)
@@ -82,17 +82,17 @@ test_functions =
       return message
 
     if options.in
-      return if element.val() in (o.toString() for o in options.in)
+      return if element in (o.toString() for o in options.in)
       return options.message
 
     if options.range
       lower = options.range[0]
       upper = options.range[1]
-      return if element.val() >= lower and element.val() <= upper
+      return if element >= lower and element <= upper
       return options.message
 
   confirmation_validator: (element, options) ->
-    if element.val() != jQuery("##{element.attr('id')}_confirmation").val()
+    if element != jQuery("##{element.attr('id')}_confirmation")
       return options.message
 
 class Validator
@@ -106,7 +106,7 @@ class Validator
   valid: -> @errors.length == 0
   validate: ->
     @errors = {}
-    _.each @validator, (field, validators) =>
+    _.each @validator, (validators, field) =>
       @errors[field] = []
       _.each validators, (validator) =>
         validator_function = test_functions[validator.type]

@@ -1,5 +1,10 @@
 class Timeline.Models.Ticket extends Backbone.Model
   paramRoot: 'ticket'
+  errors: []
+
+  #validate: (attrs)->
+  #  validator = new Validator(attrs, "Ticket")
+  #  console.log(validator)
 
   defaults:
     title: ""

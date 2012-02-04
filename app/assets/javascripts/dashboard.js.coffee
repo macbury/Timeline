@@ -20,8 +20,6 @@ $(document).ready ->
   $('body').mousemove (event) ->
     mx = event.pageX
     my = event.pageY
-  
-  $("select").chosen();
 
   $('textarea').autoResize ->
     animate: true

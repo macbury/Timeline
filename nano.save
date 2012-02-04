@@ -1,0 +1,5 @@
+  SSLCACertificateFile /etc/apache2/ssl/PositiveSSLCA.crt
+  SSLCertificateKeyFile /etc/apache2/ssl/fb.oxtilo.pl.key
+  SSLCertificateFile /etc/apache2/ssl/fb_oxtilo_pl.crt
+
+
