@@ -8,6 +8,8 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
 
   initialize: ->
     @options.tickets.bind('add', @addOne)
+    @options.tickets.bind('reset', @addAll)
+    @addAll()
     @render()
   
   show: => 

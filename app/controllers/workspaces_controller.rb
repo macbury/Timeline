@@ -21,6 +21,7 @@ class WorkspacesController < ApplicationController
     @workspace = self.current_user.workspaces.new(params[:workspace])
 
     if @workspace.save
+      @workspace.users << self.current_user
       redirect_to @workspace, notice: 'Workspace was successfully created.'
     else
       render action: "new"

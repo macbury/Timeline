@@ -3,7 +3,7 @@
     %a.button{ href: "#" }= I18n.t("ticket.status.start")
     .split
     %a.avatar{ href: "#" }
-      %img{ src: "/assets/eye_inv.png" }/
+      %img{ src: "/none.jpg" }/
   %a.expand{ href: "#" } Expand
   %span.title= @ticket.get("title")
     

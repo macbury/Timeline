@@ -40,19 +40,21 @@ test_functions =
       return options.messages.even
 
   length_validator: (element, options) ->
-    tokenizer = options.js_tokenizer || "split('')"
+    element = '' unless element
+    tokenizer = "split('')"
     tokenized_length = new Function('element', "return (element.#{tokenizer} || '').length")(element)
+
     CHECKS =
       is: '=='
       minimum: '>='
       maximum: '<='
     blankOptions = {}
     blankOptions.message = if options.is
-      options.messages.is
+      I18n.t("errors.messages.wrong_length", { count: options.is })
     else if options.minimum
-      options.messages.minimum
+      I18n.t("errors.messages.too_short", { count: options.minimum })
 
-    message = @presence(element, blankOptions)
+    message = test_functions.presence_validator(element, blankOptions)
     if message
       return if options.allow_blank == true
       return message
@@ -114,6 +116,7 @@ class Validator
           @errors[field].push validator_function(@attributes[field], validator.options)
         else
           console.log "Undefined validator #{validator.type} for #{field}"
+       @errors[field] = _.uniq(@errors[field])
         
       
 window.Validator = Validator;

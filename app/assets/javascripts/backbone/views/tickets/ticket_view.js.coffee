@@ -6,30 +6,33 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
 
   events:
     'click form .save': 'save'
-    'click form .cancel': 'cancel'
+    'click form submit': 'save'
+    'click form .cancel': 'collapse'
+    'click .expand': 'expand'
+    'click .collapse': 'collapse'
   save: (e) ->
     @model.save({}, {
-      error: -> console.log "error"
+      error: => console.log "error"
+      success: => @collapse()
     })
     e.preventDefault()
-    #@$(".save").button('loading')
-    @collapse()
+    @$(".save").button('loading')
     
-  cancel: (e)->
-    e.preventDefault()
-    @collapse()
-    @model.destroy() if @model.isNew()
-  
+
   initialize: ->
     @model.bind "change:errors", => this.render()
     @model.bind "destroy", => $(@el).remove()
 
-  collapse: =>
+  collapse: (e) =>
+    e.preventDefault() if e
     @block.hide()
     @list.show()
+    @model.destroy() if @model.isNew()
     @trigger("resize")
 
-  expand: =>
+
+  expand: (e) =>
+    e.preventDefault() if e
     @block.show()
     @list.hide()
     @trigger("resize")

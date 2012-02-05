@@ -8,3 +8,5 @@ class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseSpa
     if ticket.isNew()
       super(ticket)
       @show()
+    else
+      super(ticket)

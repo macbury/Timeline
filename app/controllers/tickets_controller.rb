@@ -3,13 +3,13 @@ class TicketsController < ApplicationController
   # GET /tickets
   # GET /tickets.json
   def index
-    @tickets = Ticket.all
+    @tickets = @workspace.tickets.all
   end
 
   # GET /tickets/1
   # GET /tickets/1.json
   def show
-    @ticket = Ticket.find(params[:id])
+    @ticket = @workspace.tickets.find(params[:id])
 
     respond_to do |format|
       format.json { render json: @ticket }
@@ -19,8 +19,7 @@ class TicketsController < ApplicationController
   # POST /tickets
   # POST /tickets.json
   def create
-    @ticket = Ticket.new(params[:ticket])
-
+    @ticket = @workspace.tickets.new(params[:ticket])
     respond_to do |format|
       if @ticket.save
         format.json { render json: @ticket, status: :created, location: [@workspace, @ticket] }
@@ -33,7 +32,7 @@ class TicketsController < ApplicationController
   # PUT /tickets/1
   # PUT /tickets/1.json
   def update
-    @ticket = Ticket.find(params[:id])
+    @ticket = @workspace.tickets.find(params[:id])
 
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
@@ -47,7 +46,7 @@ class TicketsController < ApplicationController
   # DELETE /tickets/1
   # DELETE /tickets/1.json
   def destroy
-    @ticket = Ticket.find(params[:id])
+    @ticket = @workspace.tickets.find(params[:id])
     @ticket.destroy
 
     respond_to do |format|
@@ -57,6 +56,6 @@ class TicketsController < ApplicationController
 
   protected
     def load_project!
-      @workspace = Workspace.find(params[:workspace_id])
+      @workspace = self.current_user.workspaces.find(params[:workspace_id])
     end
 end
