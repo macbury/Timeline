@@ -4,6 +4,9 @@ class Timeline.Routers.TicketsRouter extends Backbone.Router
     @tickets.url = options.url
     @tickets.fetch()
 
+    @users = new Timeline.Collections.UsersCollection()
+    @users.reset options.users
+    console.log @users
     window.tickets = @tickets
 
   routes:

@@ -29,12 +29,15 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @list.show()
     @model.destroy() if @model.isNew()
     @trigger("resize")
-
+  
+  focus: ->
+    @form.find(".title").focus()
 
   expand: (e) =>
     e.preventDefault() if e
     @block.show()
     @list.hide()
+    @focus()
     @trigger("resize")
 
   render: =>

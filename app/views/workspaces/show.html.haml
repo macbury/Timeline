@@ -28,7 +28,10 @@
 - content_for :footer do
   :javascript
     $(document).ready(function(){
-      window.timeline = new Timeline.Routers.TicketsRouter({ url: #{workspace_tickets_path( workspace_id: @workspace.id).inspect.html_safe} });
+      window.timeline = new Timeline.Routers.TicketsRouter({ 
+        users: #{render partial: "users/user.json.builder", collection: @workspace.users},
+        url: #{workspace_tickets_path( workspace_id: @workspace.id).inspect.html_safe} 
+      });
       Backbone.history.start();
     });
 

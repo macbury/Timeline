@@ -5,8 +5,5 @@ class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseSpa
   buttonElement: "#pending_space_button"
 
   addOne: (ticket) =>
-    if ticket.isNew()
-      super(ticket)
-      @show()
-    else
-      super(ticket)
+    super(ticket)
+    @show() if ticket.isNew()
