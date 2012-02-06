@@ -6,21 +6,29 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
   spaceName: "Empty..."
   buttonElement: "#none"
 
+  events:
+    "click .toolbar .act a.hide": "hide"
+
   initialize: ->
+    @users = @options.users
     @options.tickets.bind('add', @addOne)
     @options.tickets.bind('reset', @addAll)
-    @addAll()
     @render()
+
   
   show: => 
     @toggleButton.addClass("active")
     $(@el).show()
     @scroller.nanoScroller()
     @trigger("show")
-  hide: => 
+    $.cookie("space_#{@spaceName}", 1)
+
+  hide: (e) => 
     $(@el).hide()
     @toggleButton.removeClass("active")
     @trigger("hide")
+    $.cookie("space_#{@spaceName}", null)
+    e.preventDefault() if e
   
   visible: => !$(@el).is(":hidden")
 
@@ -39,17 +47,16 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
   width: (new_width) ->
     $(@el).css
       width: "#{new_width}%"
-
-  addAll: =>
-    @options.tickets.each(@addOne)
   
+  tickets: -> false
+  addAll: => @tickets().each(@addOne) if @tickets()
   update: => @scroller.nanoScroller()
 
   addOne: (ticket) =>
-    view = new Timeline.Views.Tickets.TicketView({model : ticket})
+    view = new Timeline.Views.Tickets.TicketView(model : ticket, users: @users)
     view.bind "resize", => @update()
     $(@el).find(".end").before(view.render().el)
-    
+    view.afterInsert()
 
   render: =>
     $(@el).html(@template())
@@ -64,8 +71,12 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
       @toggle()
       e.preventDefault()
       false
-    
-    @hide()
-    #@addAll()
+
+    @addAll()
+
+    if $.cookie("space_#{@spaceName}")
+      @show()
+    else
+      @hide()
 
     return this

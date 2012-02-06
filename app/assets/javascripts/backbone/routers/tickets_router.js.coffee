@@ -6,7 +6,6 @@ class Timeline.Routers.TicketsRouter extends Backbone.Router
 
     @users = new Timeline.Collections.UsersCollection()
     @users.reset options.users
-    console.log @users
     window.tickets = @tickets
 
   routes:
@@ -21,7 +20,7 @@ class Timeline.Routers.TicketsRouter extends Backbone.Router
     $("#tickets").html(@view.render().el)
 
   index: ->
-    @spaces_view = new Timeline.Views.Tickets.Spaces(tickets: @tickets)
+    @spaces_view = new Timeline.Views.Tickets.Spaces(tickets: @tickets, users: @users)
 
   show: (id) ->
     ticket = @tickets.get(id)

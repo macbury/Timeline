@@ -1,1 +1,1 @@
-json.(user, :id, :email)
+json.(user, :id, :login, :gravatar_url)

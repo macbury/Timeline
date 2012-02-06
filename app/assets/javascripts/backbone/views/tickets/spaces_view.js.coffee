@@ -9,6 +9,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
   initialize: (options) ->
     @spaces = []
     @tickets = options.tickets
+    @users = options.users
     $(window).resize => @resize()
     @render()
 
@@ -18,21 +19,21 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     e.preventDefault()
 
   addPending: =>
-    @pendingSpace = new Timeline.Views.Tickets.PendingSpace(tickets: @tickets)
+    @pendingSpace = new Timeline.Views.Tickets.PendingSpace(tickets: @tickets, users: @users)
     @pendingSpace.bind "show", => @resize()
     @pendingSpace.bind "hide", => @resize()
     @tr.append(@pendingSpace.render().el)
     @spaces.push @pendingSpace
 
   addCurrent: =>
-    @currentSpace = new Timeline.Views.Tickets.CurrentSpace(tickets: @tickets)
+    @currentSpace = new Timeline.Views.Tickets.CurrentSpace(tickets: @tickets, users: @users)
     @currentSpace.bind "show", => @resize()
     @currentSpace.bind "hide", => @resize()
     @tr.append(@currentSpace.render().el)
     @spaces.push @currentSpace
 
   addDone: =>
-    @doneSpace = new Timeline.Views.Tickets.DoneSpace(tickets: @tickets)
+    @doneSpace = new Timeline.Views.Tickets.DoneSpace(tickets: @tickets, users: @users)
     @doneSpace.bind "show", => @resize()
     @doneSpace.bind "hide", => @resize()
     @tr.append(@doneSpace.render().el)
@@ -55,9 +56,11 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @header = $(@el).find(".header")
     @tr = $(@el).find("#spaces tr")
     @tr.empty()
-    @addPending()
-    @addCurrent()
+    
     @addDone()
+    @addCurrent()
+    @addPending()
+
     @resize()
 
     @tr.sortable

@@ -1,6 +1,8 @@
 .list
   .pull-right
-    %a.button{ href: "#" }= I18n.t("ticket.status.start")
+    %a.button.accept{ href: "#" }= I18n.t("ticket.status.accepted")
+    %a.button.reject{ href: "#" }= I18n.t("ticket.status.rejected")
+    %a.button.status{ href: "#" }
     .split
     %a.avatar{ href: "#" }
       %img{ src: "/none.jpg" }/
@@ -15,21 +17,20 @@
     .field.divider
       %a.btn.btn-primary.small.save{ href: "#" }= I18n.t("actions.save")
       %a.btn.small.cancel{ href: "#" }= I18n.t("actions.cancel")
-      - unless @ticket.isNew()
-        %a.btn.btn-danger.small{ href: "#" }= I18n.t("actions.destroy")
-        %a.btn.btn-info.small{ href: "#" }= I18n.t("actions.view_history")
+      %a.btn.btn-danger.small.destroy{ href: "#" }= I18n.t("actions.destroy")
     .field
-      %select
-
+      %select{ name: "requested_by_id" }
+        - for user in @users.models
+          %option{ value: user.get('id') }= user.get("login")
       %span.hint requested this ticket on (now)
     .field.divider
-      %select
+      %select{ name: "owned_by_id" }
+        - for user in @users.models
+          %option{ value: user.get('id') }= user.get("login")
       %span.hint own this ticket
-    .field
-      %label Labels:
-      %input{ type: "text", placeholder: "Enter labels here" }
       
     .field
       %label Description:
-      %textarea{ rows: 5 }
+      %textarea{ rows: 5, name: "description" }
+
 .clear

@@ -3,6 +3,8 @@ Timeline::Application.routes.draw do
     resources :tickets
   end
 
+  resource :account
+
   devise_for :users
 
   # The priority is based upon order of creation:

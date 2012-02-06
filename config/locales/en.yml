@@ -11,10 +11,15 @@ en:
     destroy: "Destroy"
     view_history: "View History"
   views:
-    icebox: "IceBox"
+    backlog: BackLog
     done: Done
     current: Current
   ticket:
     title_placeholder: "Enter ticket title here"
     status:
-      start: "Start"
+      pending: "Start"
+      started: "Finish"
+      finished: "Deliver"
+      accepted: "Accept"
+      rejected: "Reject"
+      delivered: "Fix"

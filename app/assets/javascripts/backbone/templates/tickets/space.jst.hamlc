@@ -1,11 +1,12 @@
 .space
   .toolbar
     .move &nbsp;
-    %span.title Loading...
     .act
       %a.expand{ href: "#" } Expand all
       %a.collapse{ href: "#" } Collapse all
-      %a.close{ href: "#" } Close
+      %a.hide{ href: "#" } Close
+    %span.title Loading...
+  .clear
   .inner
     .nano
       .content

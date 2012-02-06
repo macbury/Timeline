@@ -1,4 +1,5 @@
 class TicketsController < ApplicationController
+  before_filter :authenticate_user!
   before_filter :load_project!
   # GET /tickets
   # GET /tickets.json
@@ -11,9 +12,7 @@ class TicketsController < ApplicationController
   def show
     @ticket = @workspace.tickets.find(params[:id])
 
-    respond_to do |format|
-      format.json { render json: @ticket }
-    end
+    render partial: @ticket
   end
 
   # POST /tickets
@@ -22,9 +21,9 @@ class TicketsController < ApplicationController
     @ticket = @workspace.tickets.new(params[:ticket])
     respond_to do |format|
       if @ticket.save
-        format.json { render json: @ticket, status: :created, location: [@workspace, @ticket] }
+        format.json { render partial: @ticket, status: :created, location: [@workspace, @ticket] }
       else
-        format.json { render json: @ticket.errors, status: :unprocessable_entity }
+        format.json { render partial: @ticket.errors, status: :unprocessable_entity }
       end
     end
   end
