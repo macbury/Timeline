@@ -105,6 +105,15 @@
     min-height: 24px;
     line-height: 24px;
 
+    &.restart {
+      border-top: 1px solid lighten(#a5243e, 60%);
+      background-color: lighten(#a5243e, 50%);
+      border-bottom: 1px solid lighten(#a5243e, 45%);
+      &:hover {
+        background-color: lighten(#a5243e, 55%);
+      }
+    }
+
     &.accepted {
       background-color: #DAEBCF;
       border-top: 1px solid #EEFCE2;

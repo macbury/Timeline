@@ -8,6 +8,7 @@ class Timeline.Models.Ticket extends Backbone.Model
   Delivered = 4
   Accepted = 5
   Rejected = 6
+  Restart = 7
 
   #validate: (attrs)->
   #  validator = new Validator(attrs, "Ticket")
@@ -25,7 +26,8 @@ class Timeline.Models.Ticket extends Backbone.Model
   finish:   -> @set(status: Finished)
   deliver:  -> @set(status: Delivered)
   accept:   -> @set(status: Accepted)
-  reject:   -> @set(status: Rejected)
+  reject:   -> @set(status: Restart)
+  restart:  -> @set(status: Started)
 
   isDelivered: -> @get("status") == Delivered
 
@@ -37,6 +39,7 @@ class Timeline.Models.Ticket extends Backbone.Model
       when Delivered then "delivered"
       when Accepted then "accepted"
       when Rejected then "rejected"
+      when Restart then "restart"
       else "started"
     
 
@@ -45,7 +48,7 @@ class Timeline.Models.Ticket extends Backbone.Model
       when Pending then @start()
       when Started then @finish()
       when Finished then @deliver()
-      when Rejected then @pending()
+      when Rejected then @restart()
       else @start()
 
 class Timeline.Collections.TicketsCollection extends Backbone.Collection
