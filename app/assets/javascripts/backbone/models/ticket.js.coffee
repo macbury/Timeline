@@ -10,6 +10,7 @@ class Timeline.Models.Ticket extends Backbone.Model
   Rejected = 6
   Restart = 7
 
+  currentSpace: null
   #validate: (attrs)->
   #  validator = new Validator(attrs, "Ticket")
   #  console.log(validator)

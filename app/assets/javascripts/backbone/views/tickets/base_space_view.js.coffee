@@ -17,10 +17,12 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
     @render()
   
   have: (ticket) =>
-    @tickets().filter((at) -> ticket.cid == at.cid).length > 0
+    @tickets().filter((at) => ticket.cid == at.cid && ticket.currentSpace != @spaceName).length > 0
 
   bindSpace: (ticket) =>
-    @addView(ticket.view) if @have ticket 
+    if @have ticket 
+      ticket.currentSpace = @spaceName
+      @addView(ticket.view) 
 
   show: => 
     @toggleButton.addClass("active")
