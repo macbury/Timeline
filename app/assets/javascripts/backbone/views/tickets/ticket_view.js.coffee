@@ -38,7 +38,8 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @model.bind "change:title", => @list.find(".title").text(@model.get("title"))
     @model.bind "change:status", => @renderStatus()
     @model.bind "destroy", => $(@el).remove()
-
+    @model.view = this
+    
   setOwner: ->
     owner = @users.get(@model.get("owned_by_id"))
     if owner

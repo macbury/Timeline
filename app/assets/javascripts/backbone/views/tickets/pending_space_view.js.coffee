@@ -4,7 +4,7 @@ class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseSpa
   spaceName: I18n.t("views.backlog")
   buttonElement: "#pending_space_button"
 
-  tickets: -> @options.tickets
+  tickets: -> @options.tickets.backLog()
 
   addOne: (ticket) =>
     super(ticket)

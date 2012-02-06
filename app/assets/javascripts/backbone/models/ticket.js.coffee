@@ -29,6 +29,10 @@ class Timeline.Models.Ticket extends Backbone.Model
   reject:   -> @set(status: Restart)
   restart:  -> @set(status: Started)
 
+  isBackLog: -> _.include([Pending, Rejected, Restart], @get('status')) || @isNew() 
+  isCurrent: -> _.include([Started, Finished, Delivered], @get('status')) && !@isNew()
+  isDone: -> _.include([Accepted], @get('status')) && !@isNew()
+
   isDelivered: -> @get("status") == Delivered
 
   status: ->
@@ -53,5 +57,12 @@ class Timeline.Models.Ticket extends Backbone.Model
 
 class Timeline.Collections.TicketsCollection extends Backbone.Collection
   model: Timeline.Models.Ticket
-  #url: '/tickets'
+  
+  done: -> 
+    @filter (ticket) -> ticket.isDone()
+  current: -> 
+    @filter (ticket) -> ticket.isCurrent()
+  backLog: -> 
+    @filter (ticket) -> ticket.isBackLog()
+
 

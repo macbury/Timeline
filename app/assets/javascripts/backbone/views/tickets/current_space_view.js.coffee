@@ -4,5 +4,4 @@ class Timeline.Views.Tickets.CurrentSpace extends Timeline.Views.Tickets.BaseSpa
   spaceName: I18n.t("views.current")
   buttonElement: "#current_space_button"
 
-  addOne: (ticket) =>
-    false
+  tickets: -> @options.tickets.current()
