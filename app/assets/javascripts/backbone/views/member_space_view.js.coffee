@@ -1,7 +1,24 @@
 Timeline.Views.Tickets ||= {}
 
-class Timeline.Views.Tickets.DoneSpace extends Timeline.Views.Tickets.BaseTicketSpace
-  spaceName: I18n.t("views.done")
-  buttonElement: "#done_space_button"
+class Timeline.Views.MemberSpace extends Timeline.Views.Tickets.BaseSpace
+  spaceName: I18n.t("views.members")
+  buttonElement: "#members_button"
 
-  tickets: -> @options.tickets.done()
+  initialize: ->
+    @users = @options.users
+    @users.bind('add', @addOne)
+    @users.bind('reset', @render)
+    @render()
+
+  addAll: => _.each(@users.models, (user) => @addOne(user))
+
+  addOne: (user) =>
+    view = new Timeline.Views.Members.MemberView(model : user)
+    view.render()
+    @addView view
+
+  render: =>
+    super
+    @addAll()
+    console.log @users
+    return this

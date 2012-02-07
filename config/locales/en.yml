@@ -14,6 +14,7 @@ en:
     backlog: BackLog
     done: Done
     current: Current
+    members: Members
   ticket:
     title_placeholder: "Enter ticket title here"
     status:

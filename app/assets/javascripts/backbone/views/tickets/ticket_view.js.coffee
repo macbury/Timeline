@@ -84,6 +84,8 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
   updateUI: (e) =>
     @list.find('.info.feature').popover title: @model.get("title"), content: @model.get("description")
   
+  highlight: (e) => @list.effect("highlight", {}, 500)
+
   reset_form: =>
     @setErrors({})
     @form.find(":input, select").each (index, input) =>

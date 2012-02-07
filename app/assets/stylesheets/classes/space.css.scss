@@ -1,7 +1,12 @@
 .spaces {
+  overflow-x: auto;
   $spaces_radius: 4px;
   $space_height: 300px;
   width: 100%;
+
+  table {
+    width: 100%;
+  }
 
   .placeholder {
     border: 2px dashed #ccc;
@@ -95,6 +100,23 @@
         height: 202px;
         background: #AEB6B9 image-url("dropzone.png") repeat-x top;
       }
+    }
+  }
+
+  .member {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid white;
+    min-height: 32px;
+    height: 32px;
+    line-height: 32px;
+    .avatar {
+      float: left;
+      margin-right: 5px;
+      margin-left: 1px;
+      border-radius: 5px;
+      width: 32px;
+      height: 32px;
     }
   }
 

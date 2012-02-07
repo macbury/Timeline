@@ -1,0 +1,2 @@
+%img.avatar{ src: @user.get('gravatar_url') }/
+%a{ href: "#"}= @user.get("login")

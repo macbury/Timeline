@@ -17,31 +17,30 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
   refresh: (e) => 
     e.preventDefault()
     @tickets.fetch()
+
   addTicket: (e) =>
     t = new Timeline.Models.Ticket
     @tickets.add t
     e.preventDefault()
 
+  registerSpace: (view) =>
+    view.bind "show", => @resize()
+    view.bind "hide", => @resize()
+    @tr.append(view.render().el)
+    @spaces.push view
+
   addPending: =>
     @pendingSpace = new Timeline.Views.Tickets.PendingSpace(tickets: @tickets, users: @users)
-    @pendingSpace.bind "show", => @resize()
-    @pendingSpace.bind "hide", => @resize()
-    @tr.append(@pendingSpace.render().el)
-    @spaces.push @pendingSpace
-
+    @registerSpace(@pendingSpace)
   addCurrent: =>
     @currentSpace = new Timeline.Views.Tickets.CurrentSpace(tickets: @tickets, users: @users)
-    @currentSpace.bind "show", => @resize()
-    @currentSpace.bind "hide", => @resize()
-    @tr.append(@currentSpace.render().el)
-    @spaces.push @currentSpace
-
+    @registerSpace(@currentSpace)
   addDone: =>
     @doneSpace = new Timeline.Views.Tickets.DoneSpace(tickets: @tickets, users: @users)
-    @doneSpace.bind "show", => @resize()
-    @doneSpace.bind "hide", => @resize()
-    @tr.append(@doneSpace.render().el)
-    @spaces.push @doneSpace
+    @registerSpace(@doneSpace)
+  addMembers: =>
+    @membersSpace = new Timeline.Views.MemberSpace(users: @users)
+    @registerSpace(@membersSpace)
 
   resize: ->
     header_height = @header.height()
@@ -64,6 +63,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @addDone()
     @addCurrent()
     @addPending()
+    @addMembers()
 
     @resize()
 

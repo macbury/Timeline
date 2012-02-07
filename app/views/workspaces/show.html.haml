@@ -17,7 +17,7 @@
         %li= link_to "Enter distraction Free Mode", "#"
         %li.divider
         %li= link_to "Settings", "#"
-        %li= link_to "Members", "#"
+        %li= link_to "Members", "#", id: "members_button"
     .btn-group
       %a.btn.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
         %i.icon-road
@@ -39,6 +39,7 @@
       Backbone.history.start();
     });
 
-%table.spaces#spaces
-  %tr
-    %td Loading... Please Wait...
+.spaces
+  %table#spaces
+    %tr
+      %td Loading... Please Wait...
