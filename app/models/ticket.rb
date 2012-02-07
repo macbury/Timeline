@@ -8,7 +8,7 @@ class Ticket < ActiveRecord::Base
 
   belongs_to :workspace
 
-  validates :title, presence: true, length: { minimum: 2, maximum: 64 }
+  validates :title, presence: true, length: { minimum: 2, maximum: 128 }
   validates :description, length: { maximum: 1024 }
 
   attr_protected :workspace_id

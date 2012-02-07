@@ -1,3 +1,4 @@
+require "csv"
 class TicketsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :load_project!
@@ -5,6 +6,10 @@ class TicketsController < ApplicationController
   # GET /tickets.json
   def index
     @tickets = @workspace.tickets.all
+    respond_to do |format|
+      format.json
+      format.csv { export_to_csv @tickets }
+    end
   end
 
   # GET /tickets/1
@@ -23,7 +28,7 @@ class TicketsController < ApplicationController
       if @ticket.save
         format.json { render partial: @ticket, status: :created, location: [@workspace, @ticket] }
       else
-        format.json { render partial: @ticket.errors, status: :unprocessable_entity }
+        format.json { render json: @ticket.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,5 +61,17 @@ class TicketsController < ApplicationController
   protected
     def load_project!
       @workspace = self.current_user.workspaces.find(params[:workspace_id])
+    end
+
+    def export_to_csv(tickets)
+      csv_string = CSV.generate do |csv| 
+        csv << ["ID", "Title", "Description"] 
+        tickets.each do |ticket| 
+          csv << [ticket.id, ticket.title, ticket.description] 
+        end 
+      end 
+      send_data csv_string, 
+                :type => 'text/csv; charset=iso-8859-1; header=present', 
+                :disposition => "attachment; filename=tickets.csv" 
     end
 end

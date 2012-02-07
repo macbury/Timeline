@@ -11,9 +11,6 @@ class Timeline.Models.Ticket extends Backbone.Model
   Restart = 7
 
   currentSpace: null
-  #validate: (attrs)->
-  #  validator = new Validator(attrs, "Ticket")
-  #  console.log(validator)
 
   defaults:
     title: ""

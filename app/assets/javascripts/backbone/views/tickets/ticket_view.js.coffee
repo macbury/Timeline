@@ -15,17 +15,43 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     'click form .cancel': 'collapse'
     'click .expand': 'expand'
     'click .collapse': 'collapse'
+  
+  setErrors: (errors) =>
+    fields = @form.find(".field")
+    
+    fields.removeClass("control-group")
+    fields.removeClass("error")
+    fields.find(".help-inline").remove()
+
+    @form.find(":input").each (index, input) =>
+      input = $(input)
+      name = input.attr("name")
+      field_errors = errors[name]
+      if field_errors
+        field_div = input.parents(".field")
+        field_div.addClass("control-group").addClass("error")
+        field_div.append("<span class='help-inline'>#{field_errors.join(", ")}</span>")
 
   save: (e) ->
     vals = {}
+    save_btn = @form.find(".save")
+    save_btn.button('loading')
     @form.find(":input").each (index, input) =>
       input = $(input)
       name = input.attr("name")
       vals[name] = input.val() if name
-
-    @model.save(vals, {
-      error: (rsp) => console.log rsp
-      success: => @collapse()
+    
+    new_model = @model.clone()
+    new_model.url = @model.url()
+    new_model.save(vals, {
+      error: (model, rsp) => 
+        @setErrors(JSON.parse(rsp.responseText))
+        save_btn.button('reset')
+      success: => 
+        save_btn.button('reset')
+        @model.set new_model.attributes
+        @setErrors({})
+        @collapse()
     })
     e.preventDefault()
     
@@ -51,11 +77,11 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @block.hide()
     @list.show()
     @destroy() if @model.isNew()
-    @model.set @model.previousAttributes() 
     @reset_form()
     @trigger("resize")
   
   reset_form: =>
+    @setErrors({})
     @form.find(":input, select").each (index, input) =>
       input = $(input)
       input.val(@model.get(input.attr("name")))
