@@ -18,7 +18,8 @@
       .navbar
         .navbar-inner
           .container-fluid
-            = link_to t("application.name"), root_url, class: "brand"
+            = link_to root_url, class: "brand" do
+              = t("application.name")
             - if user_signed_in?
               %ul.nav
                 %li.dropdown

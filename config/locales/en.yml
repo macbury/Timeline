@@ -3,7 +3,7 @@
 
 en:
   application:
-    name: "Rabbit Tracker"
+    name: "Tickweet"
   actions:
     save: "Save"
     saving: "Saving..."
