@@ -14,6 +14,9 @@ $(document).ready ->
 
   $('#notifications').tooltip('show')
 
+  Notificon("10", { favicon: "/favicon.png" })
+
+
   updateCursorCallback = ->
     cursor.css
       left: "#{mx+16}px"
