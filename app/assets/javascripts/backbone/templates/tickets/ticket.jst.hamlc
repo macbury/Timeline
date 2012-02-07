@@ -8,7 +8,9 @@
       %img{ src: "/none.jpg" }/
   %i.icon.icon-info-sign
   %a.expand{ href: "#" } Expand
-  %span.title= @ticket.get("title")
+  .title
+    .info.feature &nbsp;
+    %span= @ticket.get("title")
     
 .block
   %a.collapse{ href: "#" } Collapse

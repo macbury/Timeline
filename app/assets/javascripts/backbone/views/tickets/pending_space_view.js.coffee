@@ -1,6 +1,6 @@
 Timeline.Views.Tickets ||= {}
 
-class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseSpace
+class Timeline.Views.Tickets.PendingSpace extends Timeline.Views.Tickets.BaseTicketSpace
   spaceName: I18n.t("views.backlog")
   buttonElement: "#pending_space_button"
 

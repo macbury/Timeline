@@ -61,8 +61,9 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @model.bind "change:errors", => this.render()
     @model.bind "change:errors", => this.render()
     @model.bind "change:owned_by_id", => @setOwner()
-    @model.bind "change:title", => @list.find(".title").text(@model.get("title"))
+    @model.bind "change:title", => @list.find(".title span").text(@model.get("title"))
     @model.bind "change:status", => @renderStatus()
+    @model.bind "change", => @updateUI()
     @model.bind "destroy", => $(@el).remove()
     @model.view = this
     
@@ -79,6 +80,9 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @destroy() if @model.isNew()
     @reset_form()
     @trigger("resize")
+
+  updateUI: (e) =>
+    @list.find('.info.feature').popover title: @model.get("title"), content: @model.get("description")
   
   reset_form: =>
     @setErrors({})
@@ -136,8 +140,8 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @reset_form()
     @renderStatus()
     @setOwner()
-
-    @form.find("textarea").elastic()
+    @updateUI()
+    #@form.find("textarea").elastic()
 
     if @model.isNew()
       @expand()

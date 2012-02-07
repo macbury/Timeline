@@ -1,8 +1,9 @@
 - content_for :header do
   .btn-toolbar
-    %a.btn.pull-right.btn-primary#add_ticket{ href: "#" }
-      %i.icon-plus-sign.icon-white
-      Add Ticket
+    .btn-group.pull-right
+      %a.btn.btn-primary#add_ticket{ href: "#" }
+        %i.icon-plus-sign.icon-white
+        Add Ticket
     .btn-group{ data: { toggle: "buttons-checkbox" } }
       = link_to t("views.done"), "#", class: "btn btn-info", id: "done_space_button"
       = link_to t("views.current"), "#", class: "btn btn-info", id: "current_space_button"
@@ -23,6 +24,7 @@
         Tickets
         %span.caret
       %ul.dropdown-menu
+        %li= link_to "Refresh", workspace_path(@workspace), id: "refresh"
         %li= link_to "Settings", "#"
         %li.divider
         %li= link_to "Download as CSV", workspace_tickets_path(@workspace, format: :csv)

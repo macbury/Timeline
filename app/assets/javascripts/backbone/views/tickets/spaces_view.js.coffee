@@ -5,6 +5,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
 
   events:
     "click #add_ticket": "addTicket"
+    "click #refresh": "refresh"
 
   initialize: (options) ->
     @spaces = []
@@ -12,7 +13,10 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @users = options.users
     $(window).resize => @resize()
     @render()
-
+  
+  refresh: (e) => 
+    e.preventDefault()
+    @tickets.fetch()
   addTicket: (e) =>
     t = new Timeline.Models.Ticket
     @tickets.add t

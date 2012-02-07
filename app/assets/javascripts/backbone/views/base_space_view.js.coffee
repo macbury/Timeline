@@ -11,18 +11,7 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
 
   initialize: ->
     @users = @options.users
-    @options.tickets.bind('add', @addOne)
-    @options.tickets.bind('change:status', @bindSpace)
-    @options.tickets.bind('reset', @addAll)
     @render()
-  
-  have: (ticket) =>
-    @tickets().filter((at) => ticket.cid == at.cid && ticket.currentSpace != @spaceName).length > 0
-
-  bindSpace: (ticket) =>
-    if @have ticket 
-      ticket.currentSpace = @spaceName
-      @addView(ticket.view) 
 
   show: => 
     @toggleButton.addClass("active")
@@ -56,21 +45,13 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
     $(@el).css
       width: "#{new_width}%"
   
-  tickets: -> false
-  addAll: => _.each(@tickets(), (ticket) => @addOne(ticket))
   update: => @scroller.nanoScroller()
 
   addView: (view) =>
     view.unbind "resize"
     view.bind "resize", => @update()
     $(@el).find(".end").before(view.el)
-    view.afterInsert()
-
-  addOne: (ticket) =>
-    return false unless @have ticket
-    view = new Timeline.Views.Tickets.TicketView(model : ticket, users: @users)
-    view.render()
-    @addView view
+    view.afterInsert() if view.afterInsert
 
   render: =>
     $(@el).html(@template())
@@ -85,8 +66,6 @@ class Timeline.Views.Tickets.BaseSpace extends Backbone.View
       @toggle()
       e.preventDefault()
       false
-
-    @addAll()
 
     if $.cookie("space_#{@spaceName}")
       @show()
