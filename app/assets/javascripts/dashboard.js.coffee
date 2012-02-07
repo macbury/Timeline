@@ -1,5 +1,6 @@
 $(document).ready ->
   $('.dropdown-toggle').dropdown()
+  $('select').chosen()
   cursor = $('.cursor')
   mx = 0
   my = 0
@@ -7,12 +8,11 @@ $(document).ready ->
     mx = event.pageX
     my = event.pageY
 
-  $('textarea').autoResize ->
-    animate: true
-    animateDuration: 250
-    extraSpace: 80,
-    animateCallback: -> $(window).resize()
-      
+  $('#notifications').tooltip
+    title: "3 notifications"
+    placement: "bottom"
+
+  $('#notifications').tooltip('show')
 
   updateCursorCallback = ->
     cursor.css
@@ -20,7 +20,8 @@ $(document).ready ->
       top: "#{my+16}px"
   
   timer = null
-  $("body").ajaxStart -> 
+  $("body").ajaxStart ->
+    updateCursorCallback()
     cursor.show()
     timer = setInterval(updateCursorCallback, 50)
   $('body').ajaxStop -> 

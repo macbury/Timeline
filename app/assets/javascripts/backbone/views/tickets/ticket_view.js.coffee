@@ -143,6 +143,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @renderStatus()
     @setOwner()
     @updateUI()
+
     #@form.find("textarea").elastic()
 
     if @model.isNew()

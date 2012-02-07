@@ -1,96 +1,92 @@
-/*
- * jQuery autoResize (textarea auto-resizer)
- * @copyright James Padolsey http://james.padolsey.com
- * @version 1.04
+/** 
+ *  Another TextArea Autogrow plugin (0.2) alpha's alpha
+ *  by Nikolay Borisov aka KOSIASIK
+ *  mne@figovo.com
+ *
+ *  http://figovo.com/
+ *
+ *  Example: 
+ *  $('textarea').ata();
+ *
+ *  jQuery required. Download it at http://jquery.com/
+ *
  */
 
-(function($){
-    
-    $.fn.autoResize = function(options) {
-        
-        // Just some abstracted details,
-        // to make plugin users happy:
-        var settings = $.extend({
-            onResize : function(){},
-            animate : true,
-            animateDuration : 150,
-            animateCallback : function(){},
-            extraSpace : 20,
-            limit: 1000
+
+(function(jQuery){
+
+    jQuery.fn.ata = function(options){
+
+        options = jQuery.extend({
+            timer:100,
+            callback: function() {}
         }, options);
-        
-        // Only textarea's auto-resize:
-        this.filter('textarea').each(function(){
-            
-                // Get rid of scrollbars and disable WebKit resizing:
-            var textarea = $(this).css({resize:'none','overflow-y':'hidden'}),
-            
-                // Cache original height, for use later:
-                origHeight = textarea.height(),
-                
-                // Need clone of textarea, hidden off screen:
-                clone = (function(){
-                    
-                    // Properties which may effect space taken up by chracters:
-                    var props = ['height','width','lineHeight','textDecoration','letterSpacing'],
-                        propOb = {};
-                        
-                    // Create object of styles to apply:
-                    $.each(props, function(i, prop){
-                        propOb[prop] = textarea.css(prop);
-                    });
-                    
-                    // Clone the actual textarea removing unique properties
-                    // and insert before original textarea:
-                    return textarea.clone().removeAttr('id').removeAttr('name').css({
-                        position: 'absolute',
-                        top: 0,
-                        left: -9999
-                    }).css(propOb).attr('tabIndex','-1').insertBefore(textarea);
-          
-                })(),
-                lastScrollTop = null,
-                updateSize = function() {
-          
-                    // Prepare the clone:
-                    clone.height(0).val($(this).val()).scrollTop(10000);
-          
-                    // Find the height of text:
-                    var scrollTop = Math.max(clone.scrollTop(), origHeight) + settings.extraSpace,
-                        toChange = $(this).add(clone);
-            
-                    // Don't do anything if scrollTip hasen't changed:
-                    if (lastScrollTop === scrollTop) { return; }
-                    lastScrollTop = scrollTop;
-          
-                    // Check for limit:
-                    if ( scrollTop >= settings.limit ) {
-                        $(this).css('overflow-y','');
-                        return;
-                    }
-                    // Fire off callback:
-                    settings.onResize.call(this);
-          
-                    // Either animate or directly apply height:
-                    settings.animate && textarea.css('display') === 'block' ?
-                        toChange.stop().animate({height:scrollTop}, settings.animateDuration, settings.animateCallback)
-                        : toChange.height(scrollTop);
-                };
-            
-            // Bind namespaced handlers to appropriate events:
-            textarea
-                .unbind('.dynSiz')
-                .bind('keyup.dynSiz', updateSize)
-                .bind('keydown.dynSiz', updateSize)
-                .bind('change.dynSiz', updateSize);
-            
+    
+        return this.each(function(i){
+    
+            var $t = jQuery(this),
+                t = this;
+
+            t.style.resize = 'none';
+            t.style.overflow = 'hidden';
+
+            var tVal = t.value;         
+            t.style.height = '0px';
+            t.value = "W\nW\nW";
+            var H3 = t.scrollHeight;
+            t.value = "W\nW\nW\nW";
+            var H4 = t.scrollHeight;
+            var H = H4 - H3;
+            t.value = tVal;
+            tVal = null;
+
+            $t.before("<div id=\"ataa_"+i+"\"></div>");
+
+            var $c = jQuery('#ataa_'+i),
+                c = $c.get(0);
+
+            c.style.padding = '0px';
+            c.style.margin = '0px';
+
+            $t.appendTo($c);
+
+            $t.bind('focus', function(){
+                t.startUpdating()
+            }).bind('blur', function(){
+                t.stopUpdating()
+            });
+
+            this.heightUpdate = function(){
+
+                if (tVal != t.value){
+
+                    tVal = t.value;
+                    t.style.height = '0px';
+                    var tH = t.scrollHeight + H;
+                    t.style.height = tH + 'px';
+                    c.style.height = 'auto';
+                    c.style.height = c.offsetHeight + 'px';
+                    options.callback();
+                }
+
+            }
+
+            this.startUpdating = function(){
+                t.interval = window.setInterval(function(){
+                    t.heightUpdate()
+                }, options.timer);
+            }
+
+            this.stopUpdating = function(){
+                clearInterval(t.interval);  
+            }
+
+            jQuery(function(){
+                t.heightUpdate()
+            });
+
         });
-        
-        // Chain:
-        return this;
-        
+
     };
-    
-    
-    
+
 })(jQuery);
