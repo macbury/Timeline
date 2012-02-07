@@ -3,6 +3,7 @@
   %head
     %title= t("application.name")
     = csrf_meta_tags
+    = javascript_include_tag File.join(Faye::Url, "faye.js")
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     :javascript

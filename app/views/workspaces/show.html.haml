@@ -1,3 +1,5 @@
+- content_for :head do
+  = faye_meta(workspace_path(@workspace), "current_workspace")
 - content_for :header do
   .btn-toolbar
     .btn-group.pull-right

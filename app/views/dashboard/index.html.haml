@@ -1,80 +1,12 @@
-- content_for :header do
-  .btn-toolbar
-    %a.btn.pull-right.btn-primary{ href: "#" } Add Ticket
-    .btn-group{ data: { toggle: "buttons-checkbox" } }
-      = link_to "Current", "#", class: "btn active btn-info"
-      = link_to "Done", "#", class: "btn active btn-info"
-      = link_to "IceBox", "#", class: "btn active btn-info"
-    .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
-        More
-        %span.caret
-      %ul.dropdown-menu
-        %li= link_to "Charts", "#"
-        %li= link_to "Settings", "#"
-    .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
-        Project
-        %span.caret
-      %ul.dropdown-menu
-        %li= link_to "Settings", "#"
-    .btn-group
-      %a.btn.btn-success.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
-        Tickets
-        %span.caret
-      %ul.dropdown-menu
-        %li= link_to "Settings", "#"
-%table.spaces
-  %tr
-    - 3.times do |index|
-      %td
-        .space
-          .toolbar
-            .move &nbsp;
-            %span.title Current #{index}
-            .act
-              %a.expand{ href: "#" } Expand all
-              %a.collapse{ href: "#" } Collapse all
-              %a.close{ href: "#" } Close
-          .inner
-            .nano
-              .content
-                - (rand * 20).round.times do |test_index|
-                  .ticket
-                    .list
-                      .pull-right
-                        %a.button{ href: "#" } Start
-                        .split
-                        = link_to image_tag("eye_inv.png"), "#", class: "avatar"
-                      %a.expand{ href: "#" } Expand
-                      %span Test #{test_index}
-                        
-                    .block
-                      %a.collapse{ href: "#" } Collapse
-                      %form.form
-                        .field
-                          %input{ type: "text", placeholder: "Enter ticket title here" }
-                        .field.divider
-                          %a.btn.btn-primary.small{ href: "#" } Save
-                          %a.btn.small{ href: "#" } Cancel
-                          %a.btn.btn-danger.small{ href: "#" } Destroy
-                          %a.btn.btn-info.small{ href: "#" } View History
-                        .field
-                          %select
-                            - 20.times do |index|
-                              %option User #{index}
-                          %span.hint requested this ticket on #{l(Time.zone.now, format: :short)}
-                        .field.divider
-                          %select
-                            - 20.times do |index|
-                              %option User #{index}
-                          %span.hint own this ticket
-                        .field
-                          %label Labels:
-                          %input{ type: "text", placeholder: "Enter labels here" }
-                          
-                        .field
-                          %label Description:
-                          %textarea{ rows: 5 }
-                    .clear
-                .end
+.hero-unit
+  %h1= t("application.name")
+  %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+  %p
+    = link_to "Create Account", "#", class: "btn btn-primary btn-large"
+
+.row
+  - 3.times do
+    .span5
+      %h4 Heading
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p= link_to "More Info", "#", class: "btn"

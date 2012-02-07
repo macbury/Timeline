@@ -26,4 +26,7 @@ $(document).ready ->
   $('body').ajaxStop -> 
     clearInterval(timer)
     cursor.hide()
+
+  p = new Pusher()
+  p.subscribeTag "current_workspace", (msg) -> console.log(msg)
   

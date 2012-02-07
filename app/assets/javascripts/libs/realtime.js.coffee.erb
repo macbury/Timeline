@@ -1,0 +1,41 @@
+class Pusher
+  constructor: ->
+    @url = <%= Faye::Url.inspect %>
+  
+    unless window["Faye"]?
+      alert "Server connection failure!"
+      #window.location.realod()
+      return
+  
+    @client = new Faye.Client(@url)
+    @subscriptions = {}
+    @client.addExtension
+      outgoing: (message, callback) =>
+        if message.channel == "/meta/subscribe"
+          subscription = @subscriptions[message.subscription]
+          message.ext = {} unless message.ext?
+          message.ext.auth_token = subscription
+        callback message
+  
+  subscribe: (channel, callback) ->
+    @subscriptions[channel] = @getToken(channel)
+    @client.subscribe(channel, callback)
+  
+  subscribeTag: (tag, callback) -> @subscribe(@getChannel(tag), callback)
+  
+  getChannel: (tag) ->
+    out = false
+    $("meta").each ->
+      meta = $(this)
+      if meta.attr("name") == tag
+        out = meta.attr("channel") 
+    out
+  getToken: (channel) ->
+    out = false
+    $("meta").each ->
+      meta = $(this)
+      if meta.attr("channel") == channel
+        out = meta.attr("content") 
+    out
+
+window.Pusher = Pusher

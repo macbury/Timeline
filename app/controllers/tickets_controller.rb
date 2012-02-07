@@ -2,12 +2,13 @@ require "csv"
 class TicketsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :load_project!
+
   # GET /tickets
   # GET /tickets.json
   def index
     @tickets = @workspace.tickets.all
     respond_to do |format|
-      format.json
+      format.json { render stream: true }
       format.csv { export_to_csv @tickets }
     end
   end
@@ -26,7 +27,7 @@ class TicketsController < ApplicationController
     @ticket = @workspace.tickets.new(params[:ticket])
     respond_to do |format|
       if @ticket.save
-        format.json { render partial: @ticket, status: :created, location: [@workspace, @ticket] }
+        format.json { render partial: @ticket, status: :created, location: [@workspace, @ticket], channel: workspace_path(@workspace) }
       else
         format.json { render json: @ticket.errors, status: :unprocessable_entity }
       end
@@ -40,7 +41,7 @@ class TicketsController < ApplicationController
 
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
-        format.json { head :no_content }
+        format.json { render partial: @ticket, channel: workspace_path(@workspace) }
       else
         format.json { render json: @ticket.errors, status: :unprocessable_entity }
       end
@@ -54,7 +55,7 @@ class TicketsController < ApplicationController
     @ticket.destroy
 
     respond_to do |format|
-      format.json { head :no_content }
+      format.json { render partial: @ticket, channel: workspace_path(@workspace) }
     end
   end
 

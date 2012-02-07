@@ -1,2 +1,2 @@
-web: unicorn
-rackup faye.ru -s thin -E production
+web: unicorn --config-file config/unicorn
+faye: rackup faye.ru -s thin -E production

@@ -23,7 +23,8 @@ gem "tabulous"
 gem "i18n-js"
 gem 'chosen_rails'
 gem 'jbuilder'
-#gem "redis"
+gem 'faye', require: false
+gem "redis"
 
 # Gems used only for assets and not required
 # in production environments by default.
