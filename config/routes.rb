@@ -1,4 +1,6 @@
 Timeline::Application.routes.draw do
+  resources :comments
+
   resources :workspaces do
     resources :tickets
     resources :members
