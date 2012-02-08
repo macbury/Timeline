@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
       if options[:channel]
         channel = options[:channel]
         options.delete(:channel)
-        broadcast(channel, { action: params[:action], content: JSON.parse(render_to_string(options)) })
+        broadcast(channel, { action: params[:action], content: JSON.parse(render_to_string(options)), user_id: self.current_user.id })
       end
       
       super(options)

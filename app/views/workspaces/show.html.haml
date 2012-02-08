@@ -35,7 +35,7 @@
   :javascript
     $(document).ready(function(){
       window.timeline = new Timeline.Routers.TicketsRouter({ 
-        users: #{render partial: "users/user.json.builder", collection: @workspace.users},
+        users: #{render partial: "users/members.json.builder", locals: { users: @workspace.users } },
         url: #{workspace_tickets_path( workspace_id: @workspace.id).inspect.html_safe} 
       });
       Backbone.history.start();

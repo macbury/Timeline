@@ -56,6 +56,21 @@ class Timeline.Models.Ticket extends Backbone.Model
 class Timeline.Collections.TicketsCollection extends Backbone.Collection
   model: Timeline.Models.Ticket
   
+  initialize: ->
+    p = new Pusher()
+    p.subscribeTag "current_workspace", (rsp) => @pull(rsp)
+  
+  pull: (rsp) =>
+    return if rsp.user_id == window.user_id
+    object = rsp.content
+    ticket = @get(object.id)
+    if ticket
+      ticket.set(object)
+    else
+      ticket = @add([object])
+    ticket.trigger("pull")
+
+
   done: -> 
     @filter (ticket) -> ticket.isDone()
   current: -> 

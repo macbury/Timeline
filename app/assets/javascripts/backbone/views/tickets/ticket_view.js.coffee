@@ -65,6 +65,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @model.bind "change:status", => @renderStatus()
     @model.bind "change", => @updateUI()
     @model.bind "destroy", => $(@el).remove()
+    @model.bind "pull", => @highlight()
     @model.view = this
     
   setOwner: ->
@@ -84,7 +85,9 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
   updateUI: (e) =>
     @list.find('.info.feature').popover title: @model.get("title"), content: @model.get("description")
   
-  highlight: (e) => @list.effect("highlight", {}, 500)
+  highlight: (e) => 
+    console.log "change"
+    @list.effect("highlight", {}, 500)
 
   reset_form: =>
     @setErrors({})
@@ -108,6 +111,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
       @form.find(".destroy").hide()
     else
       @form.find(".destroy").show()
+    @reset_form()
     @block.show()
     @list.hide()
     @focus()

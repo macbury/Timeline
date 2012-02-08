@@ -7,7 +7,6 @@ class WorkspacesController < ApplicationController
 
   def show
     @workspace = self.current_user.workspaces.find(params[:id])
-    broadcast(workspace_path(@workspace), { test: "test" })
   end
 
   def new
