@@ -81,7 +81,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @destroy() if @model.isNew()
     @reset_form()
     @trigger("resize")
-
+  
   updateUI: (e) =>
     @list.find('.info.feature').popover title: @model.get("title"), content: @model.get("description")
   
@@ -146,8 +146,8 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @renderStatus()
     @setOwner()
     @updateUI()
-
-    #@form.find("textarea").elastic()
+    @form.find("textarea").autogrow onGrow: => @trigger("resize")
+        
 
     if @model.isNew()
       @expand()

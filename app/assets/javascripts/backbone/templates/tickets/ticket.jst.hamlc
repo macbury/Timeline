@@ -34,6 +34,6 @@
       
     .field
       %label Description:
-      %textarea{ rows: 5, name: "description" }
+      %textarea{ rows: 1, name: "description" }
 
 .clear
