@@ -8,6 +8,10 @@
   %li.active= link_to "Members", workspace_members_path(@workspace)
   %li= link_to "Reports", "#"
 
+= form_tag workspace_members_path(@workspace) do
+  = text_area_tag "emails"
+  = submit_tag "Invite", class: "btn btn-large"
+
 %table.table.table-striped
   %thead
     %tr
