@@ -8,13 +8,13 @@ $(document).ready ->
     mx = event.pageX
     my = event.pageY
 
-  $('#notifications').tooltip
-    title: "3 notifications"
-    placement: "bottom"
+  #$('#notifications').tooltip
+  #  title: "3 notifications"
+  #  placement: "bottom"
 
-  $('#notifications').tooltip('show')
+  #$('#notifications').tooltip('show')
 
-  Notificon("10", { favicon: "/favicon.png" })
+  
 
 
   updateCursorCallback = ->

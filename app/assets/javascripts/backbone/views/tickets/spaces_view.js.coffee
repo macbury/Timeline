@@ -10,10 +10,19 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
   initialize: (options) ->
     @spaces = []
     @tickets = options.tickets
+    @tickets.bind "all", => @updateTitleBar()
     @users = options.users
+
     $(window).resize => @resize()
     @render()
-  
+
+  updateTitleBar: =>
+    remaining_count = @tickets.remaining().length
+    if remaining_count && remaining_count > 0
+      Notificon("#{remaining_count}", { favicon: "/favicon.png" })
+    else
+      Notificon("")
+
   refresh: (e) => 
     e.preventDefault()
     @tickets.fetch()
@@ -64,6 +73,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @addCurrent()
     @addPending()
     @addMembers()
+    @updateTitleBar()
 
     @resize()
 

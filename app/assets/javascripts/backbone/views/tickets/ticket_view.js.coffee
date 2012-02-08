@@ -98,7 +98,9 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @model.destroy()
 
   focus: ->
+    @form.find("textarea").keyup()
     @form.find(".title").focus()
+
 
   afterInsert: =>
     @form.find("select").chosen()

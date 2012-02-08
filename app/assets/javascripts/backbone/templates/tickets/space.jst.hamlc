@@ -1,6 +1,5 @@
 .space
   .toolbar
-    .move &nbsp;
     .act
       %a.expand{ href: "#" } Expand all
       %a.collapse{ href: "#" } Collapse all

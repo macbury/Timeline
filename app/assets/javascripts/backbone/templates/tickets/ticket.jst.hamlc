@@ -6,7 +6,6 @@
     .split
     %a.avatar{ href: "#" }
       %img{ src: "/none.jpg" }/
-  %i.icon.icon-info-sign
   %a.expand{ href: "#" } Expand
   .title
     .info.feature &nbsp;

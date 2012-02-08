@@ -82,5 +82,7 @@ class Timeline.Collections.TicketsCollection extends Backbone.Collection
     @filter (ticket) -> ticket.isCurrent()
   backLog: -> 
     @filter (ticket) -> ticket.isBackLog()
+  remaining: -> 
+    @without.apply(this, @done())
 
 
