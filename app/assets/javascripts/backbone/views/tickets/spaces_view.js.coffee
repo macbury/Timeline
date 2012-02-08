@@ -12,7 +12,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @tickets = options.tickets
     @tickets.bind "all", => @updateTitleBar()
     @users = options.users
-
+    @title = document.title
     $(window).resize => @resize()
     @render()
 
@@ -20,8 +20,10 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     remaining_count = @tickets.remaining().length
     if remaining_count && remaining_count > 0
       Notificon("#{remaining_count}", { favicon: "/favicon.png" })
+      document.title = "#{@title} (#{remaining_count})"
     else
       Notificon("")
+      document.title = @title
 
   refresh: (e) => 
     e.preventDefault()
