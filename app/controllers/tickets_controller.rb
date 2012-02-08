@@ -60,9 +60,6 @@ class TicketsController < ApplicationController
   end
 
   protected
-    def load_project!
-      @workspace = self.current_user.workspaces.find(params[:workspace_id])
-    end
 
     def export_to_csv(tickets)
       csv_string = CSV.generate do |csv| 

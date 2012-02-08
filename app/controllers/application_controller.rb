@@ -25,4 +25,8 @@ class ApplicationController < ActionController::Base
     def set_user_time_zone
       Time.zone = current_user.timezone if user_signed_in?
     end
+    
+    def load_project!
+      @workspace = self.current_user.workspaces.find(params[:workspace_id])
+    end
 end

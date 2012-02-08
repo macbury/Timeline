@@ -1,6 +1,7 @@
 Timeline::Application.routes.draw do
   resources :workspaces do
     resources :tickets
+    resources :members
   end
 
   resource :account

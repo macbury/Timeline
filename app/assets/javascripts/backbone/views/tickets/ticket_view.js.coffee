@@ -86,8 +86,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @list.find('.info.feature').popover title: @model.get("title"), content: @model.get("description")
   
   highlight: (e) => 
-    console.log "change"
-    @list.effect("highlight", {}, 500)
+    @list.effect("highlight", {}, 500) unless $(@el).is(":hidden")
 
   reset_form: =>
     @setErrors({})

@@ -1,0 +1,28 @@
+.pull-right
+  = link_to "Dashboard", workspace_path(@workspace), class: "btn btn-large btn-success"
+%ul.nav.nav-pills
+  %li= link_to "Overview", "#"
+  %li= link_to "Settings", "#"
+  %li= link_to "Import", "#"
+  %li= link_to "Export", "#"
+  %li.active= link_to "Members", workspace_members_path(@workspace)
+  %li= link_to "Reports", "#"
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Name
+      %th E-Mail
+      %th Role
+      %th Invitation
+      %th &nbsp;
+  %tbody
+    - @members.each do |member|
+      %tr
+        %td
+          = image_tag member.gravatar_url
+          = member.login
+        %td= member.email
+        %td None
+        %td None
+        %td= link_to "Remove", "#", class: "btn btn-danger"

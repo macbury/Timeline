@@ -64,11 +64,16 @@ class Timeline.Collections.TicketsCollection extends Backbone.Collection
     return if rsp.user_id == window.user_id
     object = rsp.content
     ticket = @get(object.id)
-    if ticket
-      ticket.set(object)
+
+    if rsp.action == "destroy" && ticket
+      ticket.trigger("destroy")
+      @remove [ticket]
     else
-      ticket = @add([object])
-    ticket.trigger("pull")
+      if ticket
+        ticket.set(object)
+      else
+        ticket = @add([object])
+      ticket.trigger("pull")
 
 
   done: -> 

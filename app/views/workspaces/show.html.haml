@@ -19,7 +19,7 @@
         %li= link_to "Enter distraction Free Mode", "#"
         %li.divider
         %li= link_to "Settings", "#"
-        %li= link_to "Members", "#", id: "members_button"
+        %li= link_to "Members", workspace_members_path(@workspace)
     .btn-group
       %a.btn.dropdown-toggle{ data: { toggle: "dropdown" }, href: "#" }
         %i.icon-road
