@@ -148,6 +148,10 @@
       .button {
         display: none;
       }
+
+      .points {
+        display: none !important;
+      }
     }
 
     &.delivered {
@@ -257,7 +261,13 @@
           }
         }
 
-        span {
+        .points {
+          width: 18px;
+          height: 24px;
+          display: inline-block;
+          margin-right: 2px;
+
+          background: transparent image-url("dice_2.png") no-repeat center center;
         }
       }
 

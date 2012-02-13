@@ -9,7 +9,9 @@
   %a.expand{ href: "#" } Expand
   .title
     .info.feature &nbsp;
+    .points &nbsp;
     %span= @ticket.get("title")
+
     
 .block
   %a.collapse{ href: "#" } Collapse
