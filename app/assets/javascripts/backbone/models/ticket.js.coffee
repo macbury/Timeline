@@ -78,6 +78,8 @@ class Timeline.Collections.TicketsCollection extends Backbone.Collection
         ticket = @add([object])
       ticket.trigger("pull")
 
+  
+  comparator: (ticket) -> ticket.get("position")
 
   done: -> 
     @filter (ticket) -> ticket.isDone()

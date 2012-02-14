@@ -16,11 +16,12 @@ class Ticket < ActiveRecord::Base
 
   belongs_to :workspace
 
-  validates :title, presence: true, length: { minimum: 2, maximum: 128 }
+  validates :title, presence: true, length: { minimum: 2, maximum: 254 }
   validates :description, length: { maximum: 1024 }
 
   attr_protected :workspace_id, :space
   after_create :setup_position!
+  before_update :setup_position, if: :space_changed?
 
   def backLog?
     self.space == Ticket::BackLog
@@ -74,7 +75,6 @@ class Ticket < ActiveRecord::Base
       self.space = Ticket::Current
     end
 
-    setup_position if old_space != self.space
   end
 
   def setup_position

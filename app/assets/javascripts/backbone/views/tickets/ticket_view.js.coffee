@@ -141,6 +141,7 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
 
   render: =>
     $(@el).html(@template({ ticket: @model, users: @users }))
+    $(@el).attr("id", "ticket_#{@model.cid}")
     @block = $(@el).find(".block")
     @list = $(@el).find(".list")
     @form = @block.find("form")

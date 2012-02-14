@@ -42,5 +42,19 @@ class Timeline.Views.Tickets.BaseTicketSpace extends Timeline.Views.Tickets.Base
   render: =>
     super
     @addAll()
-
+    @inner.sortable
+      axis: 'y'
+      cursor: 'move'
+      items: ".ticket"
+      handle: ".title"
+      placeholder: "place_holder"
+      opacity: 0.6
+      stop: (event,ui) =>
+        ids = _.map @inner.sortable("toArray"), (el) -> el.replace("ticket_", "")
+        index = 0
+        _.each ids, (cid) =>
+          index += 1
+          model = @options.tickets.getByCid(cid)
+          model.save
+            position: index
     return this
