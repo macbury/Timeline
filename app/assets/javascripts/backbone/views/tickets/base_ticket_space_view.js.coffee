@@ -12,7 +12,7 @@ class Timeline.Views.Tickets.BaseTicketSpace extends Timeline.Views.Tickets.Base
   initialize: ->
     super
     @options.tickets.bind('add', @addOne)
-    @options.tickets.bind('change:status', @bindSpace)
+    @options.tickets.bind('change:space', @bindSpace)
     @options.tickets.bind('reset', @render)
     @render()
   

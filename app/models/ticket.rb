@@ -75,12 +75,12 @@ class Ticket < ActiveRecord::Base
     end
 
     setup_position if old_space != self.space
-    
   end
 
   def setup_position
     self.position = self.workspace.tickets.where(:space => self.space).maximum(:position) || 0
     self.position += 1
+    Rails.logger.debug "Moving to position #{self.position}"
   end
 
   def setup_position!

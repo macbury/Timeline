@@ -18,7 +18,10 @@ class Timeline.Models.Ticket extends Backbone.Model
     requested_by_id: null,
     owned_by_id: null,
     status: Pending
+    space: 0
   
+  
+
   pending:  -> @set(status: Pending)
   start:    -> @set(status: Started)
   finish:   -> @set(status: Finished)
@@ -27,9 +30,9 @@ class Timeline.Models.Ticket extends Backbone.Model
   reject:   -> @set(status: Restart)
   restart:  -> @set(status: Started)
 
-  isBackLog: -> _.include([Pending, Rejected, Restart], @get('status')) || @isNew() 
-  isCurrent: -> _.include([Started, Finished, Delivered], @get('status')) && !@isNew()
-  isDone: -> _.include([Accepted], @get('status')) && !@isNew()
+  isBackLog: -> @get('space') == 0 || @isNew() 
+  isCurrent: -> @get('space') == 1
+  isDone: -> @get('space') == 2
 
   isDelivered: -> @get("status") == Delivered
 
