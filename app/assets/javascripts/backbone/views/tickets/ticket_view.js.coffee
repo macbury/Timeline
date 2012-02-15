@@ -149,7 +149,14 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @renderStatus()
     @setOwner()
     @updateUI()
-    @form.find("textarea").autogrow onGrow: => @trigger("resize")
+    @form.find(".title, textarea").bind 'keyup keypress change', ->
+      $(this).height('');
+      brCount = this.value.split('\n').length;
+      this.rows = brCount;
+      areaH = this.scrollHeight;
+      lineHeight = $(this).css('line-height').replace('px','');
+      calcRows = Math.floor(areaH/lineHeight);
+      this.rows = calcRows;
         
 
     if @model.isNew()

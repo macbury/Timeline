@@ -1,88 +1,96 @@
 /*
- * jQuery Autogrow Text Area
- * version 1.0
- * It automatically adjusts the height on text area.
- *
- * Written by Jerry Luk jerry@presdo.com
- *
- * Based on Chrys Bader's Auto Expanding Text area www.chrysbader.com
- * and Craig Buckler's TextAreaExpander  http://www.sitepoint.com/blogs/2009/07/29/build-auto-expanding-textarea-1/
- *
- * Licensed under MIT license.
+ * jQuery autoResize (textarea auto-resizer)
+ * @copyright James Padolsey http://james.padolsey.com
+ * @version 1.04
  */
- 
-(function($) {
-  $.fn.autogrow = function(options) {
-    var defaults = {
-      expandTolerance: 1,
-      heightKeeperFunction: null,
-      onGrow: function() {}
-    };
-    options = $.extend(defaults, options);
-    
-    // IE and Opera should never set a textarea height of 0px
-    var hCheck = !($.browser.msie || $.browser.opera);
-    
-    function resize(e) {
-      var $e            = $(e.target || e), // event or element
-          contentLength = $e.val().length,
-          elementWidth  = $e.innerWidth();
-      if ($e.is(":hidden")) {
-        // Do not do anything if the element is hidden as we cannot determine the height correctly
-        return $e;
-      }
-      if (contentLength != $e.data("autogrow-length") || elementWidth != $e.data("autogrow-width")) {
-        
-        // For non-IE and Opera browser, it requires setting the height to 0px to compute the right height
-        if (hCheck && (contentLength < $e.data("autogrow-length") || 
-          elementWidth != $e.data("autogrow-width"))) {
-          if ($.isFunction(options.heightKeeperFunction)) {
-            (options.heightKeeperFunction($e)).height((options.heightKeeperFunction($e)).height());
-          }
-          $e.css("height", "0px");
-        }
-        
-        var height = Math.max($e.data("autogrow-min"), Math.ceil(Math.min(
-          $e.prop("scrollHeight") + options.expandTolerance * $e.data("autogrow-line-height"), 
-          $e.data("autogrow-max"))));
 
-        $e.css("overflow", ($e.prop("scrollHeight") > height ? "auto" : "hidden"));
-        $e.css("height", height + "px");
-        if ($.isFunction(options.heightKeeperFunction)) {
-          (options.heightKeeperFunction($e)).css({ height: 'auto' });
-        }
-      }
-      options.onGrow()
-      return $e;
-    };
+(function($){
     
-    function parseNumericValue(v) {
-      var n = parseInt(v, 10);
-      return isNaN(n) ? null : n;
-    };
-    
-    function initElement($e) {
-      $e.data("autogrow-min", options.minHeight || parseNumericValue($e.css('min-height')) || 0);
-      $e.data("autogrow-max", options.maxHeight || parseNumericValue($e.css('max-height')) || 99999);
-      $e.data("autogrow-line-height", options.lineHeight || parseNumericValue($e.css('line-height')));
-      resize($e);
-    };
-    
-    this.each(function() {
-      var $this = $(this);
+    $.fn.autoResize = function(options) {
+        
+        // Just some abstracted details,
+        // to make plugin users happy:
+        var settings = $.extend({
+            onResize : function(){},
+            animate : true,
+            animateDuration : 150,
+            animateCallback : function(){},
+            extraSpace : 20,
+            limit: 1000
+        }, options);
+        
+        // Only textarea's auto-resize:
+        this.filter('textarea').each(function(){
             
-      if (!$this.data("autogrow-initialized")) {
-        $this.css("padding-top", 0).css("padding-bottom", 0);
-        $this.bind("keyup", resize).bind("focus", resize);
-        $this.data("autogrow-initialized", true);
-      }
-      
-      initElement($this);
-      // Sometimes the CSS attributes are not yet there so the above computation might be wrong
-      // 100ms delay will do the job
-      setTimeout(function() { initElement($this); }, 100);
-    });
+                // Get rid of scrollbars and disable WebKit resizing:
+            var textarea = $(this).css({resize:'none','overflow-y':'hidden'}),
+            
+                // Cache original height, for use later:
+                origHeight = textarea.height(),
+                
+                // Need clone of textarea, hidden off screen:
+                clone = (function(){
+                    
+                    // Properties which may effect space taken up by chracters:
+                    var props = ['height','width','lineHeight','textDecoration','letterSpacing'],
+                        propOb = {};
+                        
+                    // Create object of styles to apply:
+                    $.each(props, function(i, prop){
+                        propOb[prop] = textarea.css(prop);
+                    });
+                    
+                    // Clone the actual textarea removing unique properties
+                    // and insert before original textarea:
+                    return textarea.clone().removeAttr('id').removeAttr('name').css({
+                        position: 'absolute',
+                        top: 0,
+                        left: -9999
+                    }).css(propOb).attr('tabIndex','-1').insertBefore(textarea);
+          
+                })(),
+                lastScrollTop = null,
+                updateSize = function() {
+          
+                    // Prepare the clone:
+                    clone.height(0).val($(this).val()).scrollTop(10000);
+          
+                    // Find the height of text:
+                    var scrollTop = Math.max(clone.scrollTop(), origHeight) + settings.extraSpace,
+                        toChange = $(this).add(clone);
+            
+                    // Don't do anything if scrollTip hasen't changed:
+                    if (lastScrollTop === scrollTop) { return; }
+                    lastScrollTop = scrollTop;
+          
+                    // Check for limit:
+                    if ( scrollTop >= settings.limit ) {
+                        $(this).css('overflow-y','');
+                        return;
+                    }
+                    // Fire off callback:
+                    settings.onResize.call(this);
+          
+                    // Either animate or directly apply height:
+                    settings.animate && textarea.css('display') === 'block' ?
+                        toChange.stop().animate({height:scrollTop}, settings.animateDuration, settings.animateCallback)
+                        : toChange.height(scrollTop);
+                };
+            
+            // Bind namespaced handlers to appropriate events:
+            textarea
+                .unbind('.dynSiz')
+                .bind('keyup.dynSiz', updateSize)
+                .bind('keydown.dynSiz', updateSize)
+                .bind('change.dynSiz', updateSize);
+            
+        });
+        
+        // Chain:
+        return this;
+        
+    };
     
-    return this;
-  };
+    
+    
 })(jQuery);

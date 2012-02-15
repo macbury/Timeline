@@ -17,7 +17,7 @@
   %a.collapse{ href: "#" } Collapse
   %form.form
     .field
-      %input.title{ name: "title", type: "text", placeholder: "Enter ticket title here" }
+      %textarea.title{ name: "title", rows: 1, placeholder: "Enter ticket title here" }
     .field.divider
       %a.btn.btn-primary.small.save{ href: "#" }= I18n.t("actions.save")
       %a.btn.small.cancel{ href: "#" }= I18n.t("actions.cancel")
