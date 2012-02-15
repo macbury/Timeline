@@ -54,7 +54,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
     @registerSpace(@membersSpace)
 
   resize: ->
-    header_height = @header.height()
+    header_height = @header.height() + @topbar.height()
     body_height = $(@el).height()
      
     space_height = body_height - header_height - 35
@@ -68,6 +68,7 @@ class Timeline.Views.Tickets.Spaces extends Backbone.View
   render: =>
     $('body, html').css overflow: "hidden"
     @header = $(@el).find(".header")
+    @topbar = $(@el).find(".top_bar")
     @tr = $(@el).find("#spaces tr")
     @tr.empty()
     

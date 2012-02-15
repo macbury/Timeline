@@ -15,49 +15,48 @@
     %link{ :rel => "shortcut icon", :href => "/favicon.png", :type => "image/x-icon" }/
     = yield :head
   %body{ :id => "controller_#{controller.controller_name}_#{controller.action_name}" }
-    .header
-      .navbar
-        .navbar-inner
-          .container-fluid
-            = link_to root_url, class: "brand" do
-              = t("application.name")
-            - if user_signed_in?
-              %ul.nav
-                %li.dropdown
-                  = link_to "#", class: "dropdown-toggle", data: { toggle: "dropdown" } do
-                    - if @workspace && !@workspace.new_record?
-                      = @workspace.name
-                    - else
-                      Select Workspace
-                    %b.caret
-                  %ul.dropdown-menu
-                    - self.current_user.workspaces.each do |workspace|
-                      %li= link_to workspace.name, workspace
-                    %li.divider
-                    %li= link_to "Show All", workspaces_path
-              %form.navbar-search.pull-left
-                %input.search-query.span2{ placeholder: "Search..." }/
-              %ul.nav.pull-right
-                %li.dropdown
-                  = link_to "#", class: "dropdown-toggle", id: "notifications", data: { toggle: "dropdown" } do
-                    %i.icon-white.icon-inbox
-                    %b.caret
-                  %ul.dropdown-menu
-                    %li= link_to "test", "#"
-                %li
-                  = link_to account_path do
-                    %i.icon-white.icon-cog
-                %li.divider-vertical
-                %li
-                  = link_to "#" do
-                    %i.icon-white.icon-off
-            - else
-              %p.pull-right Test :P
+    .navbar.navbar-fixed-top.top_bar
+      .navbar-inner
+        .container-fluid
+          = link_to root_url, class: "brand" do
+            = t("application.name")
+          - if user_signed_in?
+            %ul.nav
+              %li.dropdown
+                = link_to "#", class: "dropdown-toggle", data: { toggle: "dropdown" } do
+                  - if @workspace && !@workspace.new_record?
+                    = @workspace.name
+                  - else
+                    Select Workspace
+                  %b.caret
+                %ul.dropdown-menu
+                  - self.current_user.workspaces.each do |workspace|
+                    %li= link_to workspace.name, workspace
+                  %li.divider
+                  %li= link_to "Show All", workspaces_path
+            %form.navbar-search.pull-left
+              %input.search-query.span2{ placeholder: "Search..." }/
+            %ul.nav.pull-right
+              %li.dropdown
+                = link_to "#", class: "dropdown-toggle", id: "notifications", data: { toggle: "dropdown" } do
+                  %i.icon-white.icon-inbox
+                  %b.caret
+                %ul.dropdown-menu
+                  %li= link_to "test", "#"
+              %li
+                = link_to account_path do
+                  %i.icon-white.icon-cog
+              %li.divider-vertical
+              %li
+                = link_to "#" do
+                  %i.icon-white.icon-off
+          - else
+            %p.pull-right Test :P
       .clear
-      = yield :header
-      .clear
-      = render partial: "shared/flash_messages"
-      .clear
+    .header= yield :header
+    .clear
+    = render partial: "shared/flash_messages"
+    .clear
     .container-fluid
       = yield
       .clear

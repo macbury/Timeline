@@ -3,5 +3,12 @@
 }
 body, html {
   height: 100%;
-  min-width: 980px;
+  min-width: 980px;  
+}
+
+
+body {
+  background: image-url('background.png') repeat-x top;
+  min-height: 100%;
+  padding-top: 40px;
 }

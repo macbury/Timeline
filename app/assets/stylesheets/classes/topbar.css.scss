@@ -1,6 +1,6 @@
 .navbar .brand {
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 20px;
   font-weight: bold;
   margin-right: 20px;
   color: #000;
@@ -20,8 +20,8 @@
 .header {
   padding: 15px 20px 5px 20px;
 }
-  
-body {
-  background: image-url('background.png') repeat-x top;
-  min-height: 100%;
+
+
+.navbar-inner {
+  border-bottom: 2px solid orange;
 }
