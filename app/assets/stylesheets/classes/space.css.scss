@@ -21,14 +21,6 @@
     padding: 0px 4px;
   }
 
-  & td:first-child {
-
-  }
-
-  & td:last-child {
-
-  }
-
   .space {
     height: $space_height;
     overflow: hidden;
@@ -150,7 +142,7 @@
         background-color: lighten(#DAEBCF, 5%) !important;
       }
 
-      .button {
+      .btn {
         display: none;
       }
 
@@ -160,27 +152,6 @@
     }
 
     &.delivered {
-      .accept {
-        margin-right: 0px;
-        background-color: #6b9a13;
-        border-color: #416f00;
-        color: #fff;
-
-        &:hover {
-          background-color: #416f00;
-        }
-      }
-      .reject {
-        margin-left: 2px;
-        background-color: #a5243e;
-        border-color: #821328;
-        color: #fff;
-
-        &:hover {
-          background-color: #821328;
-        }
-      }
-
       .status {
         display: none;
       }
@@ -197,16 +168,6 @@
       & .list:hover {
         background-color: darken(#F3F3D1, 10%);
       }
-
-      .status {
-        background-color: #ef9113;
-        color: #fff;
-        border-color: #cd6e00;
-
-        &:hover {
-          background-color: #cd6e00;
-        }
-      }
     }
 
     &.started {
@@ -214,44 +175,19 @@
       & .list:hover {
         background-color: darken(#E4EFF7, 5%);
       }
-
-      .status {
-        background-color: #2b4c74;
-        color: #fff;
-        box-shadow: inset 0px 0px 1px #416e9b;
-        border-color: #24364c;
-
-        &:hover {
-          background-color: #24364c;
-        }
-      }
-    }
-
-    .button {
-      background: #e0e2e5;
-      border: 1px solid #bbc4cc;
-      box-shadow: inset 0px 0px 1px #fff;
-      border-radius: 2px;
-      display: block;
-      float: left;
-      width: 49px;
-      height: 20px;
-      line-height: 20px;
-      text-align: center;
-      color: #222;
-      margin: 1px 5px;
-      font-size: 11px;
-      font-weight: bold;
-      margin-top: 0px;
-
-      &:hover {
-        text-decoration: none;
-        background: #bbc4cc;
-      }
     }
 
     .list {
       
+      .btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 0px 10px;
+        margin: 0px 2px 0px 0px;
+        float: left;
+        min-width: 32px;
+      }
+
       .title {
         display: block;
         margin-left: 20px;
@@ -301,6 +237,7 @@
           border-left: 1px dotted gray;
           width: 1px;
           height: 21px;
+          margin-left: 3px;
           display: inline-block;
         }
       }

@@ -35,6 +35,8 @@ class Timeline.Models.Ticket extends Backbone.Model
   isDone: -> @get('space') == 2
 
   isDelivered: -> @get("status") == Delivered
+  isStarted: -> @get("status") == Started
+  isFinished: -> @get("status") == Finished
 
   status: ->
     switch @get('status')

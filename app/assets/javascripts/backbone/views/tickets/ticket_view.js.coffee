@@ -119,7 +119,11 @@ class Timeline.Views.Tickets.TicketView extends Backbone.View
     @trigger("resize")
   
   renderStatus: =>
-    @list.find(".status").text(I18n.t("ticket.status.#{@model.status()}"))
+    status_btn = @list.find(".status")
+    status_btn.attr("class", "btn status")
+    status_btn.addClass("btn-info") if @model.isStarted()
+    status_btn.addClass("btn-warning") if @model.isFinished()
+    status_btn.text(I18n.t("ticket.status.#{@model.status()}"))
     for klass in ["pending", "started", "finished", "delivered", "accepeted", "rejected"]
       $(@el).removeClass(klass)
     $(@el).addClass(@model.status())

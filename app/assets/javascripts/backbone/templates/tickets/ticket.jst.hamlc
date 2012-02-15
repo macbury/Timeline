@@ -1,8 +1,8 @@
 .list
   .pull-right
-    %a.button.accept{ href: "#" }= I18n.t("ticket.status.accepted")
-    %a.button.reject{ href: "#" }= I18n.t("ticket.status.rejected")
-    %a.button.status{ href: "#" }
+    %a.btn.btn-success.accept{ href: "#" }= I18n.t("ticket.status.accepted")
+    %a.btn.btn-danger.reject{ href: "#" }= I18n.t("ticket.status.rejected")
+    %a.status.btn{ href: "#" } Start
     .split
     %a.avatar{ href: "#" }
       %img{ src: "/none.jpg" }/
