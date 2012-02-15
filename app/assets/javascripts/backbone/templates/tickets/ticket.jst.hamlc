@@ -23,15 +23,32 @@
       %a.btn.small.cancel{ href: "#" }= I18n.t("actions.cancel")
       %a.btn.btn-danger.small.destroy{ href: "#" }= I18n.t("actions.destroy")
     .field
+      %label Type
+      %select
+        %option Feature
+        %option Bug
+      %img{ src: "/assets/feature.png" }
+    .field
+      %label Points
+      %select
+        %option 0 points
+        %option 1 point
+        %option 2 points
+        %option 3 points
+        %option 4 points
+        %option 5 points
+        %option 6 points
+      %img{ src: "/assets/dice_3.png" }
+    .field
+      %label Requester
       %select{ name: "requested_by_id" }
         - for user in @users.models
           %option{ value: user.get('id') }= user.get("login")
-      %span.hint requested this ticket on (now)
     .field.divider
+      %label Owner
       %select{ name: "owned_by_id" }
         - for user in @users.models
           %option{ value: user.get('id') }= user.get("login")
-      %span.hint own this ticket
       
     .field
       %label Description:

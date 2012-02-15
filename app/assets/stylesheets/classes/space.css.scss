@@ -273,7 +273,7 @@
           display: inline-block;
           margin-right: 2px;
 
-          background: transparent image-url("dice_2.png") no-repeat center center;
+          background: transparent image-url("dice_0.png") no-repeat center center;
         }
       }
 
@@ -326,6 +326,13 @@
 
       .form {
         margin: 0 20px;
+        select: 200px;
+
+        label {
+          float: left;
+          width: 100px;
+          margin-top: 2px;
+        }
       }
     }
   }
