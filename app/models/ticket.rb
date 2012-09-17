@@ -1,27 +1,27 @@
 class Ticket < ActiveRecord::Base
-  Pending = 0
-  Started = 1
-  Finished = 3
+  Pending   = 0
+  Started   = 1
+  Finished  = 3
   Delivered = 4
-  Accepted = 5
-  Rejected = 6
+  Accepted  = 5
+  Rejected  = 6
 
-  BackLog = 0
-  Current = 1
-  Done = 2
+  BackLog   = 0
+  Current   = 1
+  Done      = 2
 
-  scope :inBackLog, where(:status => Ticket::BackLog)
-  scope :inCurrent, where(:status => Ticket::Current)
-  scope :inDone, where(:status => Ticket::Done)
+  scope          :inBackLog, where(:status => Ticket::BackLog)
+  scope          :inCurrent, where(:status => Ticket::Current)
+  scope          :inDone, where(:status => Ticket::Done)
 
-  belongs_to :workspace
+  belongs_to     :workspace
 
-  validates :title, presence: true, length: { minimum: 2, maximum: 254 }
-  validates :description, length: { maximum: 1024 }
+  validates      :title, presence: true, length: { minimum: 2, maximum: 254 }
+  validates      :description, length: { maximum: 1024 }
 
   attr_protected :workspace_id, :space
-  after_create :setup_position!
-  before_update :setup_position, if: :space_changed?
+  after_create   :setup_position!
+  before_update  :setup_position, if: :space_changed?
 
   def backLog?
     self.space == Ticket::BackLog
